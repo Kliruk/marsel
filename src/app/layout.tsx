@@ -6,6 +6,7 @@ import "@/styles/globals.css";
 
 const inter = ralewayGoogleFont({
   subsets: ["latin"],
+  style: ["italic"],
   weight: "300",
   variable: "--font-raleway",
 });
@@ -18,11 +19,11 @@ const bergamasco = localFont({
     },
     {
       path: "../../public/fonts/Bergamasco Light.ttf",
-      weight: "200",
+      weight: "300",
     },
     {
       path: "../../public/fonts/Bergamasco Semibold.ttf",
-      weight: "400",
+      weight: "600",
     },
   ],
   variable: "--font-bergamasco",

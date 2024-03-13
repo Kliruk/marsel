@@ -1,0 +1,17 @@
+.buttonSwitches{
+    display: flex;
+}
+
+.buttonSwitchesArrow{
+    margin-top: 5px;
+}
+
+.buttonSwitches:hover path{
+    fill: transparent;
+    stroke: var(--color-red);
+}
+
+.buttonSwitches:active .wrapper path{
+    fill: var(--color-red);
+    stroke: transparent;
+}

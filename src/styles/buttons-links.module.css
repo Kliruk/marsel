@@ -1,0 +1,74 @@
+.buttonLinksRoundedB,
+.buttonLinksRoundedS,
+.buttonLinksSquared,
+.buttonLink {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-family: var(--font-bergamasco);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1;
+
+    color: var(--color-white);
+
+    padding: 8px 30px 4px 30px;
+    background: var(--color-backgroundBbutton);
+    border: 1px solid var(--color-white);
+    border-radius: 57px;
+}
+
+.buttonLinksRoundedS {
+    font-size: 31px;
+    color: var(--color-black);
+    background: transparent;
+    border-color: var(--color-black);
+    padding: 5px 25px 0 25px;
+}
+
+.buttonLinksRoundedB path,
+.buttonLinksSquared path {
+    fill: var(--color-white);
+}
+
+.buttonLinksRoundedB span {
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+.buttonLinksRoundedS span {
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+.buttonLinksSquared {
+    font-size: 23px;
+
+    padding: 13px 20px 15px 20px;
+
+    background: var(--color-black);
+    border-radius: 0;
+}
+
+.buttonLinksSquared span {
+    margin-top: 9px;
+    margin-right: 3px;
+}
+
+.buttonLink {
+    font-size: 32px;
+    font-weight: 100;
+    text-transform: capitalize;
+
+    background: transparent;
+    padding: 0;
+
+    color: var(--color-black);
+}
+
+.buttonLink:hover,
+.buttonLink:active{
+    border-color: transparent;
+}
