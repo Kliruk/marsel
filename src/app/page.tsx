@@ -6,6 +6,8 @@ import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";
 import ButtonScroll from "@/UI's/buttons/buttons-scrolls/ButtonScroll";
 import ButtonSwitch from "@/UI's/buttons/buttons-switch/ButtonSwitch";
+import ImageFading from "@/components/ImageFading";
+import Image from "next/image";
 
 
 /**
@@ -19,6 +21,24 @@ export default function Home(): JSX.Element {
 
   return (
     <div className="flex justify-center flex-col items-center">
+      <p>круглий курсор https://www.youtube.com/watch?v=momF_D4odCM</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
       <h1>
         аиикикик
       </h1>
@@ -31,6 +51,9 @@ export default function Home(): JSX.Element {
       <ButtonLink type="none" text="portfolio" link="#eeee" widthStar={12} />
       <ButtonScroll width={125} height={125} widthArrow={50}
         orientation={"downward"} star={false} widthStar={12} />
+      <ImageFading>
+        <Image src={"/DSC01855.jpg"} alt="" width={764} height={1113} />
+      </ImageFading>
       <ButtonScroll width={125} height={125} widthArrow={45}
         orientation={"upward"} star={true} widthStar={12} />
       <ButtonScroll width={100} height={100} widthArrow={35}
@@ -38,6 +61,38 @@ export default function Home(): JSX.Element {
       <ButtonSwitch orientation="left" action={test} widthStar={12} />
       <ButtonSwitch orientation="right" action={test} widthStar={12} />
       <NameCircle text={new Date().getFullYear()} width={132} height={132} />
+      <NameCircle text={new Date().getFullYear()} width={132} height={132} />
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <p>vgg</p>
+      <ImageFading>
+        <Image src={"/DSC01855.jpg"} alt="" width={764} height={1113} />
+      </ImageFading>
     </div>
   );
 }
