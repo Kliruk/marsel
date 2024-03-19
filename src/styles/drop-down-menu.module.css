@@ -1,0 +1,121 @@
+.main {
+    font-family: var(--font-bergamasco);
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+
+    min-width: 184px;
+    height: 37px;
+
+    padding: 5px 13px 0 13px;
+
+    border: 1.5px solid #343434;
+    border-radius: 18px;
+
+    transition: all .3s ease;
+
+    flex-direction: column;
+}
+
+.textWithArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.textWithArrow span {
+    width: 100%;
+    text-align: center;
+}
+
+.textWithArrow svg {
+    width: 22px;
+    transition: all .3s ease;
+}
+
+.downArrow {
+    transform: rotate(180deg);
+}
+
+.upArrow {
+    transform: rotate(0deg);
+}
+
+.open {
+    padding: 5px 13px 16px 13px;
+    border-radius: 20px;
+    justify-content: normal;
+    height: 211px;
+    min-width: 184px;
+
+    background-color: var(--color-white);
+}
+
+.textAndArrowWithVariant{
+    display: flex;
+    gap: 8px;
+}
+
+.list {
+    max-height: 145px;
+    margin-top: 19px;
+
+    font-size: 19px;
+
+    overflow-y: auto;
+}
+
+.dropDownList {
+    position: relative;
+}
+
+.dropDownList::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 68px;
+
+    border-radius: 0 0 19px 19px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.15%);
+    bottom: -2px;
+
+    pointer-events:none;
+}
+
+.listI {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: open .6s ease;
+
+    text-align: center;
+}
+
+.listI span{
+    cursor: pointer;
+}
+
+.listI::after {
+    content: "";
+    border: 1px solid var(--color-black);
+    margin: 17px 0;
+    width: 90%;
+}
+
+.listI:last-child::after {
+    content: "";
+    border: 0px;
+    margin-top: 40px;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,5 +1,7 @@
 "use client";
 
+import DropDownMenu from "@/UI's/DropDownMenu";
+import {LIST_OF_SERVICES} from "@/constants/constants";
 import NameCircle from "@/UI's/NameCircle";
 import ButtonLink from "@/UI's/buttons/buttons-links/ButtonLink";
 import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
@@ -20,9 +22,7 @@ export default function Home(): JSX.Element {
   };
 
   return (
-    <div className="flex justify-center flex-col items-center">
-      <p>для кожної зірки зробити випадковим значення delay в
-        якомусь діапазоні, щоб всі зірки мали різний час початку анімації</p>
+    <div className="flex m-10 justify-center flex-col items-center">
       <ButtonRounded widthStar={14}
         type="big" text="TLGR" link="#" />
       <ButtonRounded widthStar={12}
@@ -48,15 +48,17 @@ export default function Home(): JSX.Element {
         orientation={"upward"} star={true} widthStar={12} />
       <ButtonScroll width={100} height={100} widthArrow={35}
         orientation={"upward"} star={true} widthStar={11} />
-      <CustomHeader duration={.7} delay={.0}
+      <DropDownMenu text="Жанр"
+        list={LIST_OF_SERVICES} func={() => {}} />
+      <CustomHeader headerType="h1" duration={.7} delay={.0}
         isYmoves={true}>Оберiть свою</CustomHeader>
-      <CustomHeader duration={.7} delay={.0}
+      <CustomHeader headerType="h1" duration={.7} delay={.0}
         isYmoves={false}>естетику</CustomHeader>
-      <CustomHeader duration={.7} delay={.0}
+      <CustomHeader headerType="h1" duration={.7} delay={.0}
         isYmoves={true}>кадрiв</CustomHeader>
       <ButtonSwitch orientation="left" action={test} widthStar={12} />
       <ButtonSwitch orientation="right" action={test} widthStar={12} />
       <NameCircle text={new Date().getFullYear()} width={132} height={132} />
-    </div >
+    </div>
   );
 }

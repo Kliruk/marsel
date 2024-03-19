@@ -1,13 +1,13 @@
 "use client";
 
-import styles from "@/styles/customImage.module.css";
+import styles from "@/styles/CustomImage.module.css";
 import React, {useEffect, useRef, useState} from "react";
 import {motion, useScroll} from "framer-motion";
 import Image from "next/image";
-import {customImage} from "@/types/custom-image";
+import {ICustomImage} from "@/types/custom-image";
 
 
-const ImageFading = ({src, alt, width, height}: customImage) => {
+const ImageFading = ({src, alt, width, height}: ICustomImage) => {
   const ref = useRef(null);
   const [valueBefore, setValueBefore] = useState(0);
   const [valueAfter, setValueAfter] = useState(0);
@@ -34,7 +34,7 @@ const ImageFading = ({src, alt, width, height}: customImage) => {
 
 
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // зробити з цього компонента заміщення Image nextjs (назвати його CustomImage
+  // зробити з цього компонента заміщення Image nextjs (назвати його ICustomImage
   // чи щось типу такого) та перенести <Image /> всередину цього компонента та
   // в пропси додати {src}
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

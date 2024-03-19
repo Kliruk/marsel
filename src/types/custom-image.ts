@@ -1,4 +1,4 @@
-export interface customImage{
+export interface ICustomImage{
     src: string,
     alt: string,
     width: number,
