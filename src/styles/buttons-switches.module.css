@@ -4,6 +4,7 @@
 
 .buttonSwitchesArrow{
     margin-top: 5px;
+    width: 36px;
 }
 
 .buttonSwitches:hover path{
@@ -14,4 +15,10 @@
 .buttonSwitches:active .wrapper path{
     fill: var(--color-red);
     stroke: transparent;
+}
+
+@media screen and (max-width: 688px) {
+    .buttonSwitchesArrow{
+        width: 30px;
+    }
 }

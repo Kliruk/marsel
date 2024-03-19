@@ -14,7 +14,8 @@
   box-sizing: border-box;
 }
 
-html, :host{
+html,
+:host {
   line-height: inherit;
 }
 
@@ -71,7 +72,7 @@ h4 {
   text-align: center;
   text-transform: uppercase;
 
-  line-height: auto!important;
+  line-height: auto !important;
   display: inline-block;
 
 }
@@ -91,7 +92,7 @@ h4 {
   text-transform: none;
 }
 
-.paragraphTypical,
+.paragraphMain,
 .paragraphSmaller {
   font-family: var(--font-raleway);
   font-weight: 300;
@@ -103,15 +104,54 @@ h4 {
   font-size: 20px;
 }
 
-.backgroundTextBig {
-  font-family: var(--font-bergamasco);
-  font-style: normal;
-  font-weight: 300;
-  font-size: 200px;
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 100px;
+  }
 
-  color: #F3F3F3;
+  h2 {
+    font-size: 90px;
+  }
+
+  h3 {
+    font-size: 80px;
+  }
+
+  h4 {
+    font-size: 55px;
+  }
+
+  .paragraphTypical{
+    font-size: 22px;
+  }
+
+  .paragraphSmaller{
+    font-size: 20px;
+  }
 }
 
-.backgroundTextSmall {
-  font-size: 100;
+@media screen and (max-width: 688px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  .paragraphTypical{
+    font-size: 18px;
+  }
+
+  .paragraphSmaller{
+    font-size: 18px;
+  }
 }

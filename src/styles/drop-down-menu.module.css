@@ -77,7 +77,6 @@
     width: 100%;
     height: 68px;
 
-    border-radius: 0 0 19px 19px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 77.15%);
     bottom: -2px;
 
@@ -117,5 +116,31 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .main{
+        font-size: 21px;
+        border-radius: 20px;
+
+        height: 41px;
+        padding: 8px 16px 5px 8px;
+    }
+
+    .list{
+        font-size: 18px;
+        margin-top: 22px;
+    }
+
+    .open{
+        min-height: 203px;
+        border-radius: 17px;
+        padding-bottom: 12px;
+    }
+
+    .dropDownList::after {
+        bottom: 0;
+        width: 100%;
     }
 }

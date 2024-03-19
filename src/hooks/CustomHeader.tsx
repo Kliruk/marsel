@@ -16,7 +16,7 @@ const CustomAnimationHeaders = ({children, headerType, isYmoves, duration=.7, de
     if (isInView) {
       mainControls.start("visible");
     }
-  });
+  }, [mainControls, isInView]);
 
   return (
     <motion.div ref={ref}
@@ -24,12 +24,12 @@ const CustomAnimationHeaders = ({children, headerType, isYmoves, duration=.7, de
         hidden: {WebkitTextFillColor: "transparent", y: isYmoves === true ? 40 : 0,
           opacity: 0,
           background:
-          "linear-gradient(91.1deg, #343434 -44.14%, rgba(52, 52, 52, 0) 32.72%)",
+          "linear-gradient(91.1deg, var(--color-black) -44.14%, rgba(52, 52, 52, 0) 32.72%)",
           backgroundClip: "text"},
         visible: {WebkitTextFillColor: "transparent", y: 0,
           opacity: 1,
           background:
-          "linear-gradient(91.1deg, #343434 97.12%, rgba(52, 52, 52, 0) 136.73%)",
+          "linear-gradient(91.1deg, var(--color-black) 97.12%, rgba(52, 52, 52, 0) 136.73%)",
           backgroundClip: "text"},
       }}
       initial="hidden"

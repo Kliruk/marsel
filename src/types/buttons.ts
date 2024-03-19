@@ -1,26 +1,26 @@
-export type buttons = {
+interface IButtons {
     starAnimationDelayMin?: number,
 }
 
-export type ButtonsLinks = {
+export interface IButtonsLinks extends IButtons {
     text: string,
     link: string,
     type: "big" | "small" | "none"
     widthStar: number
-} & buttons
+}
 
-export type ButtonsScrolls = {
+export interface IButtonsScrolls extends IButtons {
     width: number,
     height: number,
     widthArrow: number,
     widthStar: number,
     orientation: "downward" | "upward"
-    star: true | false
-} & buttons
+    star: true | false,
+    uniqueClassName: string
+}
 
-
-export type ButtonsLinksSwitch = {
+export interface IButtonsLinksSwitch extends IButtons {
     widthStar: number,
     orientation: "left" | "right",
     action: () => void
-} & buttons
+}

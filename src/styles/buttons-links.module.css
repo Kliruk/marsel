@@ -74,3 +74,37 @@
 .buttonLink:active{
     border-color: transparent;
 }
+
+@media screen and (max-width: 992px) {
+    .buttonLinksRoundedS{
+        font-size: 23px;
+        padding: 4px 23px 1px 23px;
+    }
+
+    .buttonLink{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .buttonLinksRoundedS{
+        font-size: 21px;
+        padding-top: 6px;
+        padding-bottom: 2px;
+    }
+
+    .buttonLinksRoundedB{
+        font-size: 26px;
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+
+    .buttonLinksSquared{
+        font-size: 21px;
+        padding: 8px 14px 8px 14px;
+    }
+
+    .buttonLink{
+        font-size: 22px;
+    }
+}

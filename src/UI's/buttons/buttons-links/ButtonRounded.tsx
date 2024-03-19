@@ -1,6 +1,6 @@
 "use client";
 
-import {ButtonsLinks} from "@/types/buttons-links";
+import {IButtonsLinks} from "@/types/buttons";
 import {useRouter} from "next/navigation";
 import React from "react";
 import Star from "../../Star";
@@ -14,7 +14,7 @@ import {STAR_DELAY_DEFAULT} from "@/constants/constants";
  */
 const ButtonRounded =
   ({text, link, type, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT}
-   : ButtonsLinks) : JSX.Element => {
+   : IButtonsLinks) : JSX.Element => {
     const router = useRouter();
 
     return (

@@ -25,3 +25,10 @@
     fill: transparent;
     stroke: var(--color-red);
 }
+
+@media screen and (max-width: 992px) {
+    .buttonScroll{
+        width: 90px;
+        height: 90px;
+    }
+}

@@ -13,3 +13,9 @@
         transform: scale(0);
     }
 }
+
+@media screen and (max-width: 992px) {
+    .star{
+        width: 11px;
+    }
+}

@@ -3,12 +3,12 @@ import styles from "@/styles/nameCircle.module.css";
 import Image from "next/image";
 import React from "react";
 
-const NameCircle = ({text, height, width} : ICircle) => {
+const NameCircle = ({text, size} : ICircle) => {
   return (
-    <div className={styles.nameCircle}>
+    <div className={styles.nameCircle} style={{width: size, height: size}}>
       <p className={styles.text}>{text}</p>
       <Image className={styles.circle} src={"/MargaritaTkachukCircle.svg"}
-        alt="Коло" width={width} height={height}/>
+        alt="Коло" fill sizes="100%"/>
     </div>
   );
 };
