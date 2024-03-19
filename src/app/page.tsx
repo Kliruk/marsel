@@ -6,8 +6,8 @@ import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";
 import ButtonScroll from "@/UI's/buttons/buttons-scrolls/ButtonScroll";
 import ButtonSwitch from "@/UI's/buttons/buttons-switch/ButtonSwitch";
-import ImageFading from "@/components/ImageFading";
-import Image from "next/image";
+import CustomHeader from "@/components/CustomHeader";
+import CustomImage from "@/components/CustomImage";
 
 
 /**
@@ -21,78 +21,42 @@ export default function Home(): JSX.Element {
 
   return (
     <div className="flex justify-center flex-col items-center">
-      <p>круглий курсор https://www.youtube.com/watch?v=momF_D4odCM</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <h1>
-        аиикикик
-      </h1>
-      <p>додати на кнопки: mousedown, onhover</p>
+      <p>для кожної зірки зробити випадковим значення delay в
+        якомусь діапазоні, щоб всі зірки мали різний час початку анімації</p>
       <ButtonRounded widthStar={14}
-        type="big" text="TLGR" link="#fff" />
+        type="big" text="TLGR" link="#" />
       <ButtonRounded widthStar={12}
-        type="small" text="test" link="#fff" />
-      <ButtonSquared type="none" text="портфолiо" link="#eeee" widthStar={12} />
-      <ButtonLink type="none" text="portfolio" link="#eeee" widthStar={12} />
+        type="small" text="test" link="#" />
+      <ButtonSquared type="none" text="портфолiо" link="#" widthStar={12} />
+      <ButtonLink type="none" text="portfolio" link="#" widthStar={12} />
+      <h1>
+        TEST
+      </h1>
+      <h2>
+        test
+      </h2>
+      <h3>
+        test
+      </h3>
+      <h4>
+        test
+      </h4>
+      <CustomImage src="/DSC07838.jpg" alt="" width={700} height={450}/>
       <ButtonScroll width={125} height={125} widthArrow={50}
         orientation={"downward"} star={false} widthStar={12} />
-      <ImageFading>
-        <Image src={"/DSC01855.jpg"} alt="" width={764} height={1113} />
-      </ImageFading>
       <ButtonScroll width={125} height={125} widthArrow={45}
         orientation={"upward"} star={true} widthStar={12} />
       <ButtonScroll width={100} height={100} widthArrow={35}
         orientation={"upward"} star={true} widthStar={11} />
+      <CustomHeader duration={.7} delay={.0}
+        isYmoves={true}>Оберiть свою</CustomHeader>
+      <CustomHeader duration={.7} delay={.0}
+        isYmoves={false}>естетику</CustomHeader>
+      <CustomHeader duration={.7} delay={.0}
+        isYmoves={true}>кадрiв</CustomHeader>
       <ButtonSwitch orientation="left" action={test} widthStar={12} />
       <ButtonSwitch orientation="right" action={test} widthStar={12} />
       <NameCircle text={new Date().getFullYear()} width={132} height={132} />
-      <NameCircle text={new Date().getFullYear()} width={132} height={132} />
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <p>vgg</p>
-      <ImageFading>
-        <Image src={"/DSC01855.jpg"} alt="" width={764} height={1113} />
-      </ImageFading>
-    </div>
+    </div >
   );
 }

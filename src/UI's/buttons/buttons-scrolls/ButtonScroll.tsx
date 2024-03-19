@@ -2,9 +2,16 @@ import React from "react";
 import styles from "@/styles/buttons-scrolls.module.css";
 import Star from "../../Star";
 import {ButtonsScrolls} from "@/types/buttons-links";
+import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 
-const ButtonScroll = ({width, height, widthArrow, widthStar, orientation}
-  : ButtonsScrolls) => {
+/**
+ *  ButtonScroll creates a circle button with arrow and border
+ *  which is rounded and star, which used for links
+ * @return {JSX.Element}
+ */
+const ButtonScroll = (
+    {width, height, widthArrow, widthStar, orientation, starAnimationDelayMin=STAR_DELAY_DEFAULT}
+  : ButtonsScrolls) : JSX.Element => {
   return (
     <button className={styles.buttonScroll} style={{width: width, height: height}}>
       <div className={styles.wrapper}>
@@ -13,7 +20,7 @@ const ButtonScroll = ({width, height, widthArrow, widthStar, orientation}
               75.6441M51.3242 32.5793C37.2932 32.5793 25.9348 51.8452 25.9348 75.6441M25.9348
               75.6441L25.9348 0.745361" stroke="#343434" strokeWidth="2" strokeMiterlimit="10" />
         </svg>
-        <Star width={widthStar} />
+        <Star width={widthStar} starAnimationDelayMin={starAnimationDelayMin}/>
       </div>
     </button>
   );

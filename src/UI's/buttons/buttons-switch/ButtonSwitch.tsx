@@ -3,9 +3,15 @@
 import Star from "@/UI's/Star";
 import {ButtonsLinksSwitch} from "@/types/buttons-links";
 import styles from "@/styles/buttons-switches.module.css";
+import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 import React from "react";
 
-const ButtonSwitch = ({action, orientation, widthStar}: ButtonsLinksSwitch) => {
+/**
+ *  ButtonSwitch creates a arrow with star, which used for changing something
+ * @return {JSX.Element}
+ */
+const ButtonSwitch = ({action, orientation, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT}
+  : ButtonsLinksSwitch) : JSX.Element => {
   return (
     <button className={styles.buttonSwitches} onClick={action}>
       <svg className={styles.buttonSwitchesArrow} style={{transform: orientation === "left" ? "scale(-1, -1)" : ""}} width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +20,7 @@ const ButtonSwitch = ({action, orientation, widthStar}: ButtonsLinksSwitch) => {
         stroke="#343434" strokeWidth="2" strokeMiterlimit="10" />
       </svg>
       <div className={styles.wrapper}>
-        <Star width={widthStar} />
+        <Star width={widthStar} starAnimationDelayMin={starAnimationDelayMin}/>
       </div>
     </button>
   );
