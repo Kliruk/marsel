@@ -11,6 +11,7 @@ import ButtonSwitch from "@/UI's/buttons/buttons-switch/ButtonSwitch";
 import CustomHeader from "@/hooks/CustomHeader";
 import CustomImage from "@/hooks/CustomImage";
 import BackgroundText from "@/hooks/BackgroundText";
+import BackgroundCircle from "@/hooks/BackgroundCircle";
 
 
 /**
@@ -24,6 +25,7 @@ export default function Home(): JSX.Element {
 
   return (
     <div className="flex m-10 justify-center flex-col items-center">
+      <BackgroundCircle uniqueClassName="test" size={600}/>
       <BackgroundText size="big" uniqueClassName="test">Background text</BackgroundText>
       <BackgroundText size="small" uniqueClassName="test">Background text</BackgroundText>
       <ButtonRounded widthStar={14}
