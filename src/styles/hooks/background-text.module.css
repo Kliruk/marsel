@@ -1,0 +1,37 @@
+.backgroundTextBig,
+.backgroundTextSmall {
+    position: absolute;
+
+    font-family: var(--font-bergamasco);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 200px;
+  
+    color: #F3F3F3;
+  }
+  
+  .backgroundTextSmall {
+    font-size: 100px;
+  }
+
+  
+@media screen and (max-width: 992px) {
+    .backgroundTextBig{
+      font-size: 150px;
+    }
+  
+    .backgroundTextSmall{
+      font-size: 70px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 688px) {
+    .backgroundTextBig{
+      font-size: 90px;
+    }
+  
+    .backgroundTextSmall{
+      font-size: 50px;
+    }
+  }

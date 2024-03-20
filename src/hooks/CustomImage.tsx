@@ -32,13 +32,6 @@ const ImageFading = ({src, alt, width, height, uniqueClassName}: ICustomImage) =
     });
   }, [scrollYProgressAfter]);
 
-
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // зробити з цього компонента заміщення Image nextjs (назвати його ICustomImage
-  // чи щось типу такого) та перенести <Image /> всередину цього компонента та
-  // в пропси додати {src}
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
   return (
     <motion.div
       className={`${styles.wrapper} ${uniqueClassName}`}

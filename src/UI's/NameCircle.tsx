@@ -1,5 +1,5 @@
 import {ICircle} from "@/types/circle";
-import styles from "@/styles/nameCircle.module.css";
+import styles from "@/styles/ui's/nameCircle.module.css";
 import Image from "next/image";
 import React from "react";
 

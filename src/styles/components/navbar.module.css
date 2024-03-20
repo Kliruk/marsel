@@ -1,0 +1,10 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 54px 61px 0 61px;
+}
+
+.buttonLinks{
+    display: flex;
+    gap: 123px;
+}

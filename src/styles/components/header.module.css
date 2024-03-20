@@ -1,0 +1,20 @@
+.headerPartWithDescr{
+    display: flex;
+    align-items: center;
+}
+
+.descr{
+    max-width: 420px;
+    text-align: left;
+
+    margin-left: 39px;
+}
+
+.doublePhoto{
+    display: flex;
+    gap: 51px;
+}
+
+.doubleLeftPhoto{
+    width: 500px!important;
+}

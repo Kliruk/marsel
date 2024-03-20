@@ -2,7 +2,7 @@
 
 import {useRouter} from "next/navigation";
 import {IButtonsLinks} from "@/types/buttons";
-import styles from "@/styles/buttons-links.module.css";
+import styles from "@/styles/ui's/buttons-links.module.css";
 import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 import React from "react";
 import Star from "../../Star";

@@ -1,0 +1,24 @@
+.buttonSwitches{
+    display: flex;
+}
+
+.buttonSwitchesArrow{
+    margin-top: 5px;
+    width: 36px;
+}
+
+.buttonSwitches:hover path{
+    fill: transparent;
+    stroke: var(--color-red);
+}
+
+.buttonSwitches:active .wrapper path{
+    fill: var(--color-red);
+    stroke: transparent;
+}
+
+@media screen and (max-width: 688px) {
+    .buttonSwitchesArrow{
+        width: 30px;
+    }
+}

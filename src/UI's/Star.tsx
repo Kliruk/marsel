@@ -1,11 +1,14 @@
+"use client";
+
 import React from "react";
 import {star} from "@/types/star";
 import {getRandomNumber} from "@/constants/getRandomNumber";
-import styles from "@/styles/star.module.css";
+import styles from "@/styles/ui's/star.module.css";
+import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 
-const Star = ({width, starAnimationDelayMin=1}: star) => {
+const Star = ({width, starAnimationDelayMin=STAR_DELAY_DEFAULT}: star) => {
   const isRandom = () => {
-    if (starAnimationDelayMin != 1) {
+    if (starAnimationDelayMin != STAR_DELAY_DEFAULT) {
       return getRandomNumber(starAnimationDelayMin);
     } else {
       return getRandomNumber();

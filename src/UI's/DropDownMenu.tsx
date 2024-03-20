@@ -1,5 +1,7 @@
+"use client";
+
 import React, {useState} from "react";
-import styles from "@/styles/drop-down-menu.module.css";
+import styles from "@/styles/ui's/drop-down-menu.module.css";
 import {DropDownMenu} from "@/types/drop-down-menu";
 
 const DropDownMenu = ({text, list, func} : DropDownMenu) : JSX.Element => {

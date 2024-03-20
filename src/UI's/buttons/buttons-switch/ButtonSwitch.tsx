@@ -1,8 +1,8 @@
 "use client";
 
 import Star from "@/UI's/Star";
-import {IIButtonsLinksSwitch} from "@/types/buttons";
-import styles from "@/styles/buttons-switches.module.css";
+import {IButtonsLinksSwitch} from "@/types/buttons";
+import styles from "@/styles/ui's/buttons-switches.module.css";
 import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 import React from "react";
 
@@ -11,7 +11,7 @@ import React from "react";
  * @return {JSX.Element}
  */
 const ButtonSwitch = ({action, orientation, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT}
-  : IIButtonsLinksSwitch) : JSX.Element => {
+  : IButtonsLinksSwitch) : JSX.Element => {
   return (
     <button className={styles.buttonSwitches} onClick={action}>
       <svg className={styles.buttonSwitchesArrow} style={{transform: orientation === "left" ? "scale(-1, -1)" : ""}} viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
