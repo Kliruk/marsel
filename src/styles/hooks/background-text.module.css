@@ -2,6 +2,8 @@
 .backgroundTextSmall {
     position: absolute;
 
+    pointer-events: none;
+
     font-family: var(--font-bergamasco);
     font-style: normal;
     font-weight: 300;

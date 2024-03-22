@@ -1,0 +1,36 @@
+.portfolio{
+    display: flex;
+    align-items: center;
+
+    gap: 109px;
+    margin-top: 399px;
+    
+    flex-direction: column;
+}
+
+.headers{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.paragraph{
+    max-width: 361px;
+}
+
+.gridWithPhotos{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+}
+
+.gridAndBacktext{
+    margin-top: 27px;
+}
+
+.leftTopPhoto img,
+.rightTopPhoto img{
+    border-radius: 386px 386px 0px 0px;
+}

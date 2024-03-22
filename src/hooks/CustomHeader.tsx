@@ -5,7 +5,7 @@ import {ICustomParagraph} from "@/types/custom-header";
 import {motion, useAnimation, useInView} from "framer-motion";
 
 
-const CustomAnimationHeaders = ({children, headerType, isYmoves, duration=.7, delay=.3}
+const CustomHeader = ({children, headerType, isYmoves, duration=.7, delay=.3}
    : ICustomParagraph) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
@@ -57,4 +57,4 @@ const CustomAnimationHeaders = ({children, headerType, isYmoves, duration=.7, de
   );
 };
 
-export default CustomAnimationHeaders;
+export default CustomHeader;

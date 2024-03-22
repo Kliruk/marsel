@@ -40,7 +40,7 @@ const mak = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "%s | Маргарита Ткачук",
+  title: "Відео-фотографиня | Маргарита Ткачук",
   description: "-----------",
 };
 

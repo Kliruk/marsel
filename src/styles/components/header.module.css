@@ -1,20 +1,64 @@
-.headerPartWithDescr{
+.header{
+    margin-top: 70px;
+    margin-left: 61px;
+    margin-right: 61px;
+}
+
+.textAndDoublePhoto{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 230px;
+}
+
+.headerPartWithDescr {
     display: flex;
     align-items: center;
 }
 
-.descr{
+.descr {
     max-width: 420px;
     text-align: left;
 
     margin-left: 39px;
 }
 
-.doublePhoto{
+.rightDoublePhoto{
     display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.doublePhoto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     gap: 51px;
 }
 
-.doubleLeftPhoto{
-    width: 500px!important;
+.doubleLeftPhoto {
+    width: 500px !important;
+}
+
+.photoAndCircleArrow{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.backgroundTextDP {
+    position: absolute;
+    font-family: var(--font-bergamasco);
+    font-weight: 600;
+    font-size: 100px;
+
+    color: var(--color-white);
+}
+
+.circleAndArrow{
+    display: flex;
+    gap: 23px;
 }

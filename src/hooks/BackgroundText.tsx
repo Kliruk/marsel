@@ -1,5 +1,7 @@
+"use client";
+
 import React, {useEffect, useRef} from "react";
-import styles from "@/styles/background-text.module.css";
+import styles from "@/styles/hooks/background-text.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {IBackgroundText} from "@/types/background-props";
 
@@ -38,8 +40,8 @@ const BackgroundText = ({children, size, uniqueClassName} : IBackgroundText) => 
       initial="hidden"
       animate={mainControls}
       transition={{
-        duration: .4,
-        delay: .5,
+        duration: .8,
+        delay: .2,
         ease: "linear",
       }}
       className={`${size === "big" ? styles.backgroundTextBig :

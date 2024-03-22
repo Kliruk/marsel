@@ -1,5 +1,7 @@
+"use client";
+
 import React, {useEffect, useRef} from "react";
-import styles from "@/styles/background-circle.module.css";
+import styles from "@/styles/hooks/background-circle.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {IBackgroundCircle} from "@/types/background-props";
 
@@ -27,8 +29,10 @@ const BackgroundCircle = ({size, uniqueClassName}: IBackgroundCircle) => {
           initial="hidden"
           animate={mainControls}
           transition={{
-            duration: 3,
+            duration: 1.5,
+            delay: .2,
             ease: [.71, 0, 0, 1],
+            // ease: "linear",
           }}
           ref={ref}
           opacity="0.2" cx="437.5" cy="437.5" r="434.5" />

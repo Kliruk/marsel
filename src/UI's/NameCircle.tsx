@@ -7,7 +7,7 @@ const NameCircle = ({text, size} : ICircle) => {
   return (
     <div className={styles.nameCircle} style={{width: size, height: size}}>
       <p className={styles.text}>{text}</p>
-      <Image className={styles.circle} src={"/MargaritaTkachukCircle.svg"}
+      <Image className={styles.circle} src={"/svg/MargaritaTkachukCircle.svg"}
         alt="Коло" fill sizes="100%"/>
     </div>
   );

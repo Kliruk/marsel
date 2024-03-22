@@ -11,6 +11,15 @@
   --circle-stroke: #b6b6b6;
 }
 
+::selection{
+  background-color: var(--color-red);
+  color: var(--color-black);
+}
+::-moz-selection{
+  background-color: var(--color-red);
+  color: var(--color-black);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -73,7 +82,6 @@ h4 {
   text-align: center;
   text-transform: uppercase;
 
-  line-height: auto !important;
   display: inline-block;
 
 }

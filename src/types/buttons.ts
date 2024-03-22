@@ -10,8 +10,7 @@ export interface IButtonsLinks extends IButtons {
 }
 
 export interface IButtonsScrolls extends IButtons {
-    width: number,
-    height: number,
+    size: number,
     widthArrow: number,
     widthStar: number,
     orientation: "downward" | "upward"

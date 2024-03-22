@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import styles from "@/styles/hooks/images.module.css";
+import styles from "@/styles/hooks/regular-image.module.css";
 import {ICustomImage} from "@/types/custom-image";
 
-const Images = ({src, alt, width, height, uniqueClassName} : ICustomImage) => {
+const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage) => {
   return (
     <div className={`${styles.wrapper} ${uniqueClassName}`}
       style={{
@@ -16,4 +16,4 @@ const Images = ({src, alt, width, height, uniqueClassName} : ICustomImage) => {
   );
 };
 
-export default Images;
+export default RegularImage;
