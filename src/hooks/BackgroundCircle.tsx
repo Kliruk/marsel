@@ -20,7 +20,7 @@ const BackgroundCircle = ({size, uniqueClassName}: IBackgroundCircle) => {
   return (
     <motion.div>
       <motion.svg className={`${styles.circle} ${uniqueClassName}`}
-        width={size} height={size} viewBox="0 0 875 875" stroke="var(--circle-stroke)" fill="none" xmlns="http://www.w3.org/2000/svg">
+        width={size} height={size} viewBox="0 0 875 875" stroke="var(--color-circle-stroke)" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.circle
           variants={{
             hidden: {pathLength: 0},

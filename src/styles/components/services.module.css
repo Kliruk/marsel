@@ -1,0 +1,41 @@
+.prices{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 230px;
+}
+
+.headerWithBackText{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 61px;
+    
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.backTextMoments,
+.backTextMagic{
+    position: absolute;
+
+    z-index: 0;
+}
+
+.backTextMoments{
+    left: 0;
+}
+
+.backTextMagic{
+    right: 0;
+    bottom: -120px;
+}

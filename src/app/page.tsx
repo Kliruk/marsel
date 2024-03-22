@@ -1,7 +1,4 @@
-import AboutMe from "@/components/AboutMe";
-import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
-import Portfolio from "@/components/Portfolio";
+import {AboutMe, Header, Navbar, Portfolio, Services} from "@/components";
 import React from "react";
 
 /**
@@ -15,6 +12,7 @@ export default function Home(): JSX.Element {
       <Header />
       <AboutMe />
       <Portfolio />
+      <Services />
     </>
   );
 }

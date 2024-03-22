@@ -1,36 +1,53 @@
-.portfolio{
+.portfolio {
     display: flex;
     align-items: center;
 
     gap: 109px;
     margin-top: 399px;
-    
+
     flex-direction: column;
 }
 
-.headers{
+.headers {
     display: flex;
     align-items: center;
 
     flex-direction: column;
 }
 
-.paragraph{
+.paragraph {
     max-width: 361px;
 }
 
-.gridWithPhotos{
+.gridWithPhotos {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
     gap: 90px;
 }
 
-.gridAndBacktext{
+.gridAndBacktext {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     margin-top: 27px;
 }
 
 .leftTopPhoto img,
-.rightTopPhoto img{
+.rightTopPhoto img {
     border-radius: 386px 386px 0px 0px;
+}
+
+.backText {
+    position: absolute;
+
+    font-family: var(--font-bergamasco);
+    font-weight: 300;
+    font-size: 500px;
+    text-align: center;
+
+    color: var(--color-special-half-transparent);
+
+
 }
