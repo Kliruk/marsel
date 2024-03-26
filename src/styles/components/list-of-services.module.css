@@ -1,0 +1,30 @@
+.list {
+    display: flex;
+    gap: 84px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    font-family: var(--font-mak);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+    flex-direction: column;
+}
+
+.service:hover{
+    color: var(--color-red)!important;
+}
+
+.starDivWithAnimation{
+    opacity: 0;
+    transform: scale(0);
+}

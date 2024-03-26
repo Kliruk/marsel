@@ -5,7 +5,8 @@ import styles from "@/styles/hooks/background-text.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {IBackgroundText} from "@/types/background-props";
 
-const BackgroundText = ({children, size, uniqueClassName} : IBackgroundText) => {
+const BackgroundText = ({children, size, uniqueClassName, delay=.2, duration=.8}
+  : IBackgroundText) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
 
@@ -40,8 +41,8 @@ const BackgroundText = ({children, size, uniqueClassName} : IBackgroundText) => 
       initial="hidden"
       animate={mainControls}
       transition={{
-        duration: .8,
-        delay: .2,
+        duration: duration,
+        delay: delay,
         ease: "linear",
       }}
       className={`${size === "big" ? styles.backgroundTextBig :

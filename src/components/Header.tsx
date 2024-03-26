@@ -30,8 +30,6 @@ const Header = () => {
               uniqueClassName={styles.doubleRightPhoto}
               alt="Замовниця" width={236} height={355} />
           </div>
-          {/* <Image src="/photo/header-DPLMargo-~q5.webp" uniqueClassName={styles.doubleRightPhoto}
-          alt="Замовниця" width={236} height={355}/> */}
           <p className={styles.backgroundTextDP}>MARG<br />ARITA</p>
         </div>
       </div>
@@ -41,10 +39,12 @@ const Header = () => {
           alt="Замовниця" width={662} height={400} />
         <div className={styles.circleAndArrow}>
           <NameCircle text={new Date().getFullYear()} size={132}/>
-          <ButtonScroll size={132} widthArrow={50} widthStar={12} orientation="downward"
+          <ButtonScroll scroll="#aboutme"
+            size={132} widthArrow={50} widthStar={12} orientation="downward"
             uniqueClassName={styles.headerArrow} starAnimationDelayMin={1} star={false} />
         </div>
       </div>
+      <div id="aboutme"></div>
     </div>
   );
 };

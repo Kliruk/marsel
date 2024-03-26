@@ -10,6 +10,7 @@
   --color-red: #FF7373;
   --color-circle-stroke: #b6b6b6;
   --color-special-half-transparent: rgba(255, 255, 255, 0.4);
+  --color-list-unactive: #AEAEAE;
 }
 
 ::selection{
@@ -28,6 +29,10 @@
 html,
 :host {
   line-height: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

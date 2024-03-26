@@ -10,19 +10,17 @@ const Services = () => {
       <div className={styles.headerWithBackText}>
         <div className={styles.header}>
           <CustomHeader delay={0.1} headerType={"h3"} isYmoves={true}>
-            Оберiть свою
+            Оберiть вашу
           </CustomHeader>
           <CustomHeader delay={0.1} headerType={"h3"} isYmoves={false}>
-            Естетику
-          </CustomHeader>
-          <CustomHeader delay={0.1} headerType={"h3"} isYmoves={true}>
-            кадрів
+            Iсторiю
           </CustomHeader>
         </div>
-        <BackgroundText size={"big"} uniqueClassName={styles.backTextMoments} >
+        <BackgroundText duration={1} delay={0} size={"big"}
+          uniqueClassName={styles.backTextMoments} >
           Моментiв
         </BackgroundText>
-        <BackgroundText size={"big"} uniqueClassName={styles.backTextMagic} >
+        <BackgroundText delay={.2} size={"big"} uniqueClassName={styles.backTextMagic} >
           магiя
         </BackgroundText>
       </div>

@@ -1,13 +1,43 @@
-import {LIST_OF_SERVICES} from "@/constants/constants";
-import React from "react";
+"use client";
 
-const ListOfServices = () => {
+import React from "react";
+import styles from "@/styles/components/list-of-services.module.css";
+import {LIST_OF_SERVICES} from "@/constants/constants";
+import {motion} from "framer-motion";
+import Star from "@/UI's/Star";
+import {IListOfServices} from "@/types/list-of-services";
+
+const ListOfServices = ({currentService, setCurrentService} : IListOfServices) => {
   return (
-    <div>
-      {LIST_OF_SERVICES.map((serviceName, _) => (
-        <p key={_}>{serviceName}</p>
+    <ul className={styles.list}>
+      {LIST_OF_SERVICES.map((serviceName) => (
+        <li
+          className={styles.service}
+          onClick={() => setCurrentService(serviceName)}
+          style={{
+            color: currentService === serviceName ?
+                "var(--color-black)" : "var(--color-list-unactive)",
+          }}
+          key={serviceName}>
+          {serviceName}
+          {serviceName === currentService &&
+              <motion.div
+                className={styles.starDivWithAnimation}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                transition={{
+                  duration: .3,
+                  ease: "easeIn",
+                }}
+              >
+                <Star width={15} />
+              </motion.div>
+          }
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

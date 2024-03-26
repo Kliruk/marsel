@@ -1,14 +1,17 @@
 .prices{
     display: flex;
+    position: relative;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-    margin-top: 230px;
+    margin: 0 61px;
+    margin-top: 388px;
+    gap: 184px;
 }
 
 .headerWithBackText{
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
     
@@ -33,9 +36,10 @@
 
 .backTextMoments{
     left: 0;
+    top: -125px;
 }
 
 .backTextMagic{
     right: 0;
-    bottom: -120px;
+    top: 150px;
 }

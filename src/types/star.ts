@@ -1,4 +1,4 @@
-export interface star {
+export interface IStar {
     width: number,
     starAnimationDelayMin?: number
 }
