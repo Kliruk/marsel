@@ -13,13 +13,14 @@ import {STAR_DELAY_DEFAULT} from "@/constants/constants";
  * @return {JSX.Element}
  */
 const ButtonRounded =
-  ({text, link, type, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT}
+  ({text, link, type, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT, uniqueClassName}
    : IButtonsLinks) : JSX.Element => {
     const router = useRouter();
 
     return (
       <button
-        className={type === "big" ? styles.buttonLinksRoundedB : styles.buttonLinksRoundedS}
+        className={` ${uniqueClassName}
+          ${type === "big" ? styles.buttonLinksRoundedB : styles.buttonLinksRoundedS}`}
         onClick={() => router.push(`${link}`)}>
         <span>{text}</span>
         <Star width={widthStar} starAnimationDelayMin={starAnimationDelayMin}/>

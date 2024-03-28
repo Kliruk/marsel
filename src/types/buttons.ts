@@ -1,5 +1,6 @@
 interface IButtons {
     starAnimationDelayMin?: number,
+    uniqueClassName?: string
 }
 
 export interface IButtonsLinks extends IButtons {
@@ -15,7 +16,6 @@ export interface IButtonsScrolls extends IButtons {
     widthStar: number,
     orientation: "downward" | "upward"
     star: true | false,
-    uniqueClassName: string,
     scroll: string
 }
 

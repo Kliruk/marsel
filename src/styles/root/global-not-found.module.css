@@ -9,6 +9,12 @@
     margin-top: 105px;
 }
 
+
+.leftPhoto,
+.rightPhoto{
+    object-fit: cover;
+}
+
 .leftPhoto{
     margin-top: 343px;
 }
@@ -66,5 +72,29 @@
 }
 
 @media screen and (max-width: 688px) {
+    .main{
+        gap: 76px;
+        margin-top: 70px;
+    }
 
+    .textAndbutton{
+        max-width: 296px;
+    }
+
+    .rightPhoto{
+        width: 272px!important;
+        height: 162px!important;
+
+        margin-bottom: 66px;
+        margin-right: 130px;
+    }
+
+    .leftPhoto{
+        display: block;
+
+        width: 264px!important;
+        height: 190px!important;
+
+        margin: 0;
+    }
 }

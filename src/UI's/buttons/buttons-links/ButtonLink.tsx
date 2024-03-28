@@ -12,12 +12,14 @@ import Star from "../../Star";
  *  ButtonLinks creates a button with text and star, which used for links
  * @return {JSX.Element}
  */
-const ButtonLink = ({text, link, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT}
+const ButtonLink = ({text, link, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT,
+  uniqueClassName}
    : IButtonsLinks): JSX.Element => {
   const router = useRouter();
 
   return (
-    <button className={styles.buttonLink} onClick={() => router.push(`${link}`)}>
+    <button className={`${uniqueClassName} ${styles.buttonLink}`}
+      onClick={() => router.push(`${link}`)}>
       <span>{text}</span>
       <Star width={widthStar} starAnimationDelayMin={starAnimationDelayMin}/>
     </button>

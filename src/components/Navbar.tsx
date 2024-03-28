@@ -14,7 +14,7 @@ const Navbar = () => {
         <ButtonLink starAnimationDelayMin={0.8} text="Portfolio"
           link="/portfolio" type="none" widthStar={12} />
       </div>
-      <ButtonRounded text="INST" type="small" link="https://www.instagram.com/tkachuk_margarita_/"
+      <ButtonRounded uniqueClassName={styles.instButton} text="INST" type="small" link="https://www.instagram.com/tkachuk_margarita_/"
         widthStar={12}/>
     </div>
   );

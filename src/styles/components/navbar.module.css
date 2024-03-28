@@ -1,10 +1,49 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
-    margin: 54px 61px 0 61px;
+    margin: 50px 61px 0 61px;
 }
 
-.buttonLinks{
+.buttonLinks {
     display: flex;
+    align-items: center;
     gap: 123px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar{
+        margin-top: 30px;
+    }
+    
+    .buttonLinks{
+        gap: 58px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .buttonLinks{
+        gap: 25px;
+
+        width: 85%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .instButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .buttonLinks{
+        width: 92%;
+    }
 }
