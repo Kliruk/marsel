@@ -31,6 +31,7 @@
 
 .rightPhoto{
     align-self: baseline;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 @media screen and (max-width: 1400px) {
