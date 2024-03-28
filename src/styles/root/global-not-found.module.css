@@ -1,0 +1,70 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+
+    gap: 120px;
+    margin-top: 105px;
+}
+
+.leftPhoto{
+    margin-top: 343px;
+}
+
+.textAndbutton{
+    display: flex;
+    align-items: center;
+    
+    max-width: 787px;
+    gap: 108px;
+
+    flex-direction: column;
+}
+
+.rightPhoto{
+    align-self: baseline;
+}
+
+@media screen and (max-width: 1400px) {
+    .main{
+        flex-direction: column;
+
+        gap: 119px;
+        margin-top: 119px;
+    }
+
+    .leftPhoto{
+        display: none;
+    }
+
+    .rightPhoto{
+        width: 601px!important;
+        height: 550px!important;
+
+        align-self: auto;
+        margin-bottom: 76px;
+    }
+
+    .textAndbutton{
+        gap: 34px;
+
+        max-width: 787px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .textAndbutton{
+        max-width: 453px;
+    }
+
+    .rightPhoto{
+        width: 476px!important;
+        height: 436px!important;
+    }
+}
+
+@media screen and (max-width: 688px) {
+
+}
