@@ -1,6 +1,7 @@
-import AboutMe from "./AboutMe";
-import Header from "./Header";
 import Navbar from "./Navbar";
+import Header from "./Header";
+import AboutMe from "./AboutMe";
+import Advantages from "./Advantages";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 import ListAndService from "./ListAndService";
@@ -11,6 +12,7 @@ export {
   Navbar,
   Header,
   AboutMe,
+  Advantages,
   Portfolio,
   Services,
   ListAndService,
