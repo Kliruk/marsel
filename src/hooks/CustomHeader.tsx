@@ -18,8 +18,8 @@ import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/constants
  * @param {delay} delay of the animation, provided with default value
  * @return {JSX.Element}
  */
-const CustomHeader = ({children, color, headerType, isYMoves, duration=HOOKS_DURATION_DEFAULT,
-  delay=HOOKS_DELAY_DEFAULT}
+const CustomHeader = ({children, color="var(--color-black)", headerType, isYMoves,
+  duration=HOOKS_DURATION_DEFAULT, delay=HOOKS_DELAY_DEFAULT}
    : ICustomParagraph) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
