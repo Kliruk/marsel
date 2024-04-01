@@ -5,6 +5,14 @@ import styles from "@/styles/hooks/background-circle.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {IBackgroundCircle} from "@/types/background-props";
 
+
+/**
+ * Returns a circle with appearing animation
+ * @param {size} size of the circle, both width and height values
+ * @param {uniqueClassName} unique class name in order to control css of element,
+ * adaptation for example
+ * @return {JSX.Element}
+ */
 const BackgroundCircle = ({size, uniqueClassName}: IBackgroundCircle) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});

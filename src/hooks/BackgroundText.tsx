@@ -4,8 +4,17 @@ import React, {useEffect, useRef} from "react";
 import styles from "@/styles/hooks/background-text.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {IBackgroundText} from "@/types/background-props";
+import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/constants";
 
-const BackgroundText = ({children, size, uniqueClassName, delay=.2, duration=.8}
+
+/**
+ * Returns a background text with appearing animation
+ * @param {children} text of this
+ * @param {size} size of text, only two option avaliable: small(100px or big(200px)
+ * @return {JSX.Element}
+ */
+const BackgroundText = ({children, size="big", uniqueClassName, delay=HOOKS_DELAY_DEFAULT,
+  duration=HOOKS_DURATION_DEFAULT}
   : IBackgroundText) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});

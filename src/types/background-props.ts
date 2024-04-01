@@ -6,7 +6,7 @@ interface IBackgroundProps{
 
 export interface IBackgroundText extends IBackgroundProps {
     children: ReactNode,
-    size: string,
+    size?: string,
     delay?: number,
     duration?: number
 }

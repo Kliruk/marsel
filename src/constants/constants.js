@@ -1,4 +1,7 @@
 export const STAR_DELAY_DEFAULT = 1;
+export const HOOKS_DELAY_DEFAULT = .2;
+export const HOOKS_DURATION_DEFAULT = .8;
+
 export const LIST_OF_SERVICES = ["Зйомка відео", "Відеоролик", "Фотозйомка", "YourStory", "„Pro“ Контент"]
 
 export const SERVICES = {

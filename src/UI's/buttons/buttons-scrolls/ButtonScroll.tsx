@@ -5,8 +5,14 @@ import {IButtonsScrolls} from "@/types/buttons";
 import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 
 /**
- *  ButtonScroll creates a circle button with arrow and border
- *  which is rounded and star, which used for links
+ *  Return a button which used for scroll-links
+ * @param {size} size of the button, both width and height values
+ * @param {widthArrow} width of arrow, only width
+ * @param {widthStar} size_star of the star, both width and height values
+ * @param {orientation} orientation of the arrow, only "downward" or "upward" values
+ * @param {starAnimationDelayMin} star animation delay, lowest value(min)
+ * @param {uniqueClassName} unique class name in order to control css of element,
+ * adaptation for example
  * @return {JSX.Element}
  */
 const ButtonScroll = (

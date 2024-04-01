@@ -4,6 +4,14 @@ import React, {useState} from "react";
 import styles from "@/styles/ui's/drop-down-menu.module.css";
 import {IDropDownMenu} from "@/types/drop-down-menu";
 
+
+/**
+ * Return drop down menu for choosing an option
+ * @param {text} main text for menu
+ * @param {list} list of the options
+ * @param {func} func that triggers when user choose something
+ * @return {JSX.Element}
+ */
 const DropDownMenu = ({text, list, func} : IDropDownMenu) : JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [variant, setVariant] = useState<null | string>(null);

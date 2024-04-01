@@ -8,7 +8,12 @@ import React from "react";
 import Star from "../../Star";
 
 /**
- *  ButtonSquared creates a button with text, backgroundColor and star, which used for links
+ *  Returns a squared functional button which used for links to another or external pages
+ * @param {text} text of the button
+ * @param {link} link to the page
+ * @param {type} type of the button, in this case is only: "previous" or "none"
+ * @param {widthStar} size of the star, both width and height values
+ * @param {starAnimationDelayMin} star animation delay, lowest value(min)
  * @return {JSX.Element}
  */
 const ButtonSquared = ({text, link, type, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT,
@@ -16,9 +21,17 @@ const ButtonSquared = ({text, link, type, widthStar, starAnimationDelayMin=STAR_
    : IButtonsLinks): JSX.Element => {
   const router = useRouter();
 
+  const onClick = () => {
+    if (type === "previous") {
+      router.back();
+    } else {
+      router.push(`${link}`);
+    }
+  };
+
   return (
     <button className={`${uniqueClassName} ${styles.buttonLinksSquared}`}
-      onClick={() => router.push(`${link}`)}>
+      onClick={onClick}>
       <span>{text}</span>
       <Star width={widthStar} starAnimationDelayMin={starAnimationDelayMin}/>
     </button>

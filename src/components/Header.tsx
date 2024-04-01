@@ -23,10 +23,10 @@ const Header = () => {
         </div>
         <div className={styles.rightDoublePhoto}>
           <div className={styles.doublePhoto}>
-            <CustomImageAnim src="/photo/header-DLMargo-q8.4.webp"
+            <CustomImageAnim src="/photo/header/header-DLMargo-q8.4.webp"
               uniqueClassName={styles.doubleRightPhoto}
               alt="Замовниця" width={211} height={316} />
-            <CustomImageAnim src="/photo/header-DRMargo-q8.1.webp"
+            <CustomImageAnim src="/photo/header/header-DRMargo-q8.1.webp"
               uniqueClassName={styles.doubleRightPhoto}
               alt="Замовниця" width={236} height={355} />
           </div>
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.photoAndCircleArrow}>
-        <CustomImageAnim src="/photo/header-LMargo-q10.webp"
+        <CustomImageAnim src="/photo/header/header-LMargo-q10.webp"
           uniqueClassName={styles.doubleRightPhoto}
           alt="Замовниця" width={662} height={400} />
         <div className={styles.circleAndArrow}>

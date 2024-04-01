@@ -1,0 +1,309 @@
+.main {
+    display: flex;
+    /* align-items: center; */
+
+    margin-top: 369px;
+    margin-left: 148px;
+    margin-right: 139px;
+
+    font-family: var(--font-mak);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+
+    flex-direction: column;
+}
+
+.photoAndNum{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+.bigNum{
+    position: absolute;
+    
+    font-family: var(--font-bergamasco);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 400px;
+    
+    color: var(--color-for-photo-half-transparent);
+    bottom: 26px;
+}
+
+.backTextHistory{
+    left: 600px;
+    top: 550px;
+}
+
+.backTextMoments{
+    right: 360px;
+    top: 600px;
+}
+
+.headerAndFirstAdv{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 250px; */
+}
+
+.firstAdvAndPhoto{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 127px;
+
+}
+
+.firstAdv{
+    margin: 212px 0;
+    margin-left: 94px;
+
+    max-width: 626px;
+}
+
+.headerAndPhoto{
+    margin-top: 207px;
+}
+
+.header{
+    margin-bottom: 207px;
+}
+
+.secondPhotoAndNum{
+    margin-left: 112px;
+}
+
+.secondThirdAdv{
+    display: flex;
+    position: relative;
+
+    top: -126px;
+
+    gap: 23px;
+}
+
+.thirdAdvAndPhoto{
+    display: flex;
+    align-items: flex-start;
+    
+    width: 100%;
+
+    flex-direction: column;
+}
+
+.thirdAdv{
+    max-width: 516px;
+
+    margin-top: 242px;
+    margin-left: 246px;
+}
+
+.secondAdv{
+    max-width: 651px;
+
+    margin-top: 338px;
+    margin-bottom: 211px;
+}
+
+.fourthPhotoAndNum{
+    display: flex;
+    justify-content: center;
+
+    margin-left: 277px;
+}
+
+.lastPhotoAndText{
+    position: relative;
+    align-self: flex-start;
+
+    top: -226px;
+}
+
+.backTextMemories{
+    top: -200px;
+    left: 300px;
+}
+
+.backTextMarselin{
+    bottom:  100px;
+    right: -920px;
+}
+
+.backTextMemories{
+    display: none;
+}
+
+.backTextFeelings{
+    display: none;
+}
+
+@media screen and (max-width: 1740px) {
+    .firstAdv{
+        margin-left: 0;
+    }
+
+    .thirdAdv{
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (max-width: 1680px) {
+    .main{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .firstAdvAndPhoto{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .backTextMarselin{
+        right: -740px;
+    }
+}
+
+@media screen and (max-width: 1385px) {
+    .fourthPhotoAndNum{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main{
+        margin-top: 320px;
+        align-items: center;
+    }
+
+    .main div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .firstAdv,
+    .thirdAdv,
+    .secondAdv{
+        margin: 190px 0;
+    }
+
+    .headerAndFirstAdv{
+        flex-direction: column;
+    }
+
+    .firstAdvAndPhoto{
+        order: 2;
+
+        margin: 0;
+    }
+
+    .firstPhotoAndNum{
+        margin-left: 230px;
+        z-index: 1;
+        order: 2;
+    }
+
+    .headerAndPhoto{
+        display: flex;
+        flex-direction: column;
+
+        margin: 0;
+    }
+    
+    .header{
+        /* order: 2; */
+        margin: 150px 0 150px 100px!important;
+    }
+
+    .headerAdvantages{
+        margin-top: 0!important;
+    }
+    
+    .secondThirdAdv{
+        position: relative;
+        top: 0;
+    }
+
+    .thirdPhotoAndNum{
+        margin-right: 318px;
+        order: 2;
+    }
+
+    .secondAdvAdnPhoto{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .secondPhotoAndNum{
+        margin: 0;
+        margin-right: 373px;
+    }
+
+    /* .secondAdv{
+        order: 2;
+    } */
+
+    .fourthPhotoAndNum{
+        margin-left: 242px;
+    }
+
+    .lastPhotoAndText{
+        position: relative;
+        top: 0;
+        align-self: center;
+
+        margin-right: 110px;
+    }
+
+    .lastPhotoAndNum{
+        display: none!important;
+    }
+
+    .backTextHistory{
+        left: 480px;
+        top: 506px;
+    }
+
+    .backTextMoments{
+        right: 398px;
+        top: -814px;
+        z-index: 0;
+    }
+
+    .backTextMemories{
+        display: block;
+        top: 524px;
+        left: 373px;
+    }
+
+    .backTextMarselin{
+        top: 100px;
+
+    }
+
+    .backTextFeelings{
+        display: block;
+        top: 487px;
+        left: -155px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 688px) {
+
+}

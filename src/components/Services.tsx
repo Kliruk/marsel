@@ -16,11 +16,11 @@ const Services = () => {
             Iсторiю
           </CustomHeader>
         </div>
-        <BackgroundText duration={1} delay={0} size={"big"}
+        <BackgroundText duration={1} delay={0}
           uniqueClassName={styles.backTextMoments} >
           Моментiв
         </BackgroundText>
-        <BackgroundText delay={.2} size={"big"} uniqueClassName={styles.backTextMagic} >
+        <BackgroundText delay={.2} uniqueClassName={styles.backTextMagic} >
           магiя
         </BackgroundText>
       </div>

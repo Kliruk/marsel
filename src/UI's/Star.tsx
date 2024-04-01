@@ -6,6 +6,13 @@ import {getRandomNumber} from "@/constants/getRandomNumber";
 import styles from "@/styles/ui's/star.module.css";
 import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 
+
+/**
+ * Return a star with animation
+ * @param {width} width of star
+ * @param {starAnimationDelayMin} starAnimationDelayMin is number for star delay for animation
+ * @return {JSX.Element}
+ */
 const Star = ({width, starAnimationDelayMin=STAR_DELAY_DEFAULT}: IStar) => {
   const isRandom = () => {
     if (starAnimationDelayMin != STAR_DELAY_DEFAULT) {

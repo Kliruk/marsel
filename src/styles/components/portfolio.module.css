@@ -3,7 +3,7 @@
     align-items: center;
 
     gap: 109px;
-    margin-top: 399px;
+    margin-top: 80px;
 
     flex-direction: column;
 }
@@ -47,7 +47,14 @@
     font-size: 500px;
     text-align: center;
 
-    color: var(--color-special-half-transparent);
+    color: var(--color-for-photo-half-transparent);
 
 
+}
+
+
+@media screen and (max-width: 1300px) {
+    .portfolio{
+        margin-top: 200px;
+    }
 }

@@ -21,16 +21,16 @@ const Portfolio = () => {
       <div className={styles.gridAndBacktext}>
         <div className={styles.gridWithPhotos}>
           <CustomImageAnim uniqueClassName={styles.leftTopPhoto}
-            src={"/photo/portfolio-TLWithDog-q31.1.webp"} alt={"Дівчина з песиком"}
+            src={"/photo/portfolio/portfolio-TLWithDog-q31.1.webp"} alt={"Дівчина з песиком"}
             width={772} height={1155} />
           <CustomImageAnim uniqueClassName={styles.rightTopPhoto}
-            src={"/photo/portfolio-TRAnna-q58.webp"} alt={"Дівчина з чашкою кавуськи"}
+            src={"/photo/portfolio/portfolio-TRAnna-q58.webp"} alt={"Дівчина з квіточкою"}
             width={772} height={1155} />
           <CustomImageAnim uniqueClassName={styles.leftBottomPhoto}
-            src={"/photo/test.jpg"} alt={"Дівчина з песиком"}
+            src={"/photo/test.jpg"} alt={"Портрет"}
             width={772} height={677} />
           <CustomImageAnim uniqueClassName={styles.leftBottomPhoto}
-            src={"/photo/portfolio-BRGirlInForest-q47.9.webp"} alt={"Дівчина з песиком"}
+            src={"/photo/portfolio/portfolio-BRGirlInForest-q47.9.webp"} alt={"Портрет"}
             width={772} height={677} />
         </div>
         <p className={styles.backText}>PORT<br/>RET</p>

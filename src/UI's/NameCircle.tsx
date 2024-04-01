@@ -3,7 +3,14 @@ import styles from "@/styles/ui's/nameCircle.module.css";
 import Image from "next/image";
 import React from "react";
 
-const NameCircle = ({text, size} : ICircle) => {
+
+/**
+ * Retrun rotating circle with text in it
+ * @param {text} text inside the circle
+ * @param {size} size of circle
+ * @return {JSX.Element}
+ */
+const NameCircle = ({text, size} : ICircle): JSX.Element => {
   return (
     <div className={styles.nameCircle} style={{width: size, height: size}}>
       <p className={styles.text}>{text}</p>

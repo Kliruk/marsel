@@ -20,7 +20,7 @@ export default function NotFound(): JSX.Element {
           <CustomHeader headerType={"h2"} isYmoves={true} >
             ЩОСЬ ПIШЛО НЕ ТАК
           </CustomHeader>
-          <ButtonSquared text={"повернутися назад"} link={"-1"} type={"none"} widthStar={12} />
+          <ButtonSquared text={"повернутися назад"} link={""} type={"previous"} widthStar={12} />
         </div>
         {/* ФОТО - ТЕСТОВІ */}
         <Image className={styles.rightPhoto} src={"/photo/test.jpg"}
