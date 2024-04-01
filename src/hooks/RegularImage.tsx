@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "@/styles/hooks/regular-image.module.css";
 import {ICustomImage} from "@/types/custom-image";
+import {customLazyLoading} from "@/constants/customLazyLoading";
 
 /**
  * Because of the disadvantage of tag <Image> from NextJS namely adaptation resizing, that component
@@ -23,7 +24,11 @@ const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage)
         width: width,
         height: height,
       }}>
-      <Image placeholder="blur" className={styles.image} src={src} alt={alt} sizes="100%" fill/>
+      {/* no error here, because function {customLazyLoading} returns string
+      and {placeholder} requires to be string*/}
+      {/* @ts-ignore */}
+      <Image placeholder={customLazyLoading(width, height)} className={styles.image}
+        src={src} alt={alt} sizes="100%" fill/>
     </div>
   );
 };
