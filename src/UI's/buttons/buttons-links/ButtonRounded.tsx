@@ -12,7 +12,7 @@ import {STAR_DELAY_DEFAULT} from "@/constants/constants";
  *  Returns a rounded functional button which used for links to another or external pages
  * @param {text} text of the button
  * @param {link} link to the page
- * @param {type} type of the button, in this case is only: "previous" or "none"
+ * @param {type} type of the button, in this case is only: "small" or "big"
  * @param {widthStar} size of the star, both width and height values
  * @param {starAnimationDelayMin} star animation delay, lowest value(min)
  * @return {JSX.Element}
