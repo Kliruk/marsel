@@ -18,8 +18,8 @@ import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/constants
  * @param {delay} delay of the animation, provided with default value
  * @return {JSX.Element}
  */
-const CustomHeader = ({children, headerType, isYMoves, duration=HOOKS_DURATION_DEFAULT,
-  delay=HOOKS_DELAY_DEFAULT}
+const CustomHeader = ({children, color="var(--color-black)", headerType, isYMoves,
+  duration=HOOKS_DURATION_DEFAULT, delay=HOOKS_DELAY_DEFAULT}
    : ICustomParagraph) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
@@ -38,12 +38,12 @@ const CustomHeader = ({children, headerType, isYMoves, duration=HOOKS_DURATION_D
         hidden: {WebkitTextFillColor: "transparent", y: isYMoves === true ? 40 : 0,
           opacity: 0,
           background:
-          "linear-gradient(91.1deg, var(--color-black) -44.14%, rgba(52, 52, 52, 0) 32.72%)",
+          `linear-gradient(91.1deg, ${color} -44.14%, rgba(52, 52, 52, 0) 32.72%)`,
           backgroundClip: "text"},
         visible: {WebkitTextFillColor: "transparent", y: 0,
           opacity: 1,
           background:
-          "linear-gradient(91.1deg, var(--color-black) 97.12%, rgba(52, 52, 52, 0) 136.73%)",
+          `linear-gradient(91.1deg, ${color} 97.12%, rgba(52, 52, 52, 0) 136.73%)`,
           backgroundClip: "text"},
       }}
       initial="hidden"
