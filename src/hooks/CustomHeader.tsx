@@ -11,6 +11,7 @@ import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/constants
  * !Add your header separately, one line after another!
  * because animation idea is in appear middle text without sliding up
  * @param {children} text of the header
+ * @param {color} color of the header
  * @param {headerType} header type of text, reference to default html header tags
  * @param {isYMoves} isYMoves if it is true - text will appear with slightly sliding up
  * if it is false - it will just appear without sliding up
