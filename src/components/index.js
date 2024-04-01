@@ -7,6 +7,7 @@ import Services from "./Services";
 import ListAndService from "./ListAndService";
 import ListOfServices from "./ListOfServices";
 import Service from "./Service";
+import Contacts from "./Contacts";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   ListAndService,
   ListOfServices,
   Service,
+  Contacts,
 };
