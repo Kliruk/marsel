@@ -4,6 +4,11 @@ export const HOOKS_DURATION_DEFAULT = .8;
 
 export const LIST_OF_SERVICES = ["Зйомка відео", "Відеоролик", "Фотозйомка", "YourStory", "„Pro“ Контент"]
 
+export const INSTAGRAM = "https://www.instagram.com/tkachuk_margarita_/"
+export const TELEGRAM = "https://t.me/marrgaritaaaa"
+
+export const IMAGE_CAROUSEL = ["/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp", "/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp", "/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp"]
+
 export const SERVICES = {
     "Фотозйомка": {
         "header": "Фотозйомка - це спогади, якi зберIгають красу миті",

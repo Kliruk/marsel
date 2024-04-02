@@ -1,3 +1,24 @@
-.test{
-    
+.main{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
+
+.uniqueOffer{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    gap: 50px;
+    margin-top: 46px;
+}
+
