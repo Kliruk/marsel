@@ -17,7 +17,8 @@ import {customLazyLoading} from "@/constants/customLazyLoading";
  * adaptation for example
  * @return {JSX.Element}
  */
-const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage) => {
+const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage)
+  : JSX.Element => {
   return (
     <div className={`${styles.wrapper} ${uniqueClassName}`}
       style={{

@@ -3,25 +3,34 @@
 import React from "react";
 import styles from "@/styles/hooks/image-carousel.module.css";
 import RegularImage from "@/hooks/RegularImage";
-import {IMAGE_CAROUSEL} from "@/constants/constants";
+import {IMAGE_CAROUSEL, IMAGE_CAROUSEL_SPEED_DEFAULT} from "@/constants/constants";
 import {useRef} from "react";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  useMotionValue,
-  useVelocity,
-  useAnimationFrame,
-} from "framer-motion";
+import {motion, useScroll, useSpring, useTransform, useMotionValue,
+  useVelocity, useAnimationFrame} from "framer-motion";
 import {wrap} from "@motionone/utils";
+import {ImageCarousel} from "@/types/image-carousel";
 
-interface ParallaxProps {
-  images: string[];
-  baseVelocity: number;
-}
+// !!!!!!!!!!!!!!!!!!!
+// додати можливість налаштування різної швидкості для адаптації
+// !!!!!!!!!!!!!!!!!!!
 
-function ParallaxText({images, baseVelocity = 100}: ParallaxProps) {
+/**
+ * Returns images carousel with paralax effect
+ * the carousel will scroll infinitely, if you
+ * scroll the page, the speed of the carousel scroll
+ * will increase and the direction of the carousel scroll
+ * will change according to the direction of the page scroll
+ * @param {width} width of image
+ * @param {height} height of image
+ * @param {uniqueClassName} unique class name in order to control css of element,
+ * adaptation for example
+ * @param {speed} speed of self scrolling carousel
+ * @return {JSX.Element}
+ */
+const ImageCarousel = ({width, height, uniqueClassName,
+  speed=IMAGE_CAROUSEL_SPEED_DEFAULT, images} : ImageCarousel) => {
+  const widthOfImage = useRef<HTMLDivElement | null>(null);
+  const baseVelocity = speed;
   const baseX = useMotionValue(0);
   const {scrollY} = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -33,10 +42,26 @@ function ParallaxText({images, baseVelocity = 100}: ParallaxProps) {
     clamp: false,
   });
 
+
+  /**
+   * This is a magic wrapping for the length of the text - you
+   * have to replace for wrapping that works for you or dynamically
+   * calculate
+   * transform start from 0 to width of image * (number of photos divided by half)
+   */
+  const x = useTransform(baseX, (v) =>
+    `${wrap(0, -(widthOfImage.current ?
+      widthOfImage.current.offsetWidth * (IMAGE_CAROUSEL.length / 2) : 0), v)}px`
+  );
+
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
+    /**
+     * This is what changes the direction of the scroll once we
+     * switch scrolling directions.
+     */
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
@@ -48,26 +73,24 @@ function ParallaxText({images, baseVelocity = 100}: ParallaxProps) {
     baseX.set(baseX.get() + moveBy);
   });
 
-  return (
-    <motion.div className={styles.scroller} style={{x: useTransform(baseX, (v) =>`${wrap(-30, 225, v)}%`)}}>
-      {images.map((imageUrl, index) => (
-        <img key={index} src={imageUrl} alt={`Image ${index}`} />
-      ))}
-    </motion.div>
-  );
-}
 
-const ImageCarousel = () => {
   return (
-    <div className={styles.carousel}>
-      {/* {IMAGE_CAROUSEL.map((link, index) => (*/}
-      {/*    <RegularImage uniqueClassName={styles.image} src={link} alt={`Фотосесія`} width={732} height={751} key={index} />*/}
-      {/* ))}*/}
-      <div className={styles.paralax}>
-        <ParallaxText baseVelocity={8} images={["http://localhost:3000/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp"]} />
-        <ParallaxText baseVelocity={8} images={["http://localhost:3000/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp"]} />
-        <ParallaxText baseVelocity={8} images={["http://localhost:3000/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp"]} />
-      </div>
+  /**
+   * The number of times to repeat the child text should be dynamically calculated
+   * based on the size of the text and viewport. Likewise, the x motion value is
+   * currently wrapped between -20 and -45% - this 25% is derived from the fact
+   * we have four children (100% / 4). This would also want deriving from the
+   * dynamically generated number of children.
+   */
+    <div className={styles.paralax}>
+      <motion.div className={styles.carousel} style={{x}}>
+        {images.map((image, _) => (
+          <div key={_} ref={widthOfImage}>
+            <RegularImage uniqueClassName={uniqueClassName}
+              src={image} alt={"Портрет"} width={width} height={height}/>
+          </div>
+        ))}
+      </motion.div>
     </div>
   );
 };
