@@ -27,7 +27,7 @@ const Contacts = () => {
         </div>
       </div>
       <ImageCarousel width={732} height={751} uniqueClassName={styles.image}
-        images={IMAGE_CAROUSEL} />
+        images={IMAGE_CAROUSEL} speed={-65} />
     </div>
   );
 };
