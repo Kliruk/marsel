@@ -2,6 +2,7 @@ import type {Metadata} from "next";
 import {Raleway as ralewayGoogleFont} from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
+import Head from "next/head";
 
 
 const inter = ralewayGoogleFont({
@@ -62,6 +63,9 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
+      <Head>
+        <meta name="color-scheme" content="light" />
+      </Head>
       <body className={`${inter.variable} 
             ${bergamasco.variable} ${mak.variable}`}>
         {children}
