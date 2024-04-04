@@ -17,7 +17,7 @@ export default function NotFound(): JSX.Element {
         <Image className={styles.leftPhoto} src={"/photo/test.jpg"}
           width={281} height={438} alt="Помилка" />
         <div className={styles.textAndbutton}>
-          <CustomHeader headerType={"h2"} isYmoves={true} >
+          <CustomHeader headerType={"h2"} isYMoves={true} >
             ЩОСЬ ПIШЛО НЕ ТАК
           </CustomHeader>
           <ButtonSquared text={"повернутися назад"} link={""} type={"previous"} widthStar={12} />
