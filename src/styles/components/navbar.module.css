@@ -13,6 +13,8 @@
 @media screen and (max-width: 992px) {
     .navbar{
         margin-top: 30px;
+        margin-left: 39px;
+        margin-right: 39px;
     }
     
     .buttonLinks{
