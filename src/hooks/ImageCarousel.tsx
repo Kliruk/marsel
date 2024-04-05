@@ -8,7 +8,7 @@ import {useRef} from "react";
 import {motion, useScroll, useSpring, useTransform, useMotionValue,
   useVelocity, useAnimationFrame} from "framer-motion";
 import {wrap} from "@motionone/utils";
-import {ImageCarousel} from "@/types/image-carousel";
+import {IImageCarousel} from "@/types/image-carousel";
 
 // !!!!!!!!!!!!!!!!!!!
 // додати можливість налаштування різної швидкості для адаптації
@@ -28,7 +28,8 @@ import {ImageCarousel} from "@/types/image-carousel";
  * @return {JSX.Element}
  */
 const ImageCarousel = ({width, height, uniqueClassName,
-  speed=IMAGE_CAROUSEL_SPEED_DEFAULT, images} : ImageCarousel) => {
+  speed=IMAGE_CAROUSEL_SPEED_DEFAULT, images} : IImageCarousel)
+  : JSX.Element => {
   const widthOfImage = useRef<HTMLDivElement | null>(null);
   const baseVelocity = speed;
   const baseX = useMotionValue(0);

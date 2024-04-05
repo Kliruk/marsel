@@ -1,4 +1,4 @@
-export interface ImageCarousel {
+export interface IImageCarousel {
     width: number,
     height: number,
     uniqueClassName: string,
