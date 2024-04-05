@@ -5,6 +5,7 @@ import {SERVICES} from "@/constants/constants";
 import CustomImageAnim from "@/hooks/CustomImageAnim";
 import CustomHeader from "@/hooks/CustomHeader";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";
+import ScrollContainer from "@/UI's/ScrollContainer";
 
 const Service = ({currentService}: IService) => {
   const service: Record<string, any> = SERVICES;
@@ -37,7 +38,8 @@ const Service = ({currentService}: IService) => {
               Пропозиція
             </CustomHeader>
           </div>
-          <p>SCROLL</p>
+          <ScrollContainer uniqueClassName={styles.exclusiveScrollContainer}
+            data={data.advantages} width={0} height={0} />
           <ButtonSquared text={"ЗАМОВИТИ"} link={"#contacts"} type={"none"} widthStar={12} />
         </div>
       </div>
@@ -50,7 +52,8 @@ const Service = ({currentService}: IService) => {
             <CustomHeader headerType={"h4"} isYMoves={false}>
               Детальніше
             </CustomHeader>
-            <p>SCROLL</p>
+            <ScrollContainer uniqueClassName={"moreScrollContainer"}
+              data={data.more} width={0} height={0} />
           </div>
         </div>
       }
