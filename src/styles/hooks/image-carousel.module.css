@@ -1,0 +1,14 @@
+.paralax{
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    z-index: 0;
+    transform: translateX(-50%)
+}
+
+
+

@@ -1,0 +1,52 @@
+.main{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.uniqueOffer{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    gap: 50px;
+    margin-top: 46px;
+}
+
+.senondimages{
+    display: none;
+}
+
+.carousel{
+    overflow: hidden;
+}
+/* tablet */
+@media screen and (max-width: 992px) {
+    .senondimages{
+        display: flex;
+    }
+
+    .senondimages,
+    .images{
+        width: 417px!important;
+        height: 458px!important;
+    }
+}
+  
+/* phone */
+@media screen and (max-width: 688px) {
+    .senondimages,
+    .images{
+        width: 196px!important;
+        height: 267px!important;
+    }
+}

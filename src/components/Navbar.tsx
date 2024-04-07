@@ -2,6 +2,7 @@ import ButtonLink from "@/UI's/buttons/buttons-links/ButtonLink";
 import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
 import styles from "@/styles/components/navbar.module.css";
 import React from "react";
+import {INSTAGRAM} from "@/constants/constants";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         <ButtonLink starAnimationDelayMin={0.8} text="Portfolio"
           link="/portfolio" type="none" widthStar={12} />
       </div>
-      <ButtonRounded uniqueClassName={styles.instButton} text="INST" type="small" link="https://www.instagram.com/tkachuk_margarita_/"
+      <ButtonRounded uniqueClassName={styles.instButton} text="INST" type="small" link={INSTAGRAM}
         widthStar={12}/>
     </div>
   );
