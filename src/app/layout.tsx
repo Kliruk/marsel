@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "@/styles/globals.css";
 
 
-const inter = ralewayGoogleFont({
+const raleway = ralewayGoogleFont({
   subsets: ["latin"],
   style: ["italic"],
   weight: "300",
@@ -62,7 +62,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${inter.variable} 
+      <body className={`${raleway.variable} 
             ${bergamasco.variable} ${mak.variable}`}>
         {children}
       </body>

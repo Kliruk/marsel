@@ -15,7 +15,7 @@ const Portfolio = () => {
         МОМЕНТIВ
         </CustomHeader>
       </div>
-      <p className={`paragraphMain ${styles.paragraph}`}>Кожен мій кадр - це окрема історія, а
+      <p className={`paragraphTypical ${styles.paragraph}`}>Кожен мій кадр - це окрема історія, а
         кожна фотографія - це краплинка емоції та почуттів </p>
       <ButtonRounded text={"портфолiо"} link={"/portfolio"} type={"small"} widthStar={12} />
       <div className={styles.gridAndBacktext}>

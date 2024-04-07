@@ -165,6 +165,8 @@ h4 {
 
   .paragraphTypical{
     font-size: 18px;
+
+    font-family: var(--font-raleway);
   }
 
   .paragraphSmaller{

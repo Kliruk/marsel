@@ -44,6 +44,12 @@
     }
 }
 
+@media screen and (max-width: 538px) {
+    .navbar{
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 488px) {
     .buttonLinks{
         width: 92%;

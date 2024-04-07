@@ -63,6 +63,10 @@
     .textAndDoublePhoto {
         gap: 180px;
     }
+
+    .descr{
+        max-width: 433px;
+    }
 }
 
 @media screen and (max-width: 1720px) {
@@ -105,6 +109,10 @@
 
     .photoAndCircleArrow {
         margin-top: 70px;
+    }
+
+    .descr{
+        max-width: 499px;
     }
 }
 
@@ -163,7 +171,7 @@
     }
 
     .rightDoublePhoto {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .doublePhoto {
@@ -210,6 +218,113 @@
     .doublePhoto{
         justify-content: space-between;
     }
+
+    .rightDoublePhoto{
+        margin-top: 0px;
+    }
 }
 
-@media screen and (max-width: 688px) {}
+@media screen and (max-width: 688px) {
+    .rightDoublePhoto{
+        margin-top: 55px;
+    }
+
+    .headerPartWithDescr{
+        flex-direction: column;
+    }
+
+    .doublePhoto{
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .doubleRightPhoto {
+        height: 432px !important;
+    }
+
+    .doubleLeftPhoto {
+        height: 430px !important;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .header{
+        margin-left: 25px;
+        margin-right: 25px;    
+    }
+
+    .doubleRightPhoto {
+        height: 329px !important;
+    }
+
+    .doubleLeftPhoto {
+        height: 332px !important;
+    }
+
+    .backgroundTextDP{
+        font-size: 90px;
+    }
+
+}
+
+@media screen and (max-width: 538px) {
+
+    .header{
+        margin-top: 40px;
+    }
+
+    .photoAndCircleArrow{
+        margin-top: 44px;
+    }
+
+    .doubleRightPhoto {
+        width: 100%!important;
+        height: 363px !important;
+
+        margin-top: 31px;
+    }
+
+    .doubleLeftPhoto {
+        width: 100% !important;
+        height: 350px !important;
+    }
+
+    .backgroundTextDP{
+        font-size: 60px;
+    }
+
+    .photoAndCircleArrow{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .doubleRightPhoto {
+        width: 100%!important;
+        height: 280px !important;
+
+        margin-top: 31px;
+    }
+
+    .doubleLeftPhoto {
+        width: 100% !important;
+        height: 289px !important;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    
+    .doubleRightPhoto {
+        width: 100%!important;
+        height: 250px !important;
+
+        margin-top: 31px;
+    }
+
+    .doubleLeftPhoto {
+        width: 100% !important;
+        height: 235px !important;
+    }
+}
