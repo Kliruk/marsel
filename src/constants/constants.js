@@ -1,9 +1,22 @@
 export const STAR_DELAY_DEFAULT = 1;
 export const HOOKS_DELAY_DEFAULT = .2;
 export const HOOKS_DURATION_DEFAULT = .8;
+export const IMAGE_CAROUSEL_SPEED_DEFAULT = -80
 
 export const LIST_OF_SERVICES = ["Відеозйомка", '"PRO" Відеоролик', "Фотозйомка", "Your Story", "Контент зйомка"]
 
+
+export const INSTAGRAM = "https://www.instagram.com/tkachuk_margarita_/"
+export const TELEGRAM = "https://t.me/marrgaritaaaa"
+
+/**
+ * in order to create seamless transition you should
+ * add sequence of images and duplicate them
+ */
+export const IMAGE_CAROUSEL = ["/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp", "/photo/about-me/aboutme-coupleInGrass-q28.7.webp",
+    "/photo/about-me/aboutme-coupleWithDonut-q20.webp", "/photo/portfolio/portfolio-BRGirlInForest-q47.9.webp",
+    "/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp", "/photo/about-me/aboutme-coupleInGrass-q28.7.webp",
+    "/photo/about-me/aboutme-coupleWithDonut-q20.webp", "/photo/portfolio/portfolio-BRGirlInForest-q47.9.webp"]
 
 export const SERVICES = {
     "Фотозйомка": {

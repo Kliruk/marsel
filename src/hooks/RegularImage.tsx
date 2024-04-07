@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "@/styles/hooks/regular-image.module.css";
 import {ICustomImage} from "@/types/custom-image";
+import {customLazyLoading} from "@/constants/customLazyLoading";
 
 /**
  * Because of the disadvantage of tag <Image> from NextJS namely adaptation resizing, that component
@@ -16,7 +17,8 @@ import {ICustomImage} from "@/types/custom-image";
  * adaptation for example
  * @return {JSX.Element}
  */
-const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage) => {
+const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage)
+  : JSX.Element => {
   return (
     <div className={`${styles.wrapper} ${uniqueClassName}`}
       style={{
