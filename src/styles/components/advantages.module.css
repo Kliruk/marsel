@@ -459,11 +459,50 @@
         max-width: 307px;
     }
 
+    .firstPhotoTabletAndPhone{
+        margin-left: 80px;
+    }
+
+    .secondPhotoAndNum{
+        margin-right: 90px;
+    }
+
+    .firstPhotoAndNum{
+        margin-left: 70px;
+    }
+
+    .thirdPhotoAndNum{
+        margin-right: 90px;
+    }
+
+    .fourthPhotoAndNum{
+        margin-left: 90px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .secondPhotoAndNum{
         margin-right: 40px;
     }
 
     .firstPhotoAndNum{
         margin-left: 30px;
+    }
+
+    .fourthPhotoAndNum{
+        margin-right: 40px;
+    }
+
+    .secondAdv{
+        width: 90%;
+    }
+
+    .thirdPhotoAndNum{
+        margin-right: 30px;
+    }
+
+    .secondPhotoAndNum{
+        margin-right: 30px;
     }
 }
