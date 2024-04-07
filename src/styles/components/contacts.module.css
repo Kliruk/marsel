@@ -40,6 +40,13 @@
         width: 417px!important;
         height: 458px!important;
     }
+
+    .buttons{
+        margin-top: 52px;
+        gap: 39px;
+    }
+
+
 }
   
 /* phone */
@@ -48,5 +55,12 @@
     .images{
         width: 196px!important;
         height: 267px!important;
+    }
+
+    .buttons{
+        margin-top: 48px;
+        gap: 21px;
+
+        flex-direction: column;
     }
 }
