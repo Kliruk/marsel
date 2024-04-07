@@ -8,10 +8,10 @@ const Portfolio = () => {
   return (
     <div className={styles.portfolio}>
       <div className={styles.headers}>
-        <CustomHeader headerType="h1" isYmoves={true} delay={.1}>
+        <CustomHeader headerType="h1" isYMoves={true} delay={.1}>
         МИСТЕЦТВО
         </CustomHeader>
-        <CustomHeader headerType="h1" isYmoves={true} delay={.2}>
+        <CustomHeader headerType="h1" isYMoves={true} delay={.2}>
         МОМЕНТIВ
         </CustomHeader>
       </div>

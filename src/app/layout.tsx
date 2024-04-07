@@ -3,7 +3,6 @@ import {Raleway as ralewayGoogleFont} from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
 
-
 const raleway = ralewayGoogleFont({
   subsets: ["latin"],
   style: ["italic"],

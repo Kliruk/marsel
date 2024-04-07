@@ -10,11 +10,11 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.textAndDoublePhoto}>
         <div className={`block ${styles.textAndPhoto}`}>
-          <CustomHeader headerType="h2" isYmoves={true} delay={0}>
+          <CustomHeader headerType="h2" isYMoves={true} delay={0}>
             PHOTO&VIDEO
           </CustomHeader>
           <div className={styles.headerPartWithDescr}>
-            <CustomHeader headerType="h2" isYmoves={true} delay={0}>
+            <CustomHeader headerType="h2" isYMoves={true} delay={0}>
               MAKER
             </CustomHeader>
             <p className={`paragraphTypical text-left ${styles.descr}`}>

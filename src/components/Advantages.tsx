@@ -7,6 +7,9 @@ import CustomHeader from "@/hooks/CustomHeader";
 const Advantages = () => {
   return (
     <div className={styles.main}>
+      <CustomImageAnim uniqueClassName={styles.firstPhotoTabletAndPhone}
+        src={"/photo/test.jpg"}
+        alt={"Фотозйомка"} width={519} height={828} />
       <div className={styles.headerAndFirstAdv}>
         <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextHistory}`}
           delay={.1}>
@@ -23,9 +26,9 @@ const Advantages = () => {
 
         <div className={styles.headerAndPhoto}>
           <div className={`${styles.headerAdvantages} ${styles.header}`}>
-            <CustomHeader headerType={"h3"} isYmoves={true}>ПЕРЕВАГИ</CustomHeader>
-            <CustomHeader headerType={"h3"} isYmoves={false}>РОБОТИ</CustomHeader>
-            <CustomHeader headerType={"h3"} isYmoves={true}>ЗI МНОЮ</CustomHeader>
+            <CustomHeader headerType={"h3"} isYMoves={true}>ПЕРЕВАГИ</CustomHeader>
+            <CustomHeader headerType={"h3"} isYMoves={false}>РОБОТИ</CustomHeader>
+            <CustomHeader headerType={"h3"} isYMoves={true}>ЗI МНОЮ</CustomHeader>
           </div>
           <div className={`${styles.secondPhotoAndNum} ${styles.photoAndNum}`}>
             <CustomImageAnim uniqueClassName={styles.secondPhoto} src={"/photo/test.jpg"}

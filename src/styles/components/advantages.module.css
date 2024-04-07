@@ -145,6 +145,10 @@
     display: none;
 }
 
+.firstPhotoTabletAndPhone{
+    display: none;
+}
+
 @media screen and (max-width: 1740px) {
     .firstAdv{
         margin-left: 0;
@@ -226,7 +230,8 @@
     }
 
     .headerAdvantages{
-        margin-top: 0!important;
+        margin: 0!important;
+        margin: 150px 0!important;
     }
     
     .secondThirdAdv{
@@ -301,9 +306,164 @@
 
 
 @media screen and (max-width: 992px) {
-    
+    .main{
+        font-size: 40px;
+        margin-top: 151px;
+    }
+
+    .firstPhoto,
+    .secondPhoto,
+    .thirdPhoto,
+    .fourthPhoto,
+    .lastPhoto,
+    .firstPhotoTabletAndPhone{
+        width: 389px!important;
+        height: 620px!important;
+    }
+
+    .bigNum{
+        font-size: 300px;
+        text-align: center;
+    }
+
+    .secondPhotoAndNum{
+        margin-right: 150px;
+    }
+
+    .firstPhotoAndNum{
+        margin-left: 100px;
+    }
+
+    .firstAdv{
+        max-width: 532px;
+    }
+
+    .thirdPhotoAndNum{
+        margin-right: 30px;
+    }
+
+    .thirdAdv,
+    .firstAdv,
+    .secondAdv{
+        margin: 150px 0;
+    }
+
+    .secondAdv{
+        max-width: 523px;
+    }
+
+    .fourthPhotoAndNum{
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .firstPhotoTabletAndPhone{
+        display: flex;
+    }
+
+    .backTextHistory{
+        left: 334px;
+        top: 448px
+    }
+
+    .backTextMoments{
+        right: 247px;
+        top: -762px;
+    }
+
+    .backTextMemories{
+        top: 260px;
+        left: 283px;
+    }
+
+    .backTextFeelings{
+        top: 339px;
+        left: -155px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .backTextMoments{
+        right: 185px;
+        top: -747px;
+    }
+
+    .backTextMemories{
+        top: 276px;
+        left: 208px;
+    }
+
+    .backTextFeelings{
+        top: 339px;
+        left: -155px;
+    }
 }
 
 @media screen and (max-width: 688px) {
+    .backTextFeelings{
+        top: 324px;
+        left: 22px;
+    }
 
+    .backTextMemories{
+        top: 269px;
+        left: 258px;
+    }
+
+    .backTextMoments{
+        right: 229px;
+        top: -747px;
+        z-index: 0;
+    }
+
+    .backTextHistory{
+        left: 301px;
+        top: 321px;
+    }
+
+    .headerAndFirstAdv{
+        position: relative;
+        z-index: 1;
+    }
+
+    .main{
+        font-size: 30px;
+        margin-top: 102px;
+    }
+
+    .bigNum{
+        font-size: 180px;
+    }
+
+    .firstPhoto,
+    .secondPhoto,
+    .thirdPhoto,
+    .fourthPhoto,
+    .lastPhoto,
+    .firstPhotoTabletAndPhone{
+        width: 246px!important;
+        height: 392px!important;
+    }
+
+    .headerAdvantages{
+        margin: 90px 0!important;
+    }
+
+    .thirdAdv,
+    .firstAdv,
+    .secondAdv{
+        margin: 90px 0;
+    }
+
+    .firstAdv{
+        max-width: 307px;
+    }
+
+    .secondPhotoAndNum{
+        margin-right: 40px;
+    }
+
+    .firstPhotoAndNum{
+        margin-left: 30px;
+    }
 }

@@ -9,10 +9,10 @@ const Services = () => {
     <div className={styles.prices}>
       <div className={styles.headerWithBackText}>
         <div className={styles.header}>
-          <CustomHeader delay={0.1} headerType={"h3"} isYmoves={true}>
+          <CustomHeader delay={0.1} headerType={"h3"} isYMoves={true}>
             Оберiть вашу
           </CustomHeader>
-          <CustomHeader delay={0.1} headerType={"h3"} isYmoves={false}>
+          <CustomHeader delay={0.1} headerType={"h3"} isYMoves={false}>
             Iсторiю
           </CustomHeader>
         </div>
