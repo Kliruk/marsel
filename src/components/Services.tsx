@@ -6,7 +6,7 @@ import {ListAndService} from ".";
 
 const Services = () => {
   return (
-    <div className={styles.prices}>
+    <div className={styles.prices} id="list-of-prices">
       <div className={styles.headerWithBackText}>
         <div className={styles.header}>
           <CustomHeader delay={0.1} headerType={"h3"} isYMoves={true}>
