@@ -26,8 +26,13 @@ const Contacts = () => {
             starAnimationDelayMin={STAR_DELAY_DEFAULT} text="tlgr" link={TELEGRAM}/>
         </div>
       </div>
-      <ImageCarousel width={732} height={751} uniqueClassName={styles.image}
-        images={IMAGE_CAROUSEL} speed={-65} />
+        <div className={styles.carousel}>
+            <ImageCarousel width={732} height={751} uniqueClassName={styles.images}
+                           images={IMAGE_CAROUSEL} speed={-65} />
+            <ImageCarousel width={732} height={751} uniqueClassName={styles.senondimages}
+                           images={IMAGE_CAROUSEL} speed={-65} />
+        </div>
+
     </div>
   );
 };

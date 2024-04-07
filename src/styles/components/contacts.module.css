@@ -22,12 +22,31 @@
     margin-top: 46px;
 }
 
+.senondimages{
+    display: none;
+}
+
+.carousel{
+    overflow: hidden;
+}
 /* tablet */
 @media screen and (max-width: 992px) {
+    .senondimages{
+        display: flex;
+    }
 
+    .senondimages,
+    .images{
+        width: 417px!important;
+        height: 458px!important;
+    }
 }
   
 /* phone */
 @media screen and (max-width: 688px) {
-
+    .senondimages,
+    .images{
+        width: 196px!important;
+        height: 267px!important;
+    }
 }
