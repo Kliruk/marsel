@@ -17,10 +17,10 @@ import {STAR_DELAY_DEFAULT} from "@/constants/constants";
  */
 const ButtonScroll = (
     {size, widthArrow, widthStar, orientation, starAnimationDelayMin=STAR_DELAY_DEFAULT,
-      uniqueClassName, star, scroll}
+      uniqueClassName, star, scrollTo}
   : IButtonsScrolls) : JSX.Element => {
   return (
-    <a href={scroll}>
+    <a href={scrollTo}>
       <button className={`${styles.buttonScroll} ${uniqueClassName}`}
         style={{width: size, height: size}}>
         <div className={styles.wrapper}>

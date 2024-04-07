@@ -40,7 +40,7 @@ const Header = () => {
           alt="Замовниця" width={662} height={400} />
         <div className={styles.circleAndArrow}>
           <NameCircle text={new Date().getFullYear()} size={132}/>
-          <ButtonScroll scroll="#aboutme"
+          <ButtonScroll scrollTo="#aboutme"
             size={132} widthArrow={50} widthStar={12} orientation="downward"
             uniqueClassName={styles.headerArrow} starAnimationDelayMin={1} star={false} />
         </div>
