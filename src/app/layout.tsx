@@ -1,42 +1,8 @@
 import type {Metadata} from "next";
-import {Raleway as ralewayGoogleFont} from "next/font/google";
-import localFont from "next/font/local";
+// import {Raleway as ralewayGoogleFont} from "next/font/google";
+// import localFont from "next/font/local";
+import {raleway, bergamasco, mak} from "@/hooks/Fonts";
 import "@/styles/globals.css";
-
-const raleway = ralewayGoogleFont({
-  subsets: ["latin"],
-  style: ["italic"],
-  weight: "300",
-  variable: "--font-raleway",
-});
-
-const bergamasco = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Bergamasco Thin.ttf",
-      weight: "100",
-    },
-    {
-      path: "../../public/fonts/Bergamasco Light.ttf",
-      weight: "300",
-    },
-    {
-      path: "../../public/fonts/Bergamasco Semibold.ttf",
-      weight: "600",
-    },
-  ],
-  variable: "--font-bergamasco",
-});
-
-const mak = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Mak.otf",
-      weight: "100",
-    },
-  ],
-  variable: "--font-mak",
-});
 
 export const metadata: Metadata = {
   title: "Відео-фотографиня | Маргарита Ткачук",
@@ -61,7 +27,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} 
+      <body className={`${raleway.className} 
             ${bergamasco.variable} ${mak.variable}`}>
         {children}
       </body>
