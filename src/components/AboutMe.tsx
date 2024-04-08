@@ -16,7 +16,7 @@ const AboutMe = () => {
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               та взаємодії зі світом через об'єктив камери.</p>
           </div>
-          <CustomImageAnim uniqueClassName={styles.photoForMe__coupleCandy}
+          <CustomImageAnim uniqueClassName={styles.photoForMe__image}
             src={"/photo/about-me/aboutme-coupleInGrass-q28.7.webp"}
             alt={"Фотографія закоханих"} width={726} height={884} />
         </div>
@@ -43,7 +43,7 @@ const AboutMe = () => {
              красу в кожній своїй роботі</p>
             <p className={`paragraphSmaller ${styles.finalSection__comment}`}>- Маргарита Ткачук</p>
           </div>
-          <CustomImageAnim uniqueClassName={styles.finalSection__coupleCandy}
+          <CustomImageAnim uniqueClassName={styles.finalSection__image}
             src={"/photo/about-me/aboutme-coupleWithDonut-q20.webp"}
             alt={"Фотографія закоханих"} width={726} height={884} />
         </div>

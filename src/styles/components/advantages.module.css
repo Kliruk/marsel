@@ -185,7 +185,7 @@
 
 @media screen and (max-width: 1300px) {
     .main{
-        margin-top: 320px;
+        margin-top: 270px;
         align-items: center;
     }
 
@@ -308,7 +308,7 @@
 @media screen and (max-width: 992px) {
     .main{
         font-size: 40px;
-        margin-top: 151px;
+        margin-top: 190px;
     }
 
     .firstPhoto,

@@ -41,3 +41,14 @@
     font-size: 23px;
   }
 }
+
+@media screen and (max-width: 538px) {
+  .nameCircle{
+    width: 80px!important;
+    height: 80px!important;
+  }
+
+  .text{
+    font-size: 19px;
+  }
+}
