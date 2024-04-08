@@ -136,6 +136,14 @@
     .finalSection__Header {
         font-size: 40px;
     }
+    
+    .myPassion__Header{
+        max-width: 840px;
+    }
+
+    .myPassionSection{
+        margin: 290px 0;
+    }
 }
 
 @media screen and (max-width: 1200px) {
