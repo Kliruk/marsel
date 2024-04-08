@@ -297,6 +297,17 @@
     .photoAndCircleArrow{
         margin-left: 20px;
     }
+
+    .headerArrow{
+        width: 75px!important;
+        height: 75px!important;
+
+        border-width: 1px;
+    }
+
+    .headerArrow path{
+        stroke-width: 1px;
+    }
 }
 
 @media screen and (max-width: 480px) {

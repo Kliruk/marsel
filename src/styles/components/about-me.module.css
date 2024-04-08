@@ -111,3 +111,257 @@
     top: 200px;
     left: 400px;
 }
+
+@media screen and (max-width: 1560px) {
+
+    .photoForMe__leftTextRightPhoto,
+    .finalSection__leftTextRightPhoto {
+        gap: 150px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .finalSection__image,
+    .photoForMe__image {
+        width: 800px !important;
+        height: 807px !important;
+    }
+}
+
+@media screen and (max-width: 1334px) {
+
+    .photoForMe__Header,
+    .myPassion__Header,
+    .finalSection__Header {
+        font-size: 40px;
+    }
+    
+    .myPassion__Header{
+        max-width: 840px;
+    }
+
+    .myPassionSection{
+        margin: 290px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .photoForMe__leftTextRightPhoto,
+    .finalSection__leftTextRightPhoto {
+        align-items: center;
+    }
+
+    .photoForMe__leftTextRightPhoto {
+        flex-direction: column;
+        gap: 117px;
+    }
+
+    .finalSection__leftTextRightPhoto {
+        flex-direction: column-reverse;
+        gap: 165px;
+    }
+
+    .finalSection__image,
+    .photoForMe__image {
+        width: 594px !important;
+        height: 839px !important;
+    }
+
+    .myPassionSection {
+        margin: 300px 0;
+    }
+
+    .photoForMe__Header,
+    .myPassion__Header,
+    .finalSection__Header {
+        font-size: 50px;
+    }
+
+    .photoForMe__Header {
+        margin-bottom: 120px;
+    }
+
+    .photoForMe__comment {
+        position: static;
+    }
+
+    .finalSection__Header {
+        margin-bottom: 120px;
+    }
+
+    .finalSection__comment {
+        position: static;
+    }
+
+    .finalSection__comment {
+        bottom: -130px;
+    }
+
+    .myPassion__rightBackText {
+        top: -433px;
+    }
+
+    .myPassion__leftBackText {
+        left: 0;
+    }
+
+    .photoForMe__backgroundCircle {
+        bottom: 360px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .myPassion__Header {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .photoForMe__Header,
+    .myPassion__Header,
+    .finalSection__Header {
+        font-size: 40px;
+    }
+
+    .photoForMe__Header {
+        margin-bottom: 80px;
+    }
+
+    .photoForMeSection {
+        gap: 137px;
+    }
+
+    .finalSection__image,
+    .photoForMe__image {
+        width: 594px !important;
+        height: 839px !important;
+    }
+
+    .photoForMe__backgroundCircle,
+    .finalSection__backgroundCircle {
+        width: 581px !important;
+    }
+
+    .photoForMe__backgroundCircle {
+        right: -70px;
+        left: auto;
+        bottom: 537px;
+    }
+
+    .aboutMe {
+        margin-top: 185px;
+    }
+
+    .myPassion__leftBackText {
+        bottom: -390px;
+    }
+
+    .myPassion__rightBackText {
+        top: -370px;
+        right: -57px;
+    }
+
+    .photoForMe__comment {
+        max-width: 250px;
+    }
+
+    .photoForMe__Header{
+        max-width: 520px;
+    }
+
+    .myPassion__Header {
+        max-width: 620px;
+    }
+
+    .myPassionSection {
+        margin: 237px 0;
+    }
+
+    .finalSection__Header {
+        max-width: 640px;
+        margin-bottom: 80px;
+    }
+
+    .finalSection__leftTextRightPhoto{
+        gap: 145px;
+    }
+
+    .finalSection__backgroundCircle{
+        bottom: -260px;
+        left: -190px;
+        top: auto;
+    }
+}
+
+@media screen and (max-width: 688px) {
+
+    .aboutMe{
+        margin-top: 84px;
+    }
+
+    .finalSection__image,
+    .photoForMe__image {
+        width: 330px !important;
+        height: 466px !important;
+    }
+
+    .photoForMe__backgroundCircle,
+    .finalSection__backgroundCircle {
+        width: 394px !important;
+    }
+
+    .photoForMe__Header,
+    .myPassion__Header,
+    .finalSection__Header {
+        font-size: 30px;
+    }
+
+    .photoForMe__Header {
+        max-width: 490px;
+        margin-bottom: 80px;
+    }
+    
+    .photoForMe__comment{
+        max-width: 240px;
+    }
+
+    .photoForMe__leftTextRightPhoto,
+    .finalSection__leftTextRightPhoto{
+        gap: 81px;
+    }
+
+    .photoForMe__backgroundCircle{
+        right: auto;
+        left: 153px;
+        bottom: 122px;
+    }
+
+    .myPassionSection{
+        margin: 215px 0;
+    }
+
+    .myPassion__rightBackText{
+        top: -221px;
+        right: -29px;
+    }
+
+    .myPassion__leftBackText{
+        bottom: -252px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .myPassion__Header,
+    .finalSection__Header,
+    .photoForMe__Header{
+        font-size: 28px;
+    }
+    
+    .myPassion__Header{
+        font-size: 25px;
+    }
+}

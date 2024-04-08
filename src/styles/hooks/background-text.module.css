@@ -17,12 +17,14 @@
     font-size: 100px;
   }
 
-  
-@media screen and (max-width: 992px) {
+
+  @media screen and (max-width: 1334px) {
     .backgroundTextBig{
       font-size: 150px;
     }
+  }
   
+@media screen and (max-width: 992px) {
     .backgroundTextSmall{
       font-size: 70px;
     }
