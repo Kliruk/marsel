@@ -1,0 +1,15 @@
+.buttonScroll{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    align-items: center;
+    width: 660px;
+}
+
+@media screen and (max-width: 688px) {
+    .buttonScroll{
+        flex-direction: column;
+        height: 370px;
+        width: 300px;
+    }
+}
