@@ -5,7 +5,7 @@ import {raleway, bergamasco, mak} from "@/hooks/Fonts";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Відео-фотографиня | Маргарита Ткачук",
+  title: "Відео-фотографиня · Маргарита Ткачук",
   description: "-----------",
 };
 
