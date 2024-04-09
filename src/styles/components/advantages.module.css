@@ -145,10 +145,6 @@
     display: none;
 }
 
-.firstPhotoTabletAndPhone{
-    display: none;
-}
-
 @media screen and (max-width: 1740px) {
     .firstAdv{
         margin-left: 0;
@@ -231,7 +227,7 @@
 
     .headerAdvantages{
         margin: 0!important;
-        margin: 150px 0!important;
+        margin-bottom: 150px!important;
     }
     
     .secondThirdAdv{
@@ -315,8 +311,7 @@
     .secondPhoto,
     .thirdPhoto,
     .fourthPhoto,
-    .lastPhoto,
-    .firstPhotoTabletAndPhone{
+    .lastPhoto{
         width: 389px!important;
         height: 620px!important;
     }
@@ -355,10 +350,6 @@
     .fourthPhotoAndNum{
         margin-left: 0;
         margin-right: 40px;
-    }
-
-    .firstPhotoTabletAndPhone{
-        display: flex;
     }
 
     .backTextHistory{
@@ -428,7 +419,7 @@
 
     .main{
         font-size: 30px;
-        margin-top: 102px;
+        margin-top: 130px;
     }
 
     .bigNum{
@@ -439,14 +430,13 @@
     .secondPhoto,
     .thirdPhoto,
     .fourthPhoto,
-    .lastPhoto,
-    .firstPhotoTabletAndPhone{
-        width: 246px!important;
-        height: 392px!important;
+    .lastPhoto{
+        width: 336px!important;
+        height: 533px!important;
     }
 
     .headerAdvantages{
-        margin: 90px 0!important;
+        margin-bottom: 90px!important;
     }
 
     .thirdAdv,
@@ -457,10 +447,6 @@
 
     .firstAdv{
         max-width: 307px;
-    }
-
-    .firstPhotoTabletAndPhone{
-        margin-left: 80px;
     }
 
     .secondPhotoAndNum{
@@ -478,6 +464,17 @@
     .fourthPhotoAndNum{
         margin-left: 90px;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .firstPhoto,
+    .secondPhoto,
+    .thirdPhoto,
+    .fourthPhoto,
+    .lastPhoto{
+        width: 246px!important;
+        height: 392px!important;
     }
 }
 

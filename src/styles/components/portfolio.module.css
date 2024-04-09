@@ -221,11 +221,6 @@
         width: 594px!important;
         height: 887px!important;
     }
-
-    .leftTopPhoto,
-    .leftBottomPhoto{
-
-    }
 }
 
 
@@ -242,7 +237,7 @@
 
     .portfolio{
         gap: 65px;
-        margin-top: 92px;
+        margin-top: 140px;
     }
 
     .gridAndBacktext{
@@ -266,6 +261,10 @@
         height: 600px!important;
     }
 
+    .portfolio{
+        gap: 65px;
+        margin-top: 130px;
+    }
 }
 
 @media screen and (max-width: 460px) {

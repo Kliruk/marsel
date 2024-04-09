@@ -7,9 +7,6 @@ import CustomHeader from "@/hooks/CustomHeader";
 const Advantages = () => {
   return (
     <div className={styles.main}>
-      <CustomImageAnim uniqueClassName={styles.firstPhotoTabletAndPhone}
-        src={"/photo/test.jpg"}
-        alt={"Фотозйомка"} width={519} height={828} />
       <div className={styles.headerAndFirstAdv}>
         <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextHistory}`}
           delay={.1}>

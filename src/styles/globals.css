@@ -120,6 +120,12 @@ h4 {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1180px) {
+  h1 {
+    font-size: 140px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   h1 {
     font-size: 100px;
@@ -148,15 +154,15 @@ h4 {
 
 @media screen and (max-width: 688px) {
   h1 {
-    font-size: 55px;
+    font-size: 70px;
   }
 
   h2 {
-    font-size: 45px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 45px;
+    font-size: 60px;
   }
 
   h4 {
@@ -171,5 +177,20 @@ h4 {
 
   .paragraphSmaller{
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 45px;
   }
 }

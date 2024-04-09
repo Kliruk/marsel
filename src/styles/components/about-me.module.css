@@ -304,8 +304,8 @@
 
     .finalSection__image,
     .photoForMe__image {
-        width: 330px !important;
-        height: 466px !important;
+        width: 417px !important;
+        height: 550px !important;
     }
 
     .photoForMe__backgroundCircle,
@@ -352,6 +352,14 @@
         bottom: -252px;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .finalSection__image,
+    .photoForMe__image {
+        width: 330px !important;
+        height: 466px !important;
+    }
 }
 
 @media screen and (max-width: 380px) {
