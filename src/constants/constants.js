@@ -6,7 +6,7 @@ export const IMAGE_CAROUSEL_SPEED_DEFAULT = -80
 export const LIST_OF_SERVICES = ["Відеозйомка", '"PRO" Відеоролик', "Фотозйомка", "Your Story", "Контент зйомка"]
 
 
-export const INSTAGRAM = "https://www.instagram.com/tkachuk_margarita_/"
+export const INSTAGRAM = "https://www.instagram.com/_margomti_tkachuk_/"
 export const TELEGRAM = "https://t.me/marrgaritaaaa"
 
 /**
