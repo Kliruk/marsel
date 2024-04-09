@@ -29,7 +29,7 @@ const Portfolio = () => {
           <CustomImageAnim uniqueClassName={styles.leftBottomPhoto}
             src={"/photo/test.jpg"} alt={"Портрет"}
             width={772} height={677} />
-          <CustomImageAnim uniqueClassName={styles.leftBottomPhoto}
+          <CustomImageAnim uniqueClassName={styles.rightBottomPhoto}
             src={"/photo/portfolio/portfolio-BRGirlInForest-q47.9.webp"} alt={"Портрет"}
             width={772} height={677} />
         </div>
