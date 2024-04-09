@@ -31,7 +31,6 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    margin-top: 27px;
 }
 
 .leftTopPhoto img,
@@ -52,9 +51,235 @@
 
 }
 
+@media screen and (max-width: 1710px) {
+    .leftTopPhoto,
+    .rightTopPhoto,
+    .leftBottomPhoto,
+    .rightBottomPhoto{
+        width: 100%!important;
+    }
+
+    .gridAndBacktext{
+        width: 100%;
+        padding: 0 100px;
+    }
+
+    .gridWithPhotos{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .gridWithPhotos{
+        gap: 70px;
+    }
+
+    .gridAndBacktext{
+        padding: 0 90px;
+    }
+
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 1030px!important;
+    }
+
+    .backText{
+        font-size: 400px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1590px) {
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 905px!important;
+    }
+
+    .gridWithPhotos{
+        gap: 50px;
+    }
+
+    .gridAndBacktext{
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 840px!important;
+    }
+
+    .leftBottomPhoto,
+    .rightBottomPhoto{
+        height: 580px!important;
+    }
+
+    .gridWithPhotos{
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .backText{
+        font-size: 350px;
+    }
+
+    .gridAndBacktext{
+        padding: 0 70px;
+    }
+}
 
 @media screen and (max-width: 1300px) {
     .portfolio{
         margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 810px!important;
+    }
+
+    .gridAndBacktext{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 785px!important;
+    }
+
+    .leftBottomPhoto,
+    .rightBottomPhoto{
+        height: 535px!important;
+    }
+
+    .gridWithPhotos{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 750px!important;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .leftTopPhoto,
+    .rightTopPhoto{
+        height: 700px!important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .leftBottomPhoto,
+    .rightBottomPhoto{
+        height: 480px!important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio{
+        gap: 74px;
+        margin-top: 150px;
+    }
+
+    .rightTopPhoto,
+    .rightBottomPhoto{
+        display: none;
+    }
+
+    .gridAndBacktext{
+        margin-top: 40px;
+    }
+
+    .gridWithPhotos{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+
+        width: auto;
+    }
+
+    .backText{
+        display: none;
+    }
+
+    .leftTopPhoto{
+        width: 594px!important;
+        height: 887px!important;
+    }
+
+    .leftBottomPhoto{
+        width: 594px!important;
+        height: 887px!important;
+    }
+
+    .leftTopPhoto,
+    .leftBottomPhoto{
+
+    }
+}
+
+
+@media screen and (max-width: 688px) {
+    .gridWithPhotos{
+        width: 100%;
+    }
+    
+    .leftBottomPhoto,
+    .leftTopPhoto{
+        width: 100%!important;
+        height: 862px!important;
+    }
+
+    .portfolio{
+        gap: 65px;
+        margin-top: 92px;
+    }
+
+    .gridAndBacktext{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .leftBottomPhoto,
+    .leftTopPhoto{
+        width: 100%!important;
+        height: 700px!important;
+    }
+
+}
+
+@media screen and (max-width: 562px) {
+    .leftBottomPhoto,
+    .leftTopPhoto{
+        width: 100%!important;
+        height: 600px!important;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .gridWithPhotos{
+        width: auto;
+    }
+
+    .leftBottomPhoto,
+    .leftTopPhoto{
+        width: 330px!important;
+        height: 492px!important;
+    }
+
+    .paragraph{
+        max-width: 340px;
     }
 }
