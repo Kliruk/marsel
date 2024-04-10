@@ -4,11 +4,14 @@ import styles from "@/styles/ui's/scroll-container.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 
 /**
- *
- * @param param0
- * @returns
+ * Return a vertical scrollable div with bunch of elements
+ * provided with appearing animation
+ * @param {uniqueClassName} unique class name in order to control css of element,
+ * adaptation for example
+ * @param {data} array of the desired list
+ * @return {JSX.Element}
  */
-const ScrollContainer = ({uniqueClassName, data}: IScrollContainer)
+const ListScrollContainer = ({uniqueClassName, data}: IScrollContainer)
   : JSX.Element => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
@@ -61,4 +64,4 @@ const ScrollContainer = ({uniqueClassName, data}: IScrollContainer)
   );
 };
 
-export default ScrollContainer;
+export default ListScrollContainer;
