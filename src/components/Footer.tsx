@@ -11,7 +11,7 @@ const Footer = () => {
       <CustomHeader headerType="h3" isYMoves={false}>MARSELIN.</CustomHeader>
       <BackgroundText size="small" uniqueClassName={styles.margarita}>MARGARITA</BackgroundText>
       <ButtonScroll uniqueClassName={styles.scrollbutton} size={100} widthArrow={30} widthStar={11}
-        orientation={"upward"} star={true} scroll={"#header"}/>
+        orientation={"upward"} star={true} scroll={"#header"} />
     </div>
   );
 };

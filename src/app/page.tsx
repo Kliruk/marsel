@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
       <Portfolio />
       <Services />
       <Contacts />
-      <Footer/>
+      <Footer />
     </>
   );
 }
