@@ -24,6 +24,8 @@ const Service = ({currentService}: IService) => {
         mainControl.start("visible");
       }, 600);
     }
+    // no error, it is just no need to run useEffect on prevService
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentService, mainControl]);
 
   return (
