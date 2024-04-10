@@ -12,6 +12,7 @@
   --color-for-photo-half-transparent: rgba(255, 255, 255, 0.4);
   --color-special-back-text-advantages: rgba(52, 52, 52, 0.05);
   --color-list-unactive: #AEAEAE;
+  --linear-fading: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 73.86%);
 }
 
 ::selection{

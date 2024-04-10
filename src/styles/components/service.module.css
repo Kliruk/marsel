@@ -1,0 +1,82 @@
+.service{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 184px;
+    gap: 186px;
+}
+
+.exclusiveScrollContainer{
+    width: 346px;
+    max-height: 474px;
+}
+
+.descriptionBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 221px;
+}
+
+.description,
+.moreTextBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 76px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description{
+    max-width: 719px;
+}
+
+.descriptionText{
+    max-width: 490px;
+}
+
+.advantagesBlock,
+.moreBlock{
+    display: flex;
+    align-items: center;
+    
+    gap: 305px;
+}
+
+.advantages{
+    display: flex;
+    align-items: center;
+
+    gap: 72px;
+
+    flex-direction: column;
+}
+
+.advantagesBlockHeader{
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+/* .moreTextBlock{
+    display: flex;
+    justify-content: center;
+
+    gap: 76px;
+
+    flex-direction: column;
+} */
+
+.moreScrollContainer{
+    width: 450px;
+    max-height: 530px;
+}

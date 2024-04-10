@@ -1,11 +1,8 @@
-"use client";
-
 import React from "react";
 import styles from "@/styles/components/list-of-services.module.css";
 import {LIST_OF_SERVICES} from "@/constants/constants";
-import {motion} from "framer-motion";
-import Star from "@/UI's/Star";
 import {IListOfServices} from "@/types/list-of-services";
+import SwitchStar from "@/UI's/SwitchStar";
 
 const ListOfServices = ({currentService, setCurrentService} : IListOfServices) => {
   return (
@@ -21,19 +18,7 @@ const ListOfServices = ({currentService, setCurrentService} : IListOfServices) =
           key={serviceName}>
           {serviceName}
           {serviceName === currentService &&
-              <motion.div
-                className={styles.starDivWithAnimation}
-                animate={{
-                  opacity: 1,
-                  scale: 1,
-                }}
-                transition={{
-                  duration: .3,
-                  ease: "easeIn",
-                }}
-              >
-                <Star width={15} />
-              </motion.div>
+              <SwitchStar widthStar={15} uniqueClassName={styles.starDivWithAnimation} />
           }
         </li>
       ))}
