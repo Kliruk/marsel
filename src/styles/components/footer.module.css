@@ -1,0 +1,62 @@
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 155px;
+    padding-bottom: 103px;
+}
+
+.tkachyk{
+    position: absolute;
+    right: 0px;
+    top: 155px;
+}
+
+.margarita{
+    position: absolute;
+    left: 0px;
+    top: 155px;
+}
+
+.scrollbutton{
+    position: absolute;
+    right: 69px;
+    top: 69px;
+}
+
+@media screen and (max-width: 992px) {
+    .tkachyk{
+        position: absolute;
+        left: 37px;
+        top: 73px;
+    }
+
+    .margarita{
+        position: absolute;
+        right: 48px;
+        top: 250px;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .tkachyk{
+        position: absolute;
+        left: auto;
+        top: 73px;
+        right: 0px;
+    }
+
+    .margarita{
+        position: absolute;
+        right: auto;
+        top: 250px;
+        left: 0px;
+    }
+
+    .scrollbutton{
+        display: none;
+    }
+}
