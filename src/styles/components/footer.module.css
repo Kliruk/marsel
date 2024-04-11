@@ -1,58 +1,102 @@
 .footer{
-    position: relative;
     display: flex;
-    justify-content: center;
+    position: relative;
     align-items: center;
+    justify-content: center;
+
     width: 100%;
+
     padding-top: 155px;
     padding-bottom: 103px;
 }
 
-.tkachyk{
+.header{
+    z-index: 1;
+}
+
+.tkachyk,
+.margarita,
+.scrollbutton,
+.developedBy{
     position: absolute;
+}
+
+.tkachyk{
     right: 0px;
-    top: 155px;
+
+    z-index: 0;
 }
 
 .margarita{
-    position: absolute;
     left: 0px;
-    top: 155px;
+
+    z-index: 0;
 }
 
 .scrollbutton{
-    position: absolute;
     right: 69px;
     top: 69px;
 }
 
-@media screen and (max-width: 992px) {
+.developedBy{
+    bottom: 8px;
+}
+
+@media screen and (max-width: 1635px) {
     .tkachyk{
-        position: absolute;
         left: 37px;
-        top: 73px;
+        top: 50px;
     }
 
     .margarita{
-        position: absolute;
-        right: 48px;
-        top: 250px;
         left: auto;
+        right: 48px;
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .scrollbutton{
+        right: 55px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer{
+        padding-top: 117px;
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 841px) {
+    .scrollbutton{
+        width: 79px!important;
+        height: 79px!important;
+        right: 45px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .scrollbutton{
+        right: 22px;
     }
 }
 
 @media screen and (max-width: 688px) {
+    .footer{
+        padding-top: 97px;
+        padding-bottom: 90px;
+    }
+
     .tkachyk{
-        position:  absolute;
         left: auto;
-        top: 73px;
+        top: 58px;
         right: 0px;
     }
 
     .margarita{
-        position: absolute;
         right: auto;
-        top: 250px;
+        top: 180px;
         left: 0px;
     }
 
