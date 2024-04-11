@@ -6,7 +6,7 @@ import {INSTAGRAM} from "@/constants/constants";
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>
+    <div id="header" className={styles.navbar}>
       <div className={styles.buttonLinks}>
         <ButtonLink starAnimationDelayMin={0.8} text="Prices"
           link="#prices" type="none" widthStar={12} />

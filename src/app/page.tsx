@@ -1,6 +1,6 @@
-import {Navbar, Header, AboutMe, Portfolio, Services, Advantages, Contacts} from "@/components";
+import {Navbar, Header, AboutMe, Portfolio,
+  Services, Advantages, Contacts, Footer} from "@/components";
 import React from "react";
-import Footer from "@/components/Footer";
 
 /**
  * Home Page of the Application
