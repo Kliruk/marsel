@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 // import {Raleway as ralewayGoogleFont} from "next/font/google";
 // import localFont from "next/font/local";
-import {raleway, bergamasco, mak} from "@/hooks/Fonts";
+import {raleway, bergamasco, mak} from "@/utils/fonts";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
