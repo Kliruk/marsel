@@ -55,13 +55,19 @@ const Service = ({currentService}: IService) => {
       </div>
       <div className={styles.advantagesBlock}>
         <div className={styles.advantages}>
-          <div className={styles.advantagesBlockHeader}>
-            <CustomHeader headerType={"h4"} isYMoves={false}>
-              ЕКСКЛЮЗИВНА
-            </CustomHeader>
-            <CustomHeader headerType={"h4"} isYMoves={false}>
-              Пропозиція
-            </CustomHeader>
+          <div className={styles.headerAndQuickAdvantages}>
+            <div className={styles.advantagesBlockHeader}>
+              <CustomHeader headerType={"h4"} isYMoves={false}>
+                ЕКСКЛЮЗИВНА
+              </CustomHeader>
+              <CustomHeader headerType={"h4"} isYMoves={false}>
+                Пропозиція
+              </CustomHeader>
+            </div>
+            <div className={styles.quickAdvantages}>
+              <p className={styles.price}>{data.mainadvantages.price}uah</p>
+              <p className={styles.durationService}>{data.mainadvantages.duration}</p>
+            </div>
           </div>
           <ListScrollContainer uniqueClassName={styles.exclusiveScrollContainer}
             data={data.advantages} />

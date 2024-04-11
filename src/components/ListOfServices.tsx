@@ -6,23 +6,27 @@ import SwitchStar from "@/UI's/SwitchStar";
 
 const ListOfServices = ({currentService, setCurrentService} : IListOfServices) => {
   return (
-    <ul className={styles.list}>
-      {LIST_OF_SERVICES.map((serviceName) => (
-        <li
-          className={styles.service}
-          onClick={() => setCurrentService(serviceName)}
-          style={{
-            color: currentService === serviceName ?
-                "var(--color-black)" : "var(--color-list-unactive)",
-          }}
-          key={serviceName}>
-          {serviceName}
-          {serviceName === currentService &&
-              <SwitchStar widthStar={15} uniqueClassName={styles.starDivWithAnimation} />
-          }
-        </li>
-      ))}
-    </ul>
+    <div className={styles.listOfService}>
+      <ul className={styles.list}>
+        {LIST_OF_SERVICES.map((serviceName) => (
+          <li
+            className={styles.service}
+            onClick={() => setCurrentService(serviceName)}
+            style={{
+              color: currentService === serviceName ?
+                  "var(--color-black)" : "var(--color-list-unactive)",
+            }}
+            key={serviceName}>
+            {serviceName}
+            {serviceName === currentService &&
+                <SwitchStar widthStar={15} uniqueClassName={styles.starDivWithAnimation} />
+            }
+          </li>
+        ))}
+      </ul>
+      <div className={styles.leftFade} />
+      <div className={styles.rightFade} />
+    </div>
   );
 };
 

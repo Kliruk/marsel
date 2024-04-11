@@ -60,6 +60,15 @@
     flex-direction: column;
 }
 
+.headerAndQuickAdvantages{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+
+    flex-direction: column;
+}
+
 .advantagesBlockHeader{
     display: flex;
     align-items: center;
@@ -67,16 +76,72 @@
     flex-direction: column;
 }
 
-/* .moreTextBlock{
+.quickAdvantages{
     display: flex;
-    justify-content: center;
 
-    gap: 76px;
+    font-family: var(--font-mak);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
 
-    flex-direction: column;
-} */
+    gap: 27px;
+}
 
 .moreScrollContainer{
     width: 450px;
     max-height: 530px;
+}
+
+@media screen and (max-width: 1720px) {
+    .descriptionBlock{
+        gap: 120px;
+    }
+
+    .advantagesBlock,
+    .moreBlock{
+        gap: 219px;
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    .descriptionBlock{
+        gap: 63px;
+    }
+
+    .advantagesBlock,
+    .moreBlock{
+        gap: 143px;
+    }
+
+    .service{
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .service{
+        gap: 200px;
+    }
+
+    .descriptionBlock,
+    .advantagesBlock,
+    .moreBlock{
+        flex-direction: column;
+    }
+
+    .descriptionBlock,
+    .advantagesBlock{
+        gap: 170px;
+    }
+
+    .advantagesBlock{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .image{
+        width: 594px!important;
+        height: 964px!important;
+    }
 }

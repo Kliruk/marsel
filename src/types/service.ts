@@ -5,7 +5,7 @@ export interface IService{
 export interface IData{
         header: string,
         description: string,
-        mainadvantages: string,
+        mainadvantages: {price: string, duration: string},
         advantages: string[],
         more: null | string[]
 }

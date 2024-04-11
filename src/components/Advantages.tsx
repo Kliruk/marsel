@@ -4,6 +4,10 @@ import CustomImageAnim from "@/hooks/CustomImageAnim";
 import BackgroundText from "@/hooks/BackgroundText";
 import CustomHeader from "@/hooks/CustomHeader";
 
+
+/* поправити відступи по сторонам в адаптації комп'ютер - планшет */
+
+
 const Advantages = () => {
   return (
     <div className={styles.main}>

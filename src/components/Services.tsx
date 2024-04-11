@@ -3,6 +3,7 @@ import styles from "@/styles/components/services.module.css";
 import CustomHeader from "@/hooks/CustomHeader";
 import BackgroundText from "@/hooks/BackgroundText";
 import {ListAndService} from ".";
+import PriceScroll from "./PriceScroll";
 
 const Services = () => {
   return (
@@ -25,6 +26,7 @@ const Services = () => {
         </BackgroundText>
       </div>
       <ListAndService />
+      <PriceScroll />
     </div>
   );
 };

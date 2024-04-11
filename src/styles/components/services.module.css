@@ -43,3 +43,33 @@
     right: 0;
     top: 150px;
 }
+
+@media screen and (max-width: 1200px) {
+    .prices{
+        margin-top: 330px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .prices{
+        margin-top: 280px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .prices{
+        margin-top: 170px;
+        margin-left: 29px;
+        margin-right: 29px;
+    }
+
+    .backTextMoments{
+        left: 0;
+        top: -50px;
+    }
+    
+    .backTextMagic{
+        right: 0;
+        top: 180px;
+    }
+}

@@ -1,3 +1,8 @@
+.listOfService {
+    position: relative;
+    width: 100%;
+}
+
 .list {
     display: flex;
     gap: 84px;
@@ -20,11 +25,139 @@
     flex-direction: column;
 }
 
-.service:hover{
-    color: var(--color-red)!important;
+.service:hover {
+    color: var(--color-red) !important;
 }
 
-.starDivWithAnimation{
+.starDivWithAnimation {
     opacity: 0;
     transform: scale(0);
+}
+
+.rightFade,
+.leftFade {
+    display: none;
+    position: absolute;
+
+    width: 145px;
+    height: 100%;
+
+    background: var(--linear-horizontal-fading-left-to-right);
+    pointer-events: none;
+}
+
+.rightFade {
+    top: 0;
+    right: 0;
+
+    transform: scaleX(-1);
+}
+
+.leftFade {
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1650px) {
+    .list {
+        gap: 65px;
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    .listOfService {
+        width: 100%;
+    }
+
+    .list {
+        position: relative;
+        overflow-x: auto;
+
+        width: 100%;
+
+        padding-bottom: 20px;
+    }
+
+    .service {
+        white-space: nowrap;
+    }
+
+    .service:last-of-type {
+        margin-right: 110px;
+    }
+
+    .service:first-of-type {
+        margin-left: 110px;
+    }
+
+    .rightFade {
+        display: flex;
+    }
+
+    .leftFade {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .list {
+        gap: 50px;
+    }
+
+    .service {
+        font-size: 30px;
+    }
+
+    .rightFade,
+    .leftFade {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service:last-of-type {
+        margin-right: 60px;
+    }
+
+    .service:first-of-type {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .list {
+        gap: 35px;
+    }
+
+    .service {
+        font-size: 25px;
+    }
+
+    .rightFade,
+    .leftFade {
+        width: 50px;
+    }
+
+    .service:last-of-type {
+        margin-right: 40px;
+    }
+
+    .service:first-of-type {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .rightFade,
+    .leftFade {
+        display: none;
+    }
+
+    .service:last-of-type {
+        margin-right: 0px;
+    }
+
+    .service:first-of-type {
+        margin-left: 0px;
+    }
 }

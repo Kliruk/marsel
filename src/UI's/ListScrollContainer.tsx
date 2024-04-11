@@ -1,6 +1,6 @@
 import {IScrollContainer} from "@/types/scroll-container";
 import React, {useEffect, useRef} from "react";
-import styles from "@/styles/ui's/scroll-container.module.css";
+import styles from "@/styles/ui's/list-scroll-container.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 
 /**
@@ -22,11 +22,11 @@ const ListScrollContainer = ({uniqueClassName, data}: IScrollContainer)
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [mainControls, isInView]);
+  }, [isInView]);
 
   return (
-    <div className={styles.wrapper}>
-      <div ref={ref} className={`${styles.scrollContainer} ${uniqueClassName}`}>
+    <div ref={ref} className={styles.wrapper}>
+      <div className={`${styles.scrollContainer} ${uniqueClassName}`}>
         {data.map((item, _) => (
           <React.Fragment key={_}>
             <motion.p
