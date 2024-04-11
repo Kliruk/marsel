@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "@/styles/components/list-of-services.module.css";
-import {LIST_OF_SERVICES} from "@/constants/constants";
+import {LIST_OF_SERVICES} from "@/constants/services";
 import {motion} from "framer-motion";
 import Star from "@/UI's/Star";
 import {IListOfServices} from "@/types/list-of-services";

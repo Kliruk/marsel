@@ -3,7 +3,7 @@
 import Star from "@/UI's/Star";
 import {IButtonsLinksSwitch} from "@/types/buttons";
 import styles from "@/styles/ui's/buttons-switches.module.css";
-import {STAR_DELAY_DEFAULT} from "@/constants/constants";
+import {STAR_DELAY_DEFAULT} from "@/constants/default-values";
 import React from "react";
 
 /**

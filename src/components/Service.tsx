@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/components/service.module.css";
 import {IData, IService} from "@/types/service";
-import {SERVICES} from "@/constants/constants";
+import {SERVICES} from "@/constants/services";
 import CustomImageAnim from "@/hooks/CustomImageAnim";
 import CustomHeader from "@/hooks/CustomHeader";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";

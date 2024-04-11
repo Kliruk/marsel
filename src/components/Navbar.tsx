@@ -2,7 +2,7 @@ import ButtonLink from "@/UI's/buttons/buttons-links/ButtonLink";
 import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
 import styles from "@/styles/components/navbar.module.css";
 import React from "react";
-import {INSTAGRAM} from "@/constants/constants";
+import {INSTAGRAM} from "@/constants/urls";
 
 const Navbar = () => {
   return (
