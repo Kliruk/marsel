@@ -1,0 +1,106 @@
+.footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding-top: 155px;
+    padding-bottom: 103px;
+}
+
+.header{
+    z-index: 1;
+}
+
+.tkachyk,
+.margarita,
+.scrollbutton,
+.developedBy{
+    position: absolute;
+}
+
+.tkachyk{
+    right: 0px;
+
+    z-index: 0;
+}
+
+.margarita{
+    left: 0px;
+
+    z-index: 0;
+}
+
+.scrollbutton{
+    right: 69px;
+    top: 69px;
+}
+
+.developedBy{
+    bottom: 8px;
+}
+
+@media screen and (max-width: 1635px) {
+    .tkachyk{
+        left: 37px;
+        top: 50px;
+    }
+
+    .margarita{
+        left: auto;
+        right: 48px;
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .scrollbutton{
+        right: 55px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer{
+        padding-top: 117px;
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 841px) {
+    .scrollbutton{
+        width: 79px!important;
+        height: 79px!important;
+        right: 45px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .scrollbutton{
+        right: 22px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .footer{
+        padding-top: 97px;
+        padding-bottom: 90px;
+    }
+
+    .tkachyk{
+        left: auto;
+        top: 58px;
+        right: 0px;
+    }
+
+    .margarita{
+        right: auto;
+        top: 180px;
+        left: 0px;
+    }
+
+    .scrollbutton{
+        display: none;
+    }
+}

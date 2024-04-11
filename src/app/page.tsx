@@ -1,5 +1,6 @@
 import {Navbar, Header, AboutMe, Portfolio, Services, Advantages, Contacts} from "@/components";
 import React from "react";
+import Footer from "@/components/Footer";
 
 /**
  * Home Page of the Application
@@ -15,6 +16,7 @@ export default function Home(): JSX.Element {
       <Portfolio />
       <Services />
       <Contacts />
+      <Footer />
     </>
   );
 }
