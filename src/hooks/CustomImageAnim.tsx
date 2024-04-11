@@ -4,8 +4,8 @@ import React, {useEffect, useRef, useState} from "react";
 import {motion, useScroll} from "framer-motion";
 import Image from "next/image";
 import {ICustomImage} from "@/types/custom-image";
-import {customLazyLoading} from "../constants/customLazyLoading";
-import {roundDecimalNumber} from "@/constants/roundDecimalNumber";
+import {customLazyLoading} from "../utils/customLazyLoading";
+import {roundDecimalNumber} from "@/utils/roundDecimalNumber";
 import styles from "@/styles/hooks/custom-image-anim.module.css";
 
 
