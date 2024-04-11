@@ -1,15 +1,54 @@
-.buttonScroll{
+.priceScroll{
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly ;
     align-items: center;
-    width: 660px;
+    gap: 55px;
+}
+
+.leftBoxText,
+.rightBoxText{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBoxText{
+    align-items: flex-end;
+}
+
+.rightBoxText{
+    align-items: flex-start;
+}
+
+.firstBlockSecondText{
+    margin-right: 9px;
+}
+
+.secondBlockSecondText{
+    margin-left: 9px;
+}
+
+@media screen and (max-width: 850px) {
+    .priceScroll{
+        gap: 44px;
+    }
+
+    .scrollButton{
+        width: 90px!important;
+        height: 90px!important;
+    }
+
+    .scrollButtonArrow{
+        width: 33px!important;
+    }
 }
 
 @media screen and (max-width: 688px) {
-    .buttonScroll{
+    .priceScroll{
         flex-direction: column;
-        height: 370px;
-        width: 300px;
+        gap: 36px;
+    }
+
+    .leftBoxText,
+    .rightBoxText{
+        align-items: center;
     }
 }

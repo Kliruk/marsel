@@ -11,6 +11,7 @@ export interface IButtonsLinks extends IButtons {
 }
 
 export interface IButtonsScrolls extends IButtons {
+    uniqueClassNameArrow?: string
     size: number,
     widthArrow: number,
     widthStar: number,
