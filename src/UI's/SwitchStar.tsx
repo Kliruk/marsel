@@ -8,9 +8,16 @@ import {IStarSwitch} from "@/types/ui/star-switch";
 
 
 /**
- *
- * @param param0
- * @returns
+ * Returns star, which uses for indicate current option between options,
+ * in future: multiply animations
+ * @param {opacity} opacity of star after the animation
+ * @param {scale} scale of star after the animation
+ * @param {duration} duration of animation
+ * @param {ease} type of animation
+ * @param {widthStar} width of the star (size, both height and width values)
+ * @param {uniqueClassName} unique class name in order to control css of element,
+ * adaptation for example
+ * @return {JSX.Element}
  */
 const SwitchStar = ({opacity=1, scale=1, duration=.2, ease="easeIn",
   widthStar=15, uniqueClassName} : IStarSwitch) : JSX.Element => {
