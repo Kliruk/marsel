@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/ui's/buttons-scrolls.module.css";
 import Star from "../../Star";
-import {IButtonsScrolls} from "@/types/buttons";
+import {IButtonsScrolls} from "@/types/ui/buttons";
 import {STAR_DELAY_DEFAULT} from "@/constants/constants";
 
 /**

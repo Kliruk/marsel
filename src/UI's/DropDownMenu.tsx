@@ -2,7 +2,7 @@
 
 import React, {useState} from "react";
 import styles from "@/styles/ui's/drop-down-menu.module.css";
-import {IDropDownMenu} from "@/types/drop-down-menu";
+import {IDropDownMenu} from "@/types/ui/drop-down-menu";
 
 
 /**

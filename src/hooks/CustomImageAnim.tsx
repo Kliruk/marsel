@@ -3,7 +3,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import {motion, useScroll} from "framer-motion";
 import Image from "next/image";
-import {ICustomImage} from "@/types/custom-image";
+import {ICustomImage} from "@/types/hooks/custom-image";
 import {customLazyLoading} from "../constants/customLazyLoading";
 import {roundDecimalNumber} from "@/constants/roundDecimalNumber";
 import styles from "@/styles/hooks/custom-image-anim.module.css";

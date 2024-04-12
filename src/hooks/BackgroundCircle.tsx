@@ -3,7 +3,7 @@
 import React, {useEffect, useRef} from "react";
 import styles from "@/styles/hooks/background-circle.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
-import {IBackgroundCircle} from "@/types/background-props";
+import {IBackgroundCircle} from "@/types/hooks/background-props";
 
 
 /**

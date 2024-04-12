@@ -1,6 +1,6 @@
 "use client";
 
-import {IButtonsLinks} from "@/types/buttons";
+import {IButtonsLinks} from "@/types/ui/buttons";
 import {useRouter} from "next/navigation";
 import React from "react";
 import Star from "../../Star";

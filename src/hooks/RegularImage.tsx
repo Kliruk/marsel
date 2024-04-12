@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/styles/hooks/regular-image.module.css";
-import {ICustomImage} from "@/types/custom-image";
+import {ICustomImage} from "@/types/hooks/custom-image";
 import {customLazyLoading} from "@/constants/customLazyLoading";
 
 /**

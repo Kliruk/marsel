@@ -1,4 +1,4 @@
-import {ICircle} from "@/types/circle";
+import {ICircle} from "@/types/ui/circle";
 import styles from "@/styles/ui's/nameCircle.module.css";
 import Image from "next/image";
 import React from "react";

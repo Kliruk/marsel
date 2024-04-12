@@ -8,7 +8,7 @@ import {useRef} from "react";
 import {motion, useScroll, useSpring, useTransform, useMotionValue,
   useVelocity, useAnimationFrame} from "framer-motion";
 import {wrap} from "@motionone/utils";
-import {IImageCarousel} from "@/types/image-carousel";
+import {IImageCarousel} from "@/types/hooks/image-carousel";
 
 // !!!!!!!!!!!!!!!!!!!
 // додати можливість налаштування різної швидкості для адаптації

@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 import React from "react";
 import Star from "./Star";
 import styles from "@/styles/ui's/switch-star.module.css";
-import {IStarSwitch} from "@/types/star-switch";
+import {IStarSwitch} from "@/types/ui/star-switch";
 
 
 /**

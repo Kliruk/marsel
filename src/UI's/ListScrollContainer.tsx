@@ -1,4 +1,4 @@
-import {IScrollContainer} from "@/types/scroll-container";
+import {IScrollContainer} from "@/types/ui/scroll-container";
 import React, {useEffect, useRef} from "react";
 import styles from "@/styles/ui's/list-scroll-container.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
