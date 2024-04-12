@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "@/styles/components/list-of-services.module.css";
-import {LIST_OF_SERVICES} from "@/constants/constants";
 import {IListOfServices} from "@/types/components/list-of-services";
 import SwitchStar from "@/UI's/SwitchStar";
+import {LIST_OF_SERVICES} from "@/constants/services";
 
 const ListOfServices = ({currentService, setCurrentService} : IListOfServices) => {
   return (

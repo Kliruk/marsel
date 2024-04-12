@@ -3,7 +3,9 @@ import styles from "@/styles/components/contacts.module.css";
 import CustomHeader from "@/hooks/CustomHeader";
 import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
 import ImageCarousel from "@/hooks/ImageCarousel";
-import {IMAGE_CAROUSEL, INSTAGRAM, STAR_DELAY_DEFAULT, TELEGRAM} from "@/constants/constants";
+import {INSTAGRAM, TELEGRAM} from "@/constants/urls";
+import {STAR_DELAY_DEFAULT} from "@/constants/default-values";
+import {IMAGE_CAROUSEL} from "@/constants/image-carousel";
 
 
 const Contacts = () => {

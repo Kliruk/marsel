@@ -3,7 +3,7 @@
 import React, {ReactNode, useEffect, useRef} from "react";
 import {ICustomParagraph} from "@/types/hooks/custom-header";
 import {motion, useAnimation, useInView} from "framer-motion";
-import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/constants";
+import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/default-values";
 
 
 /**

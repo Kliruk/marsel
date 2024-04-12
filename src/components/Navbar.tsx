@@ -2,11 +2,11 @@ import ButtonLink from "@/UI's/buttons/buttons-links/ButtonLink";
 import ButtonRounded from "@/UI's/buttons/buttons-links/ButtonRounded";
 import styles from "@/styles/components/navbar.module.css";
 import React from "react";
-import {INSTAGRAM} from "@/constants/constants";
+import {INSTAGRAM} from "@/constants/urls";
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>
+    <div id="header" className={styles.navbar}>
       <div className={styles.buttonLinks}>
         <ButtonLink starAnimationDelayMin={0.8} text="Prices"
           link="#prices" type="none" widthStar={12} />

@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from "react";
 import styles from "@/styles/components/service.module.css";
 import {IData, IService} from "@/types/components/service";
-import {LIST_OF_SERVICES, SERVICES} from "@/constants/constants";
+import {LIST_OF_SERVICES, SERVICES} from "@/constants/services";
 import CustomHeader from "@/hooks/CustomHeader";
 import CustomImageAnim from "@/hooks/CustomImageAnim";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";

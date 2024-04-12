@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@/styles/ui's/buttons-scrolls.module.css";
 import Star from "../../Star";
 import {IButtonsScrolls} from "@/types/ui/buttons";
-import {STAR_DELAY_DEFAULT} from "@/constants/constants";
+import {STAR_DELAY_DEFAULT} from "@/constants/default-values";
 
 /**
  *  Return a button which used for scroll-links

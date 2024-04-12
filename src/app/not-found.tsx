@@ -3,6 +3,13 @@ import CustomHeader from "@/hooks/CustomHeader";
 import Image from "next/image";
 import styles from "@/styles/root/global-not-found.module.css";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: " · Маргарита Ткачук",
+  description: "-----------",
+};
+
 
 /**
  * Global page 404, that will appear when it is unknown route

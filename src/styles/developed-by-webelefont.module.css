@@ -1,0 +1,15 @@
+.developedBy{
+    display: flex;
+}
+
+.developedByText {
+    position: relative;
+    font-family: var(--font-raleway);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+
+    color: var(--color-black);
+
+    top: 3px;
+}

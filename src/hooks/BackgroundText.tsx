@@ -4,7 +4,7 @@ import React, {useEffect, useRef} from "react";
 import styles from "@/styles/hooks/background-text.module.css";
 import {motion, useAnimation, useInView} from "framer-motion";
 import {IBackgroundText} from "@/types/hooks/background-props";
-import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/constants";
+import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/default-values";
 
 
 /**

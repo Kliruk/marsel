@@ -3,7 +3,8 @@
 import React from "react";
 import styles from "@/styles/hooks/image-carousel.module.css";
 import RegularImage from "@/hooks/RegularImage";
-import {IMAGE_CAROUSEL, IMAGE_CAROUSEL_SPEED_DEFAULT} from "@/constants/constants";
+import {IMAGE_CAROUSEL_SPEED_DEFAULT} from "@/constants/default-values";
+import {IMAGE_CAROUSEL} from "@/constants/image-carousel";
 import {useRef} from "react";
 import {motion, useScroll, useSpring, useTransform, useMotionValue,
   useVelocity, useAnimationFrame} from "framer-motion";
