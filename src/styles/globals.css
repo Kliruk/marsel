@@ -38,6 +38,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body, html{
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -46,7 +50,6 @@ body {
   color: var(--color-black);
 
   width: 100vw;
-  overflow-x: hidden;
 }
 
 button {
@@ -171,7 +174,7 @@ h4 {
   }
 
   h4 {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .paragraphTypical{
@@ -197,5 +200,9 @@ h4 {
 
   h3 {
     font-size: 45px;
+  }
+
+  h4 {
+    font-size: 30px;
   }
 }

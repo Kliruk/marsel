@@ -46,9 +46,11 @@ const Service = ({currentService}: IService) => {
           src={"/photo/about-me/aboutme-coupleWithDonut-q20.webp"} alt={"Портрет"}
           width={651} height={1044} />
         <div className={styles.description}>
-          <CustomHeader headerType={"h4"} isYMoves={false}>
-            {data.header}
-          </CustomHeader>
+          <div className={styles.descriptionHeader}>
+            <CustomHeader headerType={"h4"} isYMoves={false}>
+              {data.header}
+            </CustomHeader>
+          </div>
           <p className={`${styles.descriptionText} paragraphTypical`}>{data.description}</p>
           <ButtonSquared text={"ПОРТФОЛІО"} link={"/portfolio"} type={"none"} widthStar={12} />
         </div>

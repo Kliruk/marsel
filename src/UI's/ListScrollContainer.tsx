@@ -26,7 +26,7 @@ const ListScrollContainer = ({uniqueClassName, data}: IScrollContainer)
 
   return (
     <div ref={ref} className={styles.wrapper}>
-      <div className={`${styles.scrollContainer} ${uniqueClassName}`}>
+      <div className={`${styles.listScrollContainer} ${uniqueClassName}`}>
         {data.map((item, _) => (
           <React.Fragment key={_}>
             <motion.p

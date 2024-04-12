@@ -35,7 +35,7 @@
     flex-direction: column;
 }
 
-.description{
+.descriptionHeader{
     max-width: 719px;
 }
 
@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     
-    gap: 10px;
+    gap: 15px;
 
     flex-direction: column;
 }
@@ -143,5 +143,69 @@
     .image{
         width: 594px!important;
         height: 964px!important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .descriptionText{
+        max-width: 292px;
+    }
+
+    .descriptionHeader{
+        max-width: 618px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .service{
+        gap: 150px;
+    }
+
+    .exclusiveScrollContainer,
+    .moreScrollContainer{
+        width: 317px!important;
+        height: 505px!important;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .image{
+        width: 434px!important;
+        height: 660px!important;
+    }
+
+    .service{
+        margin-top: 90px;
+    }
+
+    .descriptionBlock,
+    .advantagesBlock,
+    .moreBlock{
+        gap: 91px;
+    }
+
+    .descriptionHeader{
+        max-width: 525px;
+    }
+
+    .headerAndQuickAdvantages{
+        gap: 20px;
+    }
+
+    .advantages{
+        gap: 62px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .image{
+        width: 330px!important;
+        height: 520px!important;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .exclusiveScrollContainer{
+        width: 268px!important;
     }
 }

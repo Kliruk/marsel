@@ -53,6 +53,7 @@
 @media screen and (max-width: 992px) {
     .prices{
         margin-top: 280px;
+        gap: 110px;
     }
 }
 
@@ -61,6 +62,8 @@
         margin-top: 170px;
         margin-left: 29px;
         margin-right: 29px;
+
+        gap: 80px;
     }
 
     .backTextMoments{
@@ -71,5 +74,15 @@
     .backTextMagic{
         right: 0;
         top: 180px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .backTextMagic{
+        right: -75px;
+    }
+
+    .backTextMoments{
+        left: 13px;
     }
 }
