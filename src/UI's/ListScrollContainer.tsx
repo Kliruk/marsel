@@ -1,7 +1,8 @@
 import {IScrollContainer} from "@/types/ui/scroll-container";
 import React, {useEffect, useRef} from "react";
 import styles from "@/styles/ui's/list-scroll-container.module.css";
-import {motion, useAnimation, useInView} from "framer-motion";
+import {useAnimation, useInView} from "framer-motion";
+import AnimOpcY from "@/animations/AnimOpcY";
 
 /**
  * Return a vertical scrollable div with bunch of elements
@@ -22,44 +23,32 @@ const ListScrollContainer = ({uniqueClassName, data}: IScrollContainer)
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [mainControls, isInView]);
 
   return (
     <div ref={ref} className={styles.wrapper}>
       <div className={`${styles.listScrollContainer} ${uniqueClassName}`}>
         {data.map((item, _) => (
           <React.Fragment key={_}>
-            <motion.p
-              variants={{
-                hidden: {opacity: 0, y: 10},
-                visible: {opacity: 1, y: 0},
-              }}
-              initial="hidden"
-              animate={mainControls}
-              transition={{
-                duration: .3,
-                delay: 0.3 + (_ * 0.1),
-                ease: "easeIn",
-              }}
-              className={`${styles.text} paragraphTypical`}
-            >{item}</motion.p>
-            <motion.div
-              variants={{
-                hidden: {opacity: 0, y: 10},
-                visible: {opacity: 1, y: 0},
-              }}
-              initial="hidden"
-              animate={mainControls}
-              transition={{
-                duration: .3,
-                delay: 0.5 + (_ * 0.1),
-                ease: "easeIn",
-              }}
-              className={styles.line} />
+            <div className={styles.textWrapper}>
+              <AnimOpcY mainControls={mainControls}>
+                <p className={`${styles.text} paragraphTypical`}>{item}</p>
+              </AnimOpcY>
+            </div>
+            <div className={styles.lineWrapper}>
+              <AnimOpcY
+                mainControls={mainControls}
+                queueOrder={_}
+                delay={.5}
+                delayMultiplier={.1}>
+                <div className={styles.line} />
+              </AnimOpcY>
+            </div>
           </React.Fragment>
         ))}
+        <div className={styles.marginTop} />
       </div>
-      <div className={styles.shading}/>
+      <div className={styles.shading} />
     </div>
   );
 };

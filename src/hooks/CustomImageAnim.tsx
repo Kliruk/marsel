@@ -1,7 +1,7 @@
 "use client";
 
 import React, {useEffect, useRef, useState} from "react";
-import {motion, useScroll} from "framer-motion";
+import {useScroll} from "framer-motion";
 import Image from "next/image";
 import {ICustomImage} from "@/types/hooks/custom-image";
 import {customLazyLoading} from "../utils/customLazyLoading";
@@ -68,7 +68,7 @@ const CustomImageAnim = ({src, alt, width, height, uniqueClassName}: ICustomImag
   }, [scrollYProgressAfter]);
 
   return (
-    <motion.div
+    <div
       className={`${styles.wrapper} ${uniqueClassName}`}
       ref={ref}
       style={{filter: `saturate(${valueBefore === 1 ? valueAfter : valueBefore})`,
@@ -83,7 +83,7 @@ const CustomImageAnim = ({src, alt, width, height, uniqueClassName}: ICustomImag
       <Image className={styles.image} placeholder={customLazyLoading(width, height)}
         src={src} alt={alt} sizes="100%"
         fill />
-    </motion.div>
+    </div>
   );
 };
 

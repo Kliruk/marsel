@@ -8,7 +8,8 @@ import CustomHeader from "@/hooks/CustomHeader";
 import CustomImageAnim from "@/hooks/CustomImageAnim";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";
 import ListScrollContainer from "@/UI's/ListScrollContainer";
-import {motion, useAnimationControls} from "framer-motion";
+import {useAnimationControls} from "framer-motion";
+import AnimOpcY from "@/animations/AnimOpcY";
 
 const Service = ({currentService}: IService) => {
   const service: Record<string, any> = SERVICES;
@@ -17,7 +18,8 @@ const Service = ({currentService}: IService) => {
   const mainControl = useAnimationControls();
 
   useEffect(() => {
-    if (currentService != LIST_OF_SERVICES[2] || prevService != LIST_OF_SERVICES[2]) {
+    if ((currentService != LIST_OF_SERVICES[2] || prevService != LIST_OF_SERVICES[2]) &&
+      (currentService != prevService)) {
       mainControl.start("hidden");
       setTimeout(() => {
         setPrevService(currentService);
@@ -28,18 +30,16 @@ const Service = ({currentService}: IService) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentService, mainControl]);
 
+  useEffect(() => {
+    mainControl.start("visible");
+  }, []);
+
   return (
-    <motion.div
-      className={styles.service}
-      variants={{
-        hidden: {opacity: 0, y: -10},
-        visible: {opacity: 1, y: 0},
-      }}
-      animate={mainControl}
-      transition={{
-        duration: .3,
-        ease: "easeIn",
-      }}
+    <AnimOpcY
+      mainControls={mainControl}
+      yStart={-10}
+      delay={0}
+      uniqueClassName={styles.service}
     >
       <div className={styles.descriptionBlock}>
         <CustomImageAnim uniqueClassName={styles.image}
@@ -93,7 +93,7 @@ const Service = ({currentService}: IService) => {
           </div>
         </div>
       }
-    </motion.div>
+    </AnimOpcY>
   );
 };
 

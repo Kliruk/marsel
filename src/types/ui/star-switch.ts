@@ -1,8 +1,6 @@
-export interface IStarSwitch{
-    opacity?: number,
-    scale?: number,
-    duration?: number,
-    ease?: string,
+import { IAnimSclOpc } from "../anim/anim-scl-opc";
+
+export interface IStarSwitch extends IAnimSclOpc{
     widthStar: number,
     uniqueClassName: string
 }

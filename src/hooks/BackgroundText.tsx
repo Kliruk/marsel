@@ -2,9 +2,9 @@
 
 import React, {useEffect, useRef} from "react";
 import styles from "@/styles/hooks/background-text.module.css";
-import {motion, useAnimation, useInView} from "framer-motion";
+import {useAnimation, useInView} from "framer-motion";
 import {IBackgroundText} from "@/types/hooks/background-props";
-import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/default-values";
+import AnimOpcBack from "@/animations/AnimOpcBack";
 
 
 /**
@@ -13,9 +13,10 @@ import {HOOKS_DELAY_DEFAULT, HOOKS_DURATION_DEFAULT} from "@/constants/default-v
  * @param {size} size of text, only two option avaliable: small(100px or big(200px)
  * @return {JSX.Element}
  */
-const BackgroundText = ({children, size="big", uniqueClassName, delay=HOOKS_DELAY_DEFAULT,
-  duration=HOOKS_DURATION_DEFAULT}
-  : IBackgroundText) => {
+const BackgroundText = ({children, size="big", uniqueClassName,
+  color="var(--color-almost-transparent)", isYMoves=false, duration, delay,
+  initialY, y, initialOpacity, opacity, initialBackground, background, ease}
+  : IBackgroundText): JSX.Element => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
 
@@ -28,36 +29,28 @@ const BackgroundText = ({children, size="big", uniqueClassName, delay=HOOKS_DELA
   }, [mainControls, isInView]);
 
   return (
-    <motion.p ref={ref}
-      variants={{
-        hidden: {
-          opacity: 0,
-          WebkitTextFillColor: "transparent",
-          background:
-          // eslint-disable-next-line max-len
-          "linear-gradient(91.1deg, var(--color-almost-transparent) -44.14%, rgba(52, 52, 52, 0) 32.72%)",
-          backgroundClip: "text",
-        },
-        visible: {
-          opacity: 1,
-          WebkitTextFillColor: "transparent",
-          background:
-          // eslint-disable-next-line max-len
-          "linear-gradient(91.1deg, var(--color-almost-transparent) 97.12%, rgba(52, 52, 52, 0) 136.73%)",
-          backgroundClip: "text",
-        },
-      }}
-      initial="hidden"
-      animate={mainControls}
-      transition={{
-        duration: duration,
-        delay: delay,
-        ease: "linear",
-      }}
-      className={`${size === "big" ? styles.backgroundTextBig :
-    styles.backgroundTextSmall} ${uniqueClassName}`}>
-      {children}
-    </motion.p>
+    <AnimOpcBack
+      color={color}
+      isYMoves={isYMoves}
+      mainControls={mainControls}
+      duration={duration}
+      delay={delay}
+      initialY={initialY}
+      y={y}
+      initialOpacity={initialOpacity}
+      opacity={opacity}
+      initialBackground={initialBackground}
+      background={background}
+      ease={ease}
+      uniqueClassName={`${size === "big" ? styles.backgroundTextBig :
+      styles.backgroundTextSmall} ${uniqueClassName}`}>
+      <p ref={ref}
+      //   className={`${size === "big" ? styles.backgroundTextBig :
+      // styles.backgroundTextSmall} ${uniqueClassName}`}
+      >
+        {children}
+      </p>
+    </AnimOpcBack>
   );
 };
 
