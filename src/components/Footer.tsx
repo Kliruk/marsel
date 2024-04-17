@@ -8,13 +8,17 @@ import DevelopedByWebElefont from "@/DevelopedByWebElepfont/DevelopedByWebElefon
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <BackgroundText size="small" uniqueClassName={styles.tkachyk}>TKACHUK</BackgroundText>
-      <BackgroundText size="small" uniqueClassName={styles.margarita}>MARGARITA</BackgroundText>
+      <BackgroundText size="small" uniqueClassName={styles.tkachyk} isYMoves={false}>
+        TKACHUK
+      </BackgroundText>
+      <BackgroundText size="small" uniqueClassName={styles.margarita} isYMoves={false}>
+        MARGARITA
+      </BackgroundText>
       <div className={styles.header}>
         <CustomHeader headerType="h3" isYMoves={false}>MARSELIN.</CustomHeader>
       </div>
       <ButtonScroll uniqueClassName={styles.scrollbutton} size={100} widthArrow={30} widthStar={11}
-        orientation={"upward"} star={true} scroll={"#header"} />
+        orientation={"upward"} star={true} scrollTo={"#header"} />
       <div className={styles.developedBy}>
         <DevelopedByWebElefont />
       </div>

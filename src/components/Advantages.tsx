@@ -13,7 +13,7 @@ const Advantages = () => {
     <div className={styles.main}>
       <div className={styles.headerAndFirstAdv}>
         <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextHistory}`}
-          delay={.1}>
+          delay={.1} isYMoves={false}>
           IСТ<br />ОРII
         </BackgroundText>
         <div className={styles.firstAdvAndPhoto}>
@@ -40,11 +40,11 @@ const Advantages = () => {
       </div>
       <div className={styles.secondThirdAdv}>
         <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextMoments}`}
-          delay={.1}>
+          delay={.1} isYMoves={false}>
           МОМ<br />ЕНТИ
         </BackgroundText>
         <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextMemories}`}
-          delay={.1}>
+          delay={.1} isYMoves={false}>
           СПО<br />ГАДИ
         </BackgroundText>
         <div className={styles.thirdAdvAndPhoto}>
@@ -58,7 +58,7 @@ const Advantages = () => {
 
         <div className={styles.secondAdvAdnPhoto}>
           <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextFeelings}`}
-            delay={.1}>
+            delay={.1} isYMoves={false}>
           ПОЧУ<br />ТТЯ
           </BackgroundText>
           <p className={styles.secondAdv}>Повний спектр послуг по створенню контенту
@@ -72,7 +72,7 @@ const Advantages = () => {
       </div>
       <div className={`${styles.lastPhotoAndText} ${styles.photoAndNum}`}>
         <BackgroundText uniqueClassName={`${styles.backText} ${styles.backTextMarselin}`}
-          delay={.1}>
+          delay={.1} isYMoves={false}>
           MARS<br />ELIN
         </BackgroundText>
         <div className={`${styles.lastPhotoAndNum} ${styles.photoAndNum}`}>

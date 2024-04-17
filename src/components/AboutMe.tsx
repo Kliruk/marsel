@@ -29,10 +29,12 @@ const AboutMe = () => {
           {/* <p className={`paragraphSmaller ${styles.myPassion__comment}`}>
             Я вірю, що кожен момент має свою власну красу</p> */}
         </div>
-        <BackgroundText uniqueClassName={styles.myPassion__leftBackText}>
+        <BackgroundText uniqueClassName={styles.myPassion__leftBackText}
+          isYMoves={false}>
           LOVE<br />STORY
         </BackgroundText>
-        <BackgroundText uniqueClassName={styles.myPassion__rightBackText}>
+        <BackgroundText uniqueClassName={styles.myPassion__rightBackText}
+          isYMoves={false}>
           LOVE<br />STORY
         </BackgroundText>
       </div>

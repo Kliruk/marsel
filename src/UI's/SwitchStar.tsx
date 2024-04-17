@@ -1,10 +1,10 @@
 "use client";
 
-import {motion} from "framer-motion";
 import React from "react";
 import Star from "./Star";
 import styles from "@/styles/ui's/switch-star.module.css";
 import {IStarSwitch} from "@/types/ui/star-switch";
+import AnimSclOpc from "@/animations/AnimSclOpc";
 
 
 /**
@@ -19,22 +19,20 @@ import {IStarSwitch} from "@/types/ui/star-switch";
  * adaptation for example
  * @return {JSX.Element}
  */
-const SwitchStar = ({opacity=1, scale=1, duration=.2, ease="easeIn",
-  widthStar=15, uniqueClassName} : IStarSwitch) : JSX.Element => {
+const SwitchStar = ({opacity, scale, duration, ease,
+  widthStar=15, uniqueClassName, initialOpacity, initialScale} : IStarSwitch) : JSX.Element => {
   return (
-    <motion.div
-      className={`${styles.starSwitch} ${uniqueClassName}`}
-      animate={{
-        opacity: opacity,
-        scale: scale,
-      }}
-      transition={{
-        duration: duration,
-        ease: ease,
-      }}
-    >
-      <Star width={widthStar} />
-    </motion.div>
+    <AnimSclOpc
+      opacity={opacity}
+      scale={scale}
+      duration={duration}
+      ease={ease}
+      initialOpacity={initialOpacity}
+      initialScale={initialScale}>
+      <div className={`${styles.starSwitch} ${uniqueClassName}`}>
+        <Star width={widthStar} />
+      </div>
+    </AnimSclOpc>
   );
 };
 

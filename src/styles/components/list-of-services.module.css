@@ -29,11 +29,6 @@
     color: var(--color-red) !important;
 }
 
-.starDivWithAnimation {
-    opacity: 0;
-    transform: scale(0);
-}
-
 .rightFade,
 .leftFade {
     display: none;

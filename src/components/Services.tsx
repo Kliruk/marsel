@@ -18,10 +18,10 @@ const Services = () => {
           </CustomHeader>
         </div>
         <BackgroundText duration={1} delay={0}
-          uniqueClassName={styles.backTextMoments} >
+          uniqueClassName={styles.backTextMoments} isYMoves={false}>
           Моментiв
         </BackgroundText>
-        <BackgroundText delay={.2} uniqueClassName={styles.backTextMagic} >
+        <BackgroundText delay={.2} uniqueClassName={styles.backTextMagic} isYMoves={false}>
           магiя
         </BackgroundText>
       </div>
