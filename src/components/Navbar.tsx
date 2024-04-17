@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <div id="header" className={styles.navbar}>
       <div className={styles.buttonLinks}>
-        <ButtonLink starAnimationDelayMin={0.8} text="Prices"
-          link="#prices" type="none" widthStar={12} />
+        <ButtonLink starAnimationDelayMin={0.8} text="prices"
+          link="#list-of-prices" type="none" widthStar={12} />
         <ButtonLink starAnimationDelayMin={0.8} text="Reviews"
           link="#reviews" type="none" widthStar={12} />
         <ButtonLink starAnimationDelayMin={0.8} text="Portfolio"

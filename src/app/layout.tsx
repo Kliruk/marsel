@@ -27,7 +27,7 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="en">
-      <body className={`${raleway.className} 
+      <body id="top" className={`${raleway.className} 
             ${bergamasco.variable} ${mak.variable}`}>
         {children}
       </body>
