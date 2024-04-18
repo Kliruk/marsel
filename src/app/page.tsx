@@ -1,5 +1,5 @@
-import {Navbar, Header, AboutMe, Portfolio,
-  Services, Advantages, Contacts, Footer} from "@/components";
+import {Header, AboutMe, Portfolio,
+  Services, Advantages, Contacts} from "@/components";
 import React from "react";
 
 /**
@@ -9,14 +9,12 @@ import React from "react";
 export default function Home(): JSX.Element {
   return (
     <>
-      <Navbar />
       <Header />
       <AboutMe />
       <Advantages />
       <Portfolio />
       <Services />
       <Contacts />
-      <Footer />
     </>
   );
 }

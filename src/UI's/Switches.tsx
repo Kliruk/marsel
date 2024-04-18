@@ -1,24 +1,23 @@
 import React from "react";
-import styles from "@/styles/components/list-of-services.module.css";
-import {IListOfServices} from "@/types/components/list-of-services";
+import styles from "@/styles/ui's/switches.module.css";
+import {IListOfServices} from "@/types/ui/switches";
 import SwitchStar from "@/UI's/SwitchStar";
-import {LIST_OF_SERVICES} from "@/constants/services";
 
-const ListOfServices = ({currentService, setCurrentService} : IListOfServices) => {
+const ListOfServices = ({current, setCurrent, list, uniqueClassName} : IListOfServices) => {
   return (
-    <div className={styles.listOfService}>
+    <div className={`${styles.listOfService} ${uniqueClassName}`}>
       <ul className={styles.list}>
-        {LIST_OF_SERVICES.map((serviceName) => (
+        {list.map((serviceName) => (
           <li
             className={styles.service}
-            onClick={() => setCurrentService(serviceName)}
+            onClick={() => setCurrent(serviceName)}
             style={{
-              color: currentService === serviceName ?
+              color: current === serviceName ?
                   "var(--color-black)" : "var(--color-list-unactive)",
             }}
             key={serviceName}>
             {serviceName}
-            {serviceName === currentService &&
+            {serviceName === current &&
                 <SwitchStar widthStar={15} uniqueClassName={styles.starDivWithAnimation} />
             }
           </li>

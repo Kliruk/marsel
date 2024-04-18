@@ -21,7 +21,7 @@ import AnimOpcBack from "@/animations/AnimOpcBack";
  */
 const CustomHeader = ({children, headerType, color, isYMoves,
   duration, delay, initialY, y, initialOpacity, opacity, initialBackground,
-  background, ease}
+  background, ease, yDuration}
    : ICustomParagraph): JSX.Element => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
@@ -49,6 +49,7 @@ const CustomHeader = ({children, headerType, color, isYMoves,
         initialBackground={initialBackground}
         background={background}
         ease={ease}
+        yDuration={yDuration}
       >
         {(() : ReactNode => {
           switch (headerType) {

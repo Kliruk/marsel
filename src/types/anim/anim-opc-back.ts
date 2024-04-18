@@ -13,6 +13,7 @@ export interface IAnimOpcBack {
     initialBackground?: string,
     background?: string,
     ease?: string,
+    yDuration?: number
 }
 
 export interface IAnimOpcBackAllParams extends IAnimOpcBack, IChildrens, IAnimOpcBackRequired{
