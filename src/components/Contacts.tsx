@@ -31,7 +31,7 @@ const Contacts = () => {
       <div className={styles.carousel}>
         <ImageCarousel width={732} height={751} uniqueClassName={styles.images}
           images={IMAGE_CAROUSEL} speed={-65} />
-        <ImageCarousel width={732} height={751} uniqueClassName={styles.senondimages}
+        <ImageCarousel width={732} height={751} uniqueClassName={styles.secondImages}
           images={IMAGE_CAROUSEL} speed={65} />
       </div>
 

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset css start */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
+
+body { line-height: 1;}
+
+ol,ul { list-style: none;}
+
+blockquote,q { quotes: none;}
+
+blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
+
+table { border-collapse: collapse; border-spacing: 0;}
+/* reset css end */
+
+
 :root {
   --color-black: #343434;
   --color-almost-transparent: #F3F3F3;
@@ -29,10 +45,10 @@
   box-sizing: border-box;
 }
 
-html,
+/* html,
 :host {
   line-height: inherit;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -52,7 +68,8 @@ body {
   width: 100vw;
 }
 
-button {
+button,
+a {
   line-height: 1;
   transition: all .2s ease;
   text-transform: uppercase;
@@ -62,19 +79,21 @@ path {
   transition: all .2s ease;
 }
 
-button:hover {
+button:hover,
+a:hover {
   border-color: var(--color-red);
   color: var(--color-red);
   background: transparent;
   background-color: transparent;
 }
 
-button:hover path {
+button:hover path,
+a:hover path {
   fill: var(--color-red);
 }
 
-button:active,
-button:active path {
+button:active, a:active,
+button:active path, a:active path {
   border-color: transparent;
   fill: transparent;
   stroke: var(--color-red);

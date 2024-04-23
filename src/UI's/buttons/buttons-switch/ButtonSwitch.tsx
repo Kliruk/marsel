@@ -1,5 +1,3 @@
-"use client";
-
 import Star from "@/UI's/Star";
 import {IButtonsLinksSwitch} from "@/types/ui/buttons";
 import styles from "@/styles/ui's/buttons-switches.module.css";

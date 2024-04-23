@@ -79,9 +79,10 @@ const CustomImageAnim = ({src, alt, width, height, uniqueClassName}: ICustomImag
     >
       {/* no error here, because function {customLazyLoading} returns string
       and {placeholder} requires to be string*/}
+      {/* https://www.youtube.com/shorts/AT70PVbdfBI */}
       {/* @ts-ignore */}
       <Image className={styles.image} placeholder={customLazyLoading(width, height)}
-        src={src} alt={alt} sizes="100%"
+        src={src} alt={alt} sizes="50vw" quality={100}
         fill />
     </div>
   );

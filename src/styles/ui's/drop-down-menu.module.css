@@ -1,16 +1,16 @@
 .main {
     font-family: var(--font-bergamasco);
     font-weight: 600;
-    font-size: 23px;
+    font-size: 25px;
     text-transform: uppercase;
 
-    min-width: 184px;
-    height: 37px;
+    min-width: 220px;
+    height: 42px;
 
     padding: 5px 13px 0 13px;
 
     border: 1.5px solid #343434;
-    border-radius: 18px;
+    border-radius: 26px;
 
     transition: all .3s ease;
 
@@ -48,7 +48,6 @@
     border-radius: 20px;
     justify-content: normal;
     height: 211px;
-    min-width: 184px;
 
     background-color: var(--color-white);
 }
@@ -100,7 +99,7 @@
     content: "";
     border: 1px solid var(--color-black);
     margin: 17px 0;
-    width: 90%;
+    width: 75%;
 }
 
 .listI:last-child::after {

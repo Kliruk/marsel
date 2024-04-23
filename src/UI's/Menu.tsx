@@ -1,5 +1,3 @@
-"use client";
-
 import React, {useState} from "react";
 import styles from "@/styles/ui's/drop-down-menu.module.css";
 import {IDropDownMenu} from "@/types/ui/drop-down-menu";
@@ -12,7 +10,7 @@ import {IDropDownMenu} from "@/types/ui/drop-down-menu";
  * @param {func} func that triggers when user choose something
  * @return {JSX.Element}
  */
-const DropDownMenu = ({current, setCurrent, list, uniqueClassName}
+const Menu = ({current, setCurrent, list, uniqueClassName}
   : IDropDownMenu) : JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -55,4 +53,4 @@ const DropDownMenu = ({current, setCurrent, list, uniqueClassName}
   );
 };
 
-export default DropDownMenu;
+export default Menu;

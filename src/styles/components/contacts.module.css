@@ -1,28 +1,32 @@
 .main{
-    position: relative;
-    margin-top: 50px;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
+    
     width: 100%;
+    
+    margin-top: 185px;
 }
 
 .uniqueOffer{
-    position: absolute;
-    z-index: 1;
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
+    
     flex-direction: column;
+    z-index: 1;
 }
 
 .buttons{
     display: flex;
+    
     gap: 50px;
     margin-top: 46px;
 }
 
-.senondimages{
+.secondImages{
     display: none;
 }
 
@@ -31,11 +35,11 @@
 }
 /* tablet */
 @media screen and (max-width: 992px) {
-    .senondimages{
+    .secondImages{
         display: flex;
     }
 
-    .senondimages,
+    .secondImages,
     .images{
         width: 417px!important;
         height: 458px!important;
@@ -51,7 +55,7 @@
   
 /* phone */
 @media screen and (max-width: 688px) {
-    .senondimages,
+    .secondImages,
     .images{
         width: 196px!important;
         height: 267px!important;

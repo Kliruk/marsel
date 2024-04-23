@@ -5,7 +5,7 @@ interface IButtons {
 
 export interface IButtonsLinks extends IButtons {
     text: string,
-    link: string | -1,
+    link: string ,
     type: "big" | "small" | "previous" | "none"
     widthStar: number
 }

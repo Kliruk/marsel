@@ -7,7 +7,7 @@ import {LIST_OF_SERVICES, SERVICES} from "@/constants/services";
 import CustomHeader from "@/hooks/CustomHeader";
 import CustomImageAnim from "@/hooks/CustomImageAnim";
 import ButtonSquared from "@/UI's/buttons/buttons-links/ButtonSquared";
-import ListScrollContainer from "@/UI's/ListScrollContainer";
+import ScrollContainer from "@/UI's/ScrollContainer";
 import {useAnimationControls} from "framer-motion";
 import AnimOpcY from "@/animations/AnimOpcY";
 
@@ -71,7 +71,7 @@ const Service = ({currentService}: IService) => {
               <p className={styles.durationService}>{data.mainadvantages.duration}</p>
             </div>
           </div>
-          <ListScrollContainer uniqueClassName={styles.exclusiveScrollContainer}
+          <ScrollContainer uniqueClassName={styles.exclusiveScrollContainer}
             data={data.advantages} />
           <ButtonSquared text={"ЗАМОВИТИ"} link={"#contacts"} type={"none"} widthStar={12} />
         </div>
@@ -88,7 +88,7 @@ const Service = ({currentService}: IService) => {
             <CustomHeader headerType={"h4"} isYMoves={false}>
               Детальніше
             </CustomHeader>
-            <ListScrollContainer uniqueClassName={styles.moreScrollContainer}
+            <ScrollContainer uniqueClassName={styles.moreScrollContainer}
               data={data.more} />
           </div>
         </div>

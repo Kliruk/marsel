@@ -28,6 +28,17 @@ const BackgroundText = ({children, size="big", uniqueClassName,
     }
   }, [mainControls, isInView]);
 
+  const sizeReturns = () => {
+    switch (size) {
+      case "big":
+        return styles.backgroundTextBig;
+      case "regular":
+        return styles.backgroundTextRegular;
+      case "small":
+        return styles.backgroundTextSmall;
+    }
+  };
+
   return (
     <AnimOpcBack
       color={color}
@@ -42,11 +53,8 @@ const BackgroundText = ({children, size="big", uniqueClassName,
       initialBackground={initialBackground}
       background={background}
       ease={ease}
-      uniqueClassName={`${size === "big" ? styles.backgroundTextBig :
-      styles.backgroundTextSmall} ${uniqueClassName}`}>
+      uniqueClassName={`${sizeReturns()} ${uniqueClassName}`}>
       <p ref={ref}
-      //   className={`${size === "big" ? styles.backgroundTextBig :
-      // styles.backgroundTextSmall} ${uniqueClassName}`}
       >
         {children}
       </p>

@@ -27,9 +27,10 @@ const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage)
       }}>
       {/* no error here, because function {customLazyLoading} returns string
       and {placeholder} requires to be string*/}
+      {/* https://www.youtube.com/shorts/AT70PVbdfBI */}
       {/* @ts-ignore */}
       <Image placeholder={customLazyLoading(width, height)} className={styles.image}
-        src={src} alt={alt} sizes="100%" fill/>
+        src={src} alt={alt} sizes="50vw" quality={100} fill/>
     </div>
   );
 };

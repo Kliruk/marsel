@@ -1,3 +1,53 @@
-.switches{
-    font-size: 24px;
+.portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.switches {
+    font-size: 26px !important;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.headerAndBackGroundText {
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    z-index: 1;
+}
+
+.headerAndDropDown,
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerAndDropDown {
+    margin-top: 104px;
+}
+
+.dropDownMenu {
+    margin-top: 58px;
+}
+
+.portfolioBackText,
+.momentsBackText {
+    z-index: 0;
+}
+
+.momentsBackText {
+    right: 58px;
+    top: 208px;
+}
+
+.portfolioBackText {
+    left: 90px;
+    top: 472px;
 }
