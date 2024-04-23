@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 190px;
+}
+
+.switchButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 61px;
+    margin-bottom: 177px;
+}
+
+.comment{
+    display: flex;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.photo{
+    display: flex;
+    margin-top: 171px;
+}
