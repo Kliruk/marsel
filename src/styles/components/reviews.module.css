@@ -10,9 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-top: 61px;
-    margin-bottom: 177px;
+    gap: 12px;
+    margin-top: 53px;
 }
 
 .comment{
@@ -20,7 +19,9 @@
     max-width: 800px;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 177px;
 }
 
 .photo{
