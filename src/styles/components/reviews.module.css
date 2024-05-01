@@ -1,4 +1,9 @@
+.reviews{
+    position: relative;
+}
+
 .header{
+    font-family: var(--font-mak);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,25 +11,47 @@
     margin-top: 190px;
 }
 
+.animateReviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .switchButtons{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 36px;
     margin-top: 53px;
+    font-size: 30px;
 }
+
 
 .comment{
     display: flex;
-    max-width: 800px;
-    align-items: center;
-    justify-content: center;
+    max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 177px;
+    font-size: 40px;
+    font-weight: 300;
 }
 
 .photo{
     display: flex;
     margin-top: 171px;
+    gap: 129px;
+}
+
+.backTextReviews{
+    position: absolute;
+    left: 61px;
+    top: 50px;
+}
+
+.backTextmemories{
+    position: absolute;
+    left: 1242px;
+    top: 180px;
 }
