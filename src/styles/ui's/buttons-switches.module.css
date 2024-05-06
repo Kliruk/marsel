@@ -17,8 +17,27 @@
     stroke: transparent;
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 1400px) {
     .buttonSwitchesArrow{
-        width: 30px;
+        width: 34px;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .buttonSwitchesArrow{
+        width: 32px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .buttonSwitchesArrow{
+        width: 27px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .buttonSwitchesArrow{
+        width: 25px;
+    }
+}
+
