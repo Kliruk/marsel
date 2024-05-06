@@ -1,57 +1,419 @@
-.reviews{
+.reviews {
+    display: flex;
     position: relative;
-}
-
-.header{
-    font-family: var(--font-mak);
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-top: 190px;
-}
 
-.animateReviews{
-    display: flex;
+    gap: 171px;
+
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.switchButtons{
+.backTextReviews {
+    left: 61px;
+    top: 50px;
+
+    z-index: 0;
+}
+
+.backTextMemories {
+    right: 40px;
+    top: 180px;
+
+    z-index: 0;
+}
+
+.headerAndSwitches {
     display: flex;
-    justify-content: center;
     align-items: center;
+
+    gap: 53px;
+
+    flex-direction: column;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.switchButtonsAndCount {
+    display: flex;
+    align-items: flex-start;
+
     gap: 36px;
-    margin-top: 53px;
+
     font-size: 30px;
 }
 
-
-.comment{
-    display: flex;
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 177px;
-    font-size: 40px;
-    font-weight: 300;
+.countMaxLength{
+    font-size: 0.7em;
+    color: var(--color-list-unactive);
 }
 
-.photo{
+.commentAnim{
+    z-index: 1;
+}
+
+.count,
+.comment {
+    font-family: var(--font-mak);
+}
+
+.comment {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+
+    max-width: 1200px;
+}
+
+.images {
     display: flex;
-    margin-top: 171px;
     gap: 129px;
 }
 
-.backTextReviews{
-    position: absolute;
-    left: 61px;
-    top: 50px;
+.leftImage img,
+.rightImage img {
+    border-radius: 374px 374px 0px 0px;
 }
 
-.backTextmemories{
-    position: absolute;
-    left: 1242px;
-    top: 180px;
+@media screen and (max-width: 1840px) {
+    .images{
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 1710px) {
+    .leftImage,
+    .rightImage{
+        width: 100%!important;
+    }
+
+    .imagesAnim{
+        width: 90%;
+    }
+
+    .images{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .images{
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .leftImage{
+        height: 1030px!important;
+    }
+
+    .rightImage{
+        height: 980px!important;
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    .leftImage{
+        height: 985px!important;
+    }
+
+    .rightImage{
+        height: 960px!important;
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    .leftImage{
+        height: 950px!important;
+    }
+
+    .rightImage{
+        height: 910px!important;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .leftImage{
+        height: 900px!important;
+    }
+
+    .rightImage{
+        height: 850px!important;
+    }
+
+    .commentAnim{
+        width: 80%;
+    }
+
+    .comment{
+        font-size: 35px;
+        max-width: 100%;
+    }
+
+    .reviews{
+        gap: 140px;
+    }
+
+    .headerAndSwitches{
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .leftImage{
+        height: 860px!important;
+    }
+
+    .rightImage{
+        height: 810px!important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .leftImage{
+        height: 800px!important;
+    }
+
+    .rightImage{
+        height: 760px!important;
+    }
+
+    .comment{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .leftImage{
+        height: 760px!important;
+    }
+
+    .rightImage{
+        height: 720px!important;
+    }
+
+    .headerAndSwitches{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .leftImage{
+        height: 720px!important;
+    }
+
+    .rightImage{
+        height: 680px!important;
+    }
+
+    .images{
+        gap: 45px;
+    }
+
+    .reviews{
+        gap: 115px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .leftImage{
+        height: 660px!important;
+    }
+
+    .rightImage{
+        height: 620px!important;
+    }
+
+    .reviews{
+        gap: 95px;
+    }
+
+    .headerAndSwitches{
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .leftImage{
+        height: 610px!important;
+    }
+
+    .rightImage{
+        height: 580px!important;
+    }
+
+    .reviews{
+        gap: 85px;
+    }
+
+    .switchButtonsAndCount{
+        gap: 28px;
+        font-size: 27px;
+    }
+
+    .backTextMemories{
+        right: 10px;
+    }
+    
+    .backTextReviews{
+        left: 10px;
+    }   
+}
+
+@media screen and (max-width: 992px) {
+    .images{
+        flex-direction: column;
+    }
+
+    .imagesAnim{
+        width: 63%;
+    }
+    
+    .leftImage,
+    .rightImage{
+        height: 830px!important;
+    }
+
+    .rightImage img{
+        border-radius: 0;
+    }
+
+    .reviews{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 892px) {
+    .imagesAnim{
+        width: 65%;
+    }
+
+    .comment{
+        font-size: 27px;
+    }
+
+    .backTextMemories{
+        top: 280px;
+    }
+
+    .backTextReviews{
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .imagesAnim{
+        width: 75%;
+    }
+
+    .leftImage,
+    .rightImage{
+        height: 770px!important;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .imagesAnim{
+        width: 70%;
+    }
+
+    .leftImage,
+    .rightImage{
+        height: 660px!important;
+    }
+    
+    .comment{
+        font-size: 25px;
+    }
+
+    .switchButtonsAndCount{
+        gap: 26px;
+        font-size: 25px;
+    }
+
+    .backTextMemories{
+        top: 200px;
+        right: 40px;
+    }
+
+    .backTextReviews{
+        left: 40px;
+    }
+
+    .reviews{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .leftImage,
+    .rightImage{
+        height: 620px!important;
+    }
+
+    .reviews{
+        gap: 65px;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .leftImage,
+    .rightImage{
+        height: 580px!important;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .leftImage,
+    .rightImage{
+        height: 520px!important;
+    }
+
+    .imagesAnim{
+        width: 70%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .comment{
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .leftImage,
+    .rightImage{
+        height: 490px!important;
+    }
+
+    .switchButtonsAndCount{
+        font-size: 22px;
+
+        gap: 18px;
+    }
+
+    
+    .reviews{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .leftImage,
+    .rightImage{
+        height: 450px!important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .leftImage,
+    .rightImage{
+        height: 390px!important;
+    }
 }
