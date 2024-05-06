@@ -52,10 +52,12 @@ const Reviews: React.FC = () => {
 
   return (
     <div className={styles.reviews}>
-      <BackgroundText size="big" uniqueClassName={styles.backTextReviews} isYMoves={false}>
+      <BackgroundText size="big" uniqueClassName={styles.backTextReviews} isYMoves={false}
+        delay={.28}>
         ВIДГ<br />УКИ
       </BackgroundText>
-      <BackgroundText size="big" uniqueClassName={styles.backTextMemories} isYMoves={false}>
+      <BackgroundText size="big" uniqueClassName={styles.backTextMemories} isYMoves={false}
+        delay={.28}>
         СПОГ<br />АДИ
       </BackgroundText>
       <div className={styles.headerAndSwitches}>
