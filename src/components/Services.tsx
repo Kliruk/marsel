@@ -19,7 +19,7 @@ const Services = () => {
         </div>
         <BackgroundText duration={1} delay={0}
           uniqueClassName={styles.backTextMoments} isYMoves={false}>
-          Моментiв
+          Моме<br className={styles.cutMoments} />нтiв
         </BackgroundText>
         <BackgroundText delay={.2} uniqueClassName={styles.backTextMagic} isYMoves={false}>
           магiя

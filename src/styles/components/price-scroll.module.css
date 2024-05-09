@@ -1,5 +1,6 @@
 .priceScroll{
     display: flex;
+    position: relative;
     align-items: center;
     gap: 55px;
 }
@@ -7,15 +8,18 @@
 .leftBoxText,
 .rightBoxText{
     display: flex;
+    position: absolute;
     flex-direction: column;
 }
 
 .leftBoxText{
     align-items: flex-end;
+    left: -220px;
 }
 
 .rightBoxText{
     align-items: flex-start;
+    right: -263px;
 }
 
 .firstBlockSecondText{
@@ -26,14 +30,16 @@
     margin-left: 9px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
     .priceScroll{
-        gap: 44px;
+        margin-top: 40px;
     }
+}
 
+@media screen and (max-width: 850px) {
     .scrollButton{
-        width: 90px!important;
-        height: 90px!important;
+        width: 110px!important;
+        height: 110px!important;
     }
 
     .scrollButtonArrow{
@@ -49,12 +55,26 @@
 
     .leftBoxText,
     .rightBoxText{
+        position: static;
         align-items: center;
+    }
+
+    .priceScroll{
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .priceScroll{
         margin-top: 30px;
+    }
+
+    .scrollButton{
+        width: 100px!important;
+        height: 100px!important;
+    }
+
+    .scrollButtonArrow{
+        width: 33px!important;
     }
 }

@@ -13,10 +13,7 @@
 .headerWithBackText{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    margin: 0 61px;
-    
+    justify-content: center;    
     flex-direction: column;
 }
 
@@ -44,26 +41,49 @@
     top: 150px;
 }
 
+.cutMoments{
+    display: none;
+}
+
+@media screen and (max-width: 1450px) {
+    .prices{
+        gap: 120px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .prices{
         margin-top: 330px;
+        gap: 90px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .prices{
         margin-top: 280px;
-        gap: 110px;
+        gap: 60px;
+    }
+
+    .cutMoments{
+        display: flex;
+    }
+
+    .backTextMoments{
+        top: -170px;
+    }
+
+    .backTextMagic{
+        display: none;
     }
 }
 
 @media screen and (max-width: 688px) {
     .prices{
-        margin-top: 170px;
+        margin-top: 125px;
         margin-left: 29px;
         margin-right: 29px;
 
-        gap: 80px;
+        gap: 60px;
     }
 
     .backTextMoments{
@@ -74,6 +94,11 @@
     .backTextMagic{
         right: 0;
         top: 180px;
+    }
+
+    .backTextMagic{
+        display: block;
+        top: 120px;
     }
 }
 

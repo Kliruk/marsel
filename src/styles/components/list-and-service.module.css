@@ -12,3 +12,27 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 1450px) {
+    .list{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .list{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .list{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .list{
+        margin-top: 0;
+    }
+}
