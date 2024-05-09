@@ -33,6 +33,13 @@
 .carousel{
     overflow: hidden;
 }
+
+.secondImages,
+.images{
+    width: 732px;
+    height: 751px;
+}
+
 /* tablet */
 @media screen and (max-width: 992px) {
     .secondImages{
@@ -41,8 +48,8 @@
 
     .secondImages,
     .images{
-        width: 417px!important;
-        height: 458px!important;
+        width: 417px;
+        height: 458px;
     }
 
     .buttons{
@@ -57,8 +64,8 @@
 @media screen and (max-width: 688px) {
     .secondImages,
     .images{
-        width: 196px!important;
-        height: 267px!important;
+        width: 196px;
+        height: 267px;
     }
 
     .buttons{

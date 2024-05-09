@@ -2,6 +2,8 @@ export interface ICustomImage{
     uniqueClassName: string,
     src: string,
     alt: string,
-    width: number,
-    height: number
+    width?: number | "100%",
+    height?: number | "100%",
+    quality?: number
+    sizes: string,
 }

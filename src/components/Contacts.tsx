@@ -29,10 +29,12 @@ const Contacts = () => {
         </div>
       </div>
       <div className={styles.carousel}>
-        <ImageCarousel width={732} height={751} uniqueClassName={styles.images}
-          images={IMAGE_CAROUSEL} speed={-65} />
-        <ImageCarousel width={732} height={751} uniqueClassName={styles.secondImages}
-          images={IMAGE_CAROUSEL} speed={65} />
+        <ImageCarousel uniqueClassName={styles.images}
+          images={IMAGE_CAROUSEL} speed={-65}
+          sizes="(min-width: 1000px) 732px, (min-width: 700px) 417px, 196px" />
+        <ImageCarousel uniqueClassName={styles.secondImages}
+          images={IMAGE_CAROUSEL} speed={65}
+          sizes="(min-width: 1000px) 732px, (min-width: 700px) 417px, 196px"/>
       </div>
 
     </div>

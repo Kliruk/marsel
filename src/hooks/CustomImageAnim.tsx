@@ -22,7 +22,7 @@ import styles from "@/styles/hooks/custom-image-anim.module.css";
  * adaptation for example
  * @return {JSX.Element}
  */
-const CustomImageAnim = ({src, alt, width, height, uniqueClassName}: ICustomImage) => {
+const CustomImageAnim = ({src, alt, width, height, uniqueClassName, sizes}: ICustomImage) => {
   const ref = useRef(null);
   const [valueBefore, setValueBefore] = useState(0);
   const [valueAfter, setValueAfter] = useState(0);
@@ -82,7 +82,7 @@ const CustomImageAnim = ({src, alt, width, height, uniqueClassName}: ICustomImag
       {/* https://www.youtube.com/shorts/AT70PVbdfBI */}
       {/* @ts-ignore */}
       <Image className={styles.image} placeholder={customLazyLoading(width, height)}
-        src={src} alt={alt} sizes="50vw" quality={100}
+        src={src} alt={alt} sizes={sizes} quality={100}
         fill />
     </div>
   );

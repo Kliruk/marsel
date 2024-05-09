@@ -8,8 +8,8 @@ import {LIST_OF_GENRES} from "@/constants/portfolio-genres";
 import CustomHeader from "@/hooks/CustomHeader";
 import Menu from "@/UI's/Menu";
 import BackgroundText from "@/hooks/BackgroundText";
-import ImagesGrid from "@/UI's/ImagesGrid";
 import {ALL_IMAGES} from "@/constants/images-portfolio";
+import ImagesGallery from "@/components/ImagesGallery";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState("Роботи");
@@ -41,7 +41,7 @@ const Home = () => {
           МОМ<br />ЕНТИ
         </BackgroundText>
       </div>
-      <ImagesGrid images={ALL_IMAGES} />
+      <ImagesGallery images={ALL_IMAGES} />
     </div>
   );
 };

@@ -39,7 +39,7 @@
 .photoForMe__Header,
 .myPassion__Header,
 .finalSection__Header {
-    font-family: var(--font-mak);
+    font-family: var(--font-accent);
     font-weight: 300;
     font-size: 50px;
     text-align: center;

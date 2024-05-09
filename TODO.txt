@@ -1,0 +1,2 @@
+TODO після затвердження всіх фотографій інспектувати сторінку за допомогою https://ausi.github.io/respimagelint/ та вставити атрибут sizes,
+    що ми отримали з перевірки компонентам CustomImageAnim та RegularImage

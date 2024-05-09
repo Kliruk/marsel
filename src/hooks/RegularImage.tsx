@@ -17,20 +17,22 @@ import {customLazyLoading} from "@/utils/customLazyLoading";
  * adaptation for example
  * @return {JSX.Element}
  */
-const RegularImage = ({src, alt, width, height, uniqueClassName} : ICustomImage)
+const RegularImage = ({src, alt, width="100%", height="100%",
+  uniqueClassName, sizes, quality=100}: ICustomImage)
   : JSX.Element => {
   return (
     <div className={`${styles.wrapper} ${uniqueClassName}`}
-      style={{
-        width: width,
-        height: height,
-      }}>
+      // style={{
+      //   width: width,
+      //   height: height,
+      // }}
+    >
       {/* no error here, because function {customLazyLoading} returns string
       and {placeholder} requires to be string*/}
       {/* https://www.youtube.com/shorts/AT70PVbdfBI */}
       {/* @ts-ignore */}
       <Image placeholder={customLazyLoading(width, height)} className={styles.image}
-        src={src} alt={alt} sizes="50vw" quality={100} fill/>
+        src={src} alt={alt} sizes={sizes} quality={quality} fill/>
     </div>
   );
 };

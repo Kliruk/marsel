@@ -41,7 +41,7 @@
 .backText {
     position: absolute;
 
-    font-family: var(--font-bergamasco);
+    font-family: var(--font-header);
     font-weight: 300;
     font-size: 500px;
     text-align: center;

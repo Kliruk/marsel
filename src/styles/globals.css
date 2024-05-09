@@ -109,7 +109,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-bergamasco);
+  font-family: var(--font-header);
   font-style: normal;
   font-weight: 300;
   font-size: 170px;
@@ -129,7 +129,7 @@ h3 {
 }
 
 h4 {
-  font-family: var(--font-mak);
+  font-family: var(--font-accent);
   font-weight: 100;
   font-size: 70px;
   text-transform: none;
@@ -137,7 +137,7 @@ h4 {
 
 .paragraphTypical,
 .paragraphSmaller {
-  font-family: var(--font-raleway);
+  font-family: var(--font-base);
   font-weight: 300;
   font-size: 24px;
   text-align: center;
@@ -199,7 +199,7 @@ h4 {
   .paragraphTypical{
     font-size: 18px;
 
-    font-family: var(--font-raleway);
+    font-family: var(--font-base);
   }
 
   .paragraphSmaller{

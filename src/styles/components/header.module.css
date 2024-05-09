@@ -47,7 +47,7 @@
 
 .backgroundTextDP {
     position: absolute;
-    font-family: var(--font-bergamasco);
+    font-family: var(--font-header);
     font-weight: 600;
     font-size: 100px;
 
