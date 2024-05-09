@@ -59,6 +59,69 @@
     gap: 23px;
 }
 
+@media screen and (min-width: 1920px) {
+    .header {
+        margin-top: 3.646vw;
+        margin-left: 3.177vw;
+        margin-right: 3.177vw;
+    }
+    
+    .textAndDoublePhoto {
+        gap: 11.979vw;
+    }
+
+    .descr {
+        max-width: 25.99vw;
+    
+        margin-left: 2.031vw;
+    }
+    
+    .doublePhoto {
+        gap: 2.656vw;
+    }
+    
+    .photoAndCircleArrow {
+        margin-top: 1.563vw;
+    }
+    
+    .backgroundTextDP {
+        font-size: 5.208vw;
+    }
+    
+    .circleAndArrow {
+        gap: 1.198vw;
+    }
+
+    .doubleRightPhoto{
+        width: 10.99vw!important;
+        height: 16.458vw!important;
+    }
+
+    .doubleLeftPhoto{
+        width: 12.292vw!important;
+        height: 18.49vw!important;
+    }
+
+    .mainPhoto{
+        width: 34.479vw!important;
+        height: 20.833vw!important;
+    }
+
+    .headerArrow{
+        width: 6.875vw!important;
+        height: 6.875vw!important;
+    }
+
+    .headerArrowArrow{
+        width: 2.604vw!important;
+    }
+
+    .nameCircle{
+        width: 6.875vw!important;
+        height: 6.875vw!important;
+    }
+}
+
 @media screen and (max-width: 1845px) {
     .textAndDoublePhoto {
         gap: 180px;

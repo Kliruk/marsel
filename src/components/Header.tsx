@@ -39,10 +39,12 @@ const Header = () => {
           uniqueClassName={styles.mainPhoto}
           alt="Замовниця" width={662} height={400} />
         <div className={styles.circleAndArrow}>
-          <NameCircle text={new Date().getFullYear()} size={132}/>
+          <NameCircle text={new Date().getFullYear()} size={132}
+            uniqueClassName={styles.nameCircle}/>
           <ButtonScroll scrollTo="#aboutme"
             size={132} widthArrow={50} widthStar={12} orientation="downward"
-            uniqueClassName={styles.headerArrow} starAnimationDelayMin={1} star={false} />
+            uniqueClassName={styles.headerArrow} uniqueClassNameArrow={styles.headerArrowArrow}
+            starAnimationDelayMin={1} star={false} />
         </div>
       </div>
       <div id="aboutme"></div>

@@ -10,6 +10,17 @@
     gap: 123px;
 }
 
+
+@media screen and (min-width: 1920px) {
+    .navbar {
+        margin: 2.604vw 3.177vw 0 3.177vw;
+    }
+    
+    .buttonLinks {
+        gap: 6.406vw;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .navbar{
         margin-top: 30px;

@@ -26,24 +26,9 @@
     stroke: var(--color-red);
 }
 
-/* @media screen and (max-width: 992px) {
+
+@media screen and (min-width: 1920px) {
     .buttonScroll{
-        width: 90px;
-        height: 90px;
+        border-width: 0.078vw;
     }
-} */
-
-/* 
-@media screen and (max-width: 538px) {
-    .buttonScroll path{
-        stroke-width: 1px;
-    }
-
-    .buttonScroll_arrow{
-        width: 35px!important;
-    }
-
-    .buttonScroll{
-        border-width: 1px;
-    }
-} */
+}
