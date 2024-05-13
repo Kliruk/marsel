@@ -1,3 +1,5 @@
+import { IVoid } from "../react/react-types"
+
 interface IButtons {
     starAnimationDelayMin?: number,
     uniqueClassName?: string
@@ -20,8 +22,7 @@ export interface IButtonsScrolls extends IButtons {
     scrollTo: string
 }
 
-export interface IButtonsLinksSwitch extends IButtons {
+export interface IButtonsLinksSwitch extends IButtons, IVoid {
     widthStar: number,
     orientation: "left" | "right",
-    action: () => void
 }

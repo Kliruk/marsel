@@ -15,7 +15,7 @@ const raleway = localFont({
       weight: "300",
     },
   ],
-  variable: "--font-base"}
+  variable: "--font-basic"}
 );
 
 const bergamasco = localFont({
