@@ -9,10 +9,14 @@ import {LIST_OF_SERVICES} from "@/constants/services";
 const ListAndService = () => {
   const [currentService, setCurrentService] = useState<string>(LIST_OF_SERVICES[2]);
 
+  const handleChange = (givenValue: string) => {
+    setCurrentService(givenValue);
+  };
+
   return (
     <div className={styles.list}>
       <Switches current={currentService}
-        setCurrent={setCurrentService} list={LIST_OF_SERVICES} />
+        handleChanges={handleChange} list={LIST_OF_SERVICES} />
       <Service currentService={currentService} />
     </div>
   );

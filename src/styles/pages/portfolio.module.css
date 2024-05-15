@@ -6,13 +6,6 @@
     margin-top: 50px;
 }
 
-.switches {
-    font-size: 24px !important;
-
-    display: flex;
-    justify-content: center;
-}
-
 .headerAndBackGroundText {
     display: flex;
     justify-content: center;
@@ -20,21 +13,6 @@
 
 .controls {
     z-index: 1;
-}
-
-.headerAndDropDown,
-.header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.headerAndDropDown {
-    margin-top: 104px;
-}
-
-.dropDownMenu {
-    margin-top: 58px;
 }
 
 .portfolioBackText,
@@ -52,15 +30,11 @@
     top: 472px;
 }
 
+.animDivForGallery{
+    width: 100%;
+}
+
 @media screen and (max-width: 992px) {
-    .headerAndDropDown {
-        margin-top: 70px;
-    }
-
-    .dropDownMenu{
-        margin-top: 40px;
-    }
-
     .portfolioBackText,
     .momentsBackText{
         font-size: 100px!important;
@@ -73,17 +47,5 @@
     .portfolioBackText{
         left: 40px;
         top: 500px;
-    }
-}
-
-@media screen and (max-width: 688px) {
-    .headerAndDropDown{
-        margin-top: 41px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .headerAndDropDown{
-        margin-top: 30px;
     }
 }

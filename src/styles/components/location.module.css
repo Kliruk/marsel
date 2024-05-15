@@ -1,0 +1,317 @@
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    padding: 0 91px;
+
+    flex-direction: column;
+}
+
+.topImages{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.imageTC,
+.imageTR{
+    margin-bottom: 179px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+
+    gap: 44px;
+    max-width: 610px;
+
+    margin-top: 30px;
+
+    flex-direction: column;
+}
+
+.bottomImagesAndAddress{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    width: 100%;
+
+    flex-direction: column;
+}
+
+.bottomImages{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.imageBL{
+    margin-left: 158px;
+}
+
+.imageBR{
+    margin-right: 87px;
+    margin-bottom: 30px;
+}
+
+.addresses{
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    gap: 13px;
+
+    bottom: 138px;
+
+    flex-direction: column;
+}
+
+.subwySign{
+    font-family: var(--font-header);
+    font-weight: 600;
+
+    margin-right: 8px;
+
+    color: var(--color-green);
+}
+
+@media screen and (max-width: 1740px) {
+    .imageBL,
+    .imageBR{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    .imageTL{
+        margin-left: 130px;
+    }
+
+    .imageTC{
+        display: none;
+    }
+
+    .imageTR{
+        margin-bottom: 70px;
+    }
+
+    .header{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 1400px) {
+    .topImages,
+    .bottomImages{
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .imageTL{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .location{
+        padding: 0 71px;
+    }
+
+    .addresses{
+        position: static;
+
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .bottomImagesAndAddress{
+        flex-direction: column-reverse;
+    }
+
+    .imageBL{
+        margin-left: 90px;
+    }
+    
+    .imageBR{
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .imageBL{
+        margin-left: 40px;
+    }
+}
+/* 
+@media screen and (max-width: 1000px) {
+    .image{
+        width: 433px!important;
+        height: 648px!important;
+    }
+
+    .imageTR{
+        margin: 0;
+    }
+
+    .imageTL{
+        margin-bottom: 84px;
+    }
+
+    .imageBL{
+        margin-bottom: 82px;
+    }
+
+    .imageBR{
+        margin: 0;
+    }
+
+    .topImages,
+    .bottomImages{
+        width: auto;
+    }
+} */
+
+@media screen and (max-width: 992px) {
+    .image{
+        width: 373px!important;
+        height: 560px!important;
+    }
+
+    .topImages{
+        position: relative;
+        right: -100px;
+        gap: 111px;
+    }
+
+    .bottomImages{
+        position: relative;
+        left: -87px;
+        gap: 40px;
+    }
+
+    .header{
+        gap: 26px;
+
+        margin-bottom: 92px;
+    }
+
+    .addresses{
+        margin-top: 0;
+        margin-bottom: 92px;
+    }
+
+    .topImages,
+    .bottomImages{
+        width: auto;
+    }
+
+    .imageTR{
+        margin: 0;
+    }
+
+    .imageTL{
+        margin-bottom: 84px;
+    }
+
+    .imageBL{
+        margin-bottom: 82px;
+    }
+
+    .imageBR{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .topImages{
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .image{
+        width: 273px!important;
+        height: 407px!important;
+    }
+    
+    .topImages{
+        right: -75px;
+    }
+
+    .location{
+        padding: 0;
+    }
+
+    .header{
+        margin-top: 72px;
+        margin-bottom: 100px;
+
+        gap: 22px;
+
+        max-width: 570px;
+    }
+
+    .addresses{
+        margin-bottom: 74px;
+    }
+    
+    .topImages{
+        gap: 40px;
+    }
+
+    .imageTL{
+        margin-bottom: 57px;
+    }
+
+    .imageBL{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .image{
+        width: 224px!important;
+        height: 335px!important;
+    }
+    
+    .topImages{
+        right: -50px;
+    }
+
+    .header{
+        max-width: 445px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .image{
+        width: 190px!important;
+        height: 285px!important;
+    }
+    
+    .topImages{
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .image{
+        width: 190px!important;
+        height: 285px!important;
+    }
+    
+    .topImages{
+        right: -50px;
+    }
+}

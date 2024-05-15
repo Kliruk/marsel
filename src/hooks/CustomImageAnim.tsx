@@ -22,7 +22,7 @@ import styles from "@/styles/hooks/custom-image-anim.module.css";
  * adaptation for example
  * @return {JSX.Element}
  */
-const CustomImageAnim = ({src, alt, width, height, uniqueClassName, sizes}: ICustomImage) => {
+const CustomImageAnim = ({src, alt, width, height, uniqueClassName, sizes=""}: ICustomImage) => {
   const ref = useRef(null);
   const [valueBefore, setValueBefore] = useState(0);
   const [valueAfter, setValueAfter] = useState(0);

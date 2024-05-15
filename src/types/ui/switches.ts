@@ -1,8 +1,8 @@
 import { Dispatch, SetStateAction } from "react";
+import { IReactVoidOneArg } from "../react/react-types";
 
-export interface IListOfServices{
+export interface ISwitches extends IReactVoidOneArg<string>{
     current: string,
-    setCurrent: Dispatch<SetStateAction<string>>,
     list: string[],
     uniqueClassName?: string,
 }

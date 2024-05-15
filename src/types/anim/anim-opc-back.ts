@@ -1,5 +1,5 @@
-import { AnimationControls } from "framer-motion";
-import { IChildrens } from "../react/react-types";
+import { IReactChildrens } from "../react/react-types";
+import { IMainControls } from "./animation";
 
 export interface IAnimOpcBack {
     color?: string,
@@ -16,10 +16,6 @@ export interface IAnimOpcBack {
     yDuration?: number
 }
 
-export interface IAnimOpcBackAllParams extends IAnimOpcBack, IChildrens, IAnimOpcBackRequired{
+export interface IAnimOpcBackAllParams extends IAnimOpcBack, IReactChildrens, IMainControls{
     uniqueClassName?: string,
-}
-
-export interface IAnimOpcBackRequired{
-    mainControls: AnimationControls,
 }

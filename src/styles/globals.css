@@ -28,6 +28,7 @@ table { border-collapse: collapse; border-spacing: 0;}
   --color-for-photo-half-transparent: rgba(255, 255, 255, 0.4);
   --color-special-back-text-advantages: rgba(52, 52, 52, 0.05);
   --color-list-unactive: #AEAEAE;
+  --color-green: #4DA94B;
   --linear-vertical-fading-bottom-to-top: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 73.86%);
   --linear-horizontal-fading-left-to-right: linear-gradient(90deg, #FFFFFF 26.44%, rgba(255, 255, 255, 0) 101.04%);
 }

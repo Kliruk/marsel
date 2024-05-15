@@ -1,6 +1,6 @@
 import { RefObject } from "react"
 
-export interface IChildrens {
+export interface IReactChildrens {
     children: React.ReactNode
 }
 
@@ -18,4 +18,8 @@ export interface IReactKey{
 
 export interface IVoid {
     action: () => void
+}
+
+export interface IReactVoidOneArg<Type>{
+    handleChanges: (a: Type) => void
 }

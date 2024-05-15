@@ -1,1 +1,0 @@
-export const LIST_PORTFOLIO_PAGES = ["Роботи", "Локації"]

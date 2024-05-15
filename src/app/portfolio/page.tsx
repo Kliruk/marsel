@@ -1,61 +1,69 @@
 "use client";
 
-import React, {useState} from "react";
-import Switches from "@/UI's/Switches";
+import React, {useEffect, useState} from "react";
 import styles from "@/styles/pages/portfolio.module.css";
-import {LIST_PORTFOLIO_PAGES} from "@/constants/switches";
-import {LIST_OF_GENRES} from "@/constants/portfolio-genres";
-import CustomHeader from "@/hooks/CustomHeader";
-import DropDownMenu from "@/UI's/DropDownMenu";
+import {PORTFOLIO_PAGES} from "@/constants/portfolio";
 import BackgroundText from "@/hooks/BackgroundText";
 import {ALL_IMAGES} from "@/constants/images-portfolio";
 import ImagesGallery from "@/components/ImagesGallery";
 import Locations from "@/components/Locations";
+import PortfolioHeader from "@/components/PortfolioHeader";
+import {useAnimationControls} from "framer-motion";
+import AnimOpcY from "@/animations/AnimOpcY";
 
 const Home = () => {
-  const [currentPage, setCurrentPage] = useState("Роботи");
-  const [currentGenre, setCurrentGenre] = useState("");
+  const [currentPage, setCurrentPage] = useState<string>(PORTFOLIO_PAGES.PORTFOLIO);
+  const [currentGenre, setCurrentGenre] = useState<string>("");
+  const [animationGoes, setAnimationGoes] = useState<boolean>(false);
+  const mainControls = useAnimationControls();
+
+  // animation controls
+  useEffect(() => {
+    mainControls.start("visible");
+  // it is supposed to be this way, because it needs to run only once
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const checkAnimation = (value: string) => {
+    if (!animationGoes) {
+      handleChange(value);
+    }
+  };
+
+  const handleChange = (value: string) => {
+    setAnimationGoes(true);
+    mainControls.start("hidden");
+    setTimeout(() => {
+      setCurrentPage(value);
+      mainControls.start("visible");
+    }, 600);
+    setAnimationGoes(false);
+  };
 
   return (
     <div className={styles.portfolio}>
       <div className={styles.headerAndBackGroundText}>
         <div className={styles.controls}>
-          <Switches current={currentPage} setCurrent={setCurrentPage} list={LIST_PORTFOLIO_PAGES}
-            uniqueClassName={styles.switches} />
-          <div className={styles.headerAndDropDown}>
-            <div className={styles.header}>
-              <CustomHeader headerType={"h2"} isYMoves={true}
-                initialY={40} duration={.6} yDuration={.9}>
-                {currentPage === LIST_PORTFOLIO_PAGES[0] ? "Моменти, що" : "Не можете"}
-              </CustomHeader>
-              <CustomHeader headerType={"h2"} isYMoves={false}
-                initialY={40} duration={.6} yDuration={.9}>
-                {currentPage === LIST_PORTFOLIO_PAGES[0] ? "Зберiгаються" : "Обрати локацiю"}
-              </CustomHeader>
-              <CustomHeader headerType={"h2"} isYMoves={true}
-                initialY={40} duration={.6} yDuration={.9}>
-                {currentPage === LIST_PORTFOLIO_PAGES[0] ? "Назавжди" : "Для Зйомки?"}
-              </CustomHeader>
-            </div>
-            {currentPage === LIST_PORTFOLIO_PAGES[0] &&
-              <DropDownMenu current={currentGenre} setCurrent={setCurrentGenre}
-                list={LIST_OF_GENRES} uniqueClassName={styles.dropDownMenu} />
-            }
-          </div>
+          <PortfolioHeader currentPage={currentPage}
+            currentGenre={currentGenre} setCurrentGenre={setCurrentGenre}
+            mainControls={mainControls} checkAnimation={checkAnimation}/>
         </div>
-        <BackgroundText size="regular" uniqueClassName={styles.portfolioBackText} isYMoves={false}>
-          ПОРТ<br />ФОЛIО
-        </BackgroundText>
-        <BackgroundText size="regular" uniqueClassName={styles.momentsBackText} isYMoves={false}>
-          МОМ<br />ЕНТИ
-        </BackgroundText>
       </div>
-      {currentPage === LIST_PORTFOLIO_PAGES[0] &&
-        <ImagesGallery images={ALL_IMAGES} />
-      }
-      {currentPage === LIST_PORTFOLIO_PAGES[1] &&
-        <Locations />
-      }
+      <BackgroundText size="regular" uniqueClassName={styles.portfolioBackText} isYMoves={false}>
+          ПОРТ<br />ФОЛIО
+      </BackgroundText>
+      <BackgroundText size="regular" uniqueClassName={styles.momentsBackText} isYMoves={false}>
+          МОМ<br />ЕНТИ
+      </BackgroundText>
+      <AnimOpcY mainControls={mainControls} delay={.3} duration={.25}
+        uniqueClassName={styles.animDivForGallery}>
+        {currentPage === PORTFOLIO_PAGES.PORTFOLIO &&
+          <ImagesGallery images={ALL_IMAGES} />
+        }
+        {currentPage === PORTFOLIO_PAGES.LOCATIONS &&
+          <Locations />
+        }
+      </AnimOpcY>
     </div>
   );
 };

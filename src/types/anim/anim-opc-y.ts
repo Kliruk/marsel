@@ -1,8 +1,7 @@
-import { AnimationControls } from "framer-motion";
-import { IChildrens } from "../react/react-types";
+import { IReactChildrens } from "../react/react-types";
+import { IMainControls } from "./animation";
 
-export interface IAnimOpcY extends IChildrens{
-    mainControls: AnimationControls,
+export interface IAnimOpcY extends IReactChildrens, IMainControls{
     queueOrder?: number,
     delay?: number,
     delayMultiplier?: number,

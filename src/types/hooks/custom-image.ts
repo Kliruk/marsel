@@ -5,5 +5,5 @@ export interface ICustomImage{
     width?: number,
     height?: number,
     quality?: number,
-    sizes: string,
+    sizes?: string,
 }

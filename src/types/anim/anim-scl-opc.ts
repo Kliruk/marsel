@@ -1,4 +1,4 @@
-import { IChildrens } from "../react/react-types";
+import { IReactChildrens } from "../react/react-types";
 
 export interface IAnimSclOpc {
     opacity?: number,
@@ -10,4 +10,4 @@ export interface IAnimSclOpc {
     uniqueClassName?: string,
 }
 
-export interface IAnimSclOpcAllParam extends IChildrens, IAnimSclOpc{}
+export interface IAnimSclOpcAllParam extends IReactChildrens, IAnimSclOpc{}
