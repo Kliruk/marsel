@@ -29,7 +29,7 @@ import {IImageCarousel} from "@/types/hooks/image-carousel";
  * @return {JSX.Element}
  */
 const ImageCarousel = ({width, height, uniqueClassName,
-  speed=IMAGE_CAROUSEL_SPEED_DEFAULT, images} : IImageCarousel)
+  speed=IMAGE_CAROUSEL_SPEED_DEFAULT, images, sizes} : IImageCarousel)
   : JSX.Element => {
   const widthOfImage = useRef<HTMLDivElement | null>(null);
   const baseVelocity = speed;
@@ -89,7 +89,8 @@ const ImageCarousel = ({width, height, uniqueClassName,
         {images.map((image, _) => (
           <div key={_} ref={widthOfImage}>
             <RegularImage uniqueClassName={uniqueClassName}
-              src={image} alt={"Портрет"} width={width} height={height}/>
+              src={image} alt={"Портрет"} sizes={sizes} width={width}
+              height={height}/>
           </div>
         ))}
       </motion.div>

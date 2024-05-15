@@ -1,11 +1,9 @@
-"use client";
-
 import {IButtonsLinks} from "@/types/ui/buttons";
-import {useRouter} from "next/navigation";
 import React from "react";
 import Star from "../../Star";
 import styles from "@/styles/ui's/buttons-links.module.css";
 import {STAR_DELAY_DEFAULT} from "@/constants/default-values";
+import Link from "next/link";
 
 
 /**
@@ -20,16 +18,13 @@ import {STAR_DELAY_DEFAULT} from "@/constants/default-values";
 const ButtonRounded =
   ({text, link, type, widthStar, starAnimationDelayMin=STAR_DELAY_DEFAULT, uniqueClassName}
    : IButtonsLinks) : JSX.Element => {
-    const router = useRouter();
-
     return (
-      <button
+      <Link href={link}
         className={` ${uniqueClassName}
-          ${type === "big" ? styles.buttonLinksRoundedB : styles.buttonLinksRoundedS}`}
-        onClick={() => router.push(`${link}`)}>
+          ${type === "big" ? styles.buttonLinksRoundedB : styles.buttonLinksRoundedS}`}>
         <span>{text}</span>
         <Star width={widthStar} starAnimationDelayMin={starAnimationDelayMin}/>
-      </button>
+      </Link>
     );
   };
 

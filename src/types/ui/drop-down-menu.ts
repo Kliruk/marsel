@@ -1,5 +1,8 @@
+import { Dispatch, SetStateAction } from "react";
+
 export interface IDropDownMenu{
-    text: string,
+    current: string,
+    setCurrent: Dispatch<SetStateAction<string>>,
     list: string[],
-    func: () => void,
+    uniqueClassName?: string,
 }

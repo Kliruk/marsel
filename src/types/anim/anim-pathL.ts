@@ -1,8 +1,7 @@
-import { AnimationControls } from "framer-motion";
-import { IChildrens } from "../react/react-types";
+import { IReactChildrens } from "../react/react-types";
+import { IMainControls } from "./animation";
 
-export interface IAnimPathL{
-    mainControls: AnimationControls
+export interface IAnimPathL extends IMainControls{
     initialPathLength?: number,
     pathLenght?: number,
     duration?: number,
@@ -10,4 +9,4 @@ export interface IAnimPathL{
     ease?: number[] | string,
 }
 
-export interface IAnimPathLAllParams extends IAnimPathL, IChildrens{}
+export interface IAnimPathLAllParams extends IAnimPathL, IReactChildrens{}

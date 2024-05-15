@@ -26,10 +26,14 @@ const Header = () => {
           <div className={styles.doublePhoto}>
             <CustomImageAnim src="/photo/header/header-DRMargo-q8.1.webp"
               uniqueClassName={styles.doubleLeftPhoto}
-              alt="Замовниця" width={236} height={355} />
+              alt="Замовниця" width={236} height={355}
+              sizes="(min-width: 1440px) 236px, (min-width: 700px)
+                calc(50vw - 59px), calc(46.32vw - 22px)" />
             <CustomImageAnim src="/photo/header/header-DLMargo-q8.4.webp"
               uniqueClassName={styles.doubleRightPhoto}
-              alt="Замовниця" width={211} height={316} />
+              alt="Замовниця" width={211} height={316}
+              sizes="(min-width: 1600px) 211px, (min-width: 700px)
+                calc(50vw - 59px), calc(46.32vw - 22px)"/>
           </div>
           <p className={styles.backgroundTextDP}>MARG<br />ARITA</p>
         </div>
@@ -37,7 +41,8 @@ const Header = () => {
       <div className={styles.photoAndCircleArrow}>
         <CustomImageAnim src="/photo/header/header-LMargo-q10.webp"
           uniqueClassName={styles.mainPhoto}
-          alt="Замовниця" width={662} height={400} />
+          alt="Замовниця" width={662} height={400}
+          sizes="(min-width: 1220px) 662px, 534px" />
         <div className={styles.circleAndArrow}>
           <NameCircle text={new Date().getFullYear()} size={132}
             uniqueClassName={styles.nameCircle}/>

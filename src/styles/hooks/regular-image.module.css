@@ -1,8 +1,8 @@
 .wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 .image{
     object-fit: cover;
-    height: unset;
 }

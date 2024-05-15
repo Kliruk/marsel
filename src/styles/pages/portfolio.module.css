@@ -1,0 +1,51 @@
+.portfolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.headerAndBackGroundText {
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    z-index: 1;
+}
+
+.portfolioBackText,
+.momentsBackText {
+    z-index: 0;
+}
+
+.momentsBackText {
+    right: 58px;
+    top: 208px;
+}
+
+.portfolioBackText {
+    left: 90px;
+    top: 472px;
+}
+
+.animDivForGallery{
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .portfolioBackText,
+    .momentsBackText{
+        font-size: 100px!important;
+    }
+
+    .momentsBackText{
+        top: 180px;
+    }
+
+    .portfolioBackText{
+        left: 40px;
+        top: 500px;
+    }
+}

@@ -1,0 +1,44 @@
+
+.switches {
+    font-size: 24px !important;
+
+    display: flex;
+    justify-content: center;
+}
+
+.headerAndDropDown,
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerAndDropDown {
+    margin-top: 104px;
+}
+
+.dropDownMenu {
+    margin-top: 58px;
+}
+
+@media screen and (max-width: 992px) {
+    .headerAndDropDown {
+        margin-top: 70px;
+    }
+
+    .dropDownMenu{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .headerAndDropDown{
+        margin-top: 41px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .headerAndDropDown{
+        margin-top: 30px;
+    }
+}

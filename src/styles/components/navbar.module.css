@@ -10,6 +10,10 @@
     gap: 123px;
 }
 
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (min-width: 1920px) {
     .navbar {

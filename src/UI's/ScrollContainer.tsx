@@ -12,7 +12,7 @@ import AnimOpcY from "@/animations/AnimOpcY";
  * @param {data} array of the desired list
  * @return {JSX.Element}
  */
-const ListScrollContainer = ({uniqueClassName, data}: IScrollContainer)
+const ScrollContainer = ({uniqueClassName, data}: IScrollContainer)
   : JSX.Element => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
@@ -53,4 +53,4 @@ const ListScrollContainer = ({uniqueClassName, data}: IScrollContainer)
   );
 };
 
-export default ListScrollContainer;
+export default ScrollContainer;

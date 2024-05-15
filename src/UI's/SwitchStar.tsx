@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Star from "./Star";
 import styles from "@/styles/ui's/switch-star.module.css";

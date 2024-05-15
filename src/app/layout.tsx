@@ -3,6 +3,7 @@ import type {Metadata} from "next";
 // import localFont from "next/font/local";
 import {raleway, bergamasco, mak} from "@/utils/fonts";
 import "@/styles/globals.css";
+import {Contacts, Footer, Navbar} from "@/components";
 
 export const metadata: Metadata = {
   title: "Відео-фотографиня · Маргарита Ткачук",
@@ -29,7 +30,10 @@ export default function RootLayout({
     <html lang="en">
       <body id="top" className={`${raleway.className} 
             ${bergamasco.variable} ${mak.variable}`}>
+        <Navbar />
         {children}
+        <Contacts />
+        <Footer />
       </body>
     </html>
   );

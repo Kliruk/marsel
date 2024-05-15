@@ -17,6 +17,7 @@ const AnimOpcBack = ({
   initialBackground = `linear-gradient(91.1deg, ${color} -44.14%, rgba(52, 52, 52, 0) 32.72%)`,
   background = `linear-gradient(91.1deg, ${color} 97.12%, rgba(52, 52, 52, 0) 136.73%)`,
   ease = "easeIn",
+  yDuration = duration,
   uniqueClassName,
 } : IAnimOpcBackAllParams) : JSX.Element => {
   return (
@@ -42,7 +43,7 @@ const AnimOpcBack = ({
         duration: duration,
         delay: delay,
         ease: ease,
-        y: {duration: duration !== .7 ? duration - .2 : duration},
+        y: {duration: yDuration},
       }}
     >
       {children}

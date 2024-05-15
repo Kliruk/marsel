@@ -1,18 +1,24 @@
 .backgroundTextBig,
-.backgroundTextSmall {
+.backgroundTextSmall,
+.backgroundTextRegular {
     position: absolute;
 
     pointer-events: none;
 
-    font-family: var(--font-bergamasco);
+    font-family: var(--font-header);
     font-style: normal;
     font-weight: 300;
     font-size: 200px;
     text-transform: uppercase;
+    text-align: center;
   
     color: #F3F3F3;
   }
   
+  .backgroundTextRegular{
+    font-size: 150px;
+  }
+
   .backgroundTextSmall {
     font-size: 100px;
   }
@@ -25,7 +31,8 @@
   }
   
 @media screen and (max-width: 992px) {
-    .backgroundTextSmall{
+    .backgroundTextSmall,
+    .backgroundTextRegular{
       font-size: 70px;
     }
   
@@ -34,6 +41,10 @@
   @media screen and (max-width: 688px) {
     .backgroundTextBig{
       font-size: 90px;
+    }
+
+    .backgroundTextRegular{
+      font-size: 75px;
     }
   
     .backgroundTextSmall{

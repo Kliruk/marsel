@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 //   subsets: ["latin"],
 //   style: ["italic"],
 //   weight: "300",
-//   variable: "--font-raleway",
+//   variable: "--font-base",
 // });
 
 const raleway = localFont({
@@ -15,7 +15,7 @@ const raleway = localFont({
       weight: "300",
     },
   ],
-  variable: "--font-raleway"}
+  variable: "--font-basic"}
 );
 
 const bergamasco = localFont({
@@ -33,7 +33,7 @@ const bergamasco = localFont({
       weight: "600",
     },
   ],
-  variable: "--font-bergamasco",
+  variable: "--font-header",
 });
 
 const mak = localFont({
@@ -43,7 +43,7 @@ const mak = localFont({
       weight: "100",
     },
   ],
-  variable: "--font-mak",
+  variable: "--font-accent",
 });
 
 export {raleway, bergamasco, mak};

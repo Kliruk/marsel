@@ -1,5 +1,6 @@
-import {Navbar, Header, AboutMe, Portfolio,
-  Services, Advantages, Contacts, Footer} from "@/components";
+import {Header, AboutMe, Portfolio,
+  Services, Advantages,
+  Contacts} from "@/components";
 import React from "react";
 import Reviews from "@/components/Reviews";
 
@@ -10,7 +11,6 @@ import Reviews from "@/components/Reviews";
 export default function Home(): JSX.Element {
   return (
     <>
-      <Navbar />
       <Header />
       <AboutMe />
       <Advantages />
@@ -18,7 +18,6 @@ export default function Home(): JSX.Element {
       <Services />
       <Reviews />
       <Contacts />
-      <Footer />
     </>
   );
 }
