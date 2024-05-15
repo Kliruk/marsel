@@ -1,6 +1,8 @@
 import {Header, AboutMe, Portfolio,
-  Services, Advantages} from "@/components";
+  Services, Advantages,
+  Contacts} from "@/components";
 import React from "react";
+import Reviews from "@/components/Reviews";
 
 /**
  * Home Page of the Application
@@ -14,6 +16,8 @@ export default function Home(): JSX.Element {
       <Advantages />
       <Portfolio />
       <Services />
+      <Reviews />
+      <Contacts />
     </>
   );
 }

@@ -60,10 +60,10 @@ const Service = ({currentService}: IService) => {
           <div className={styles.headerAndQuickAdvantages}>
             <div className={styles.advantagesBlockHeader}>
               <CustomHeader headerType={"h4"} isYMoves={false}>
-                ЕКСКЛЮЗИВНА
+                Ексклюзивна
               </CustomHeader>
               <CustomHeader headerType={"h4"} isYMoves={false}>
-                Пропозиція
+                пропозиція
               </CustomHeader>
             </div>
             <div className={styles.quickAdvantages}>

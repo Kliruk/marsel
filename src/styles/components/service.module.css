@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
 
-    gap: 72px;
+    gap: 10px;
 
     flex-direction: column;
 }
@@ -64,7 +64,8 @@
     display: flex;
     align-items: center;
     
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 50px;
 
     flex-direction: column;
 }
@@ -110,17 +111,17 @@
 
     .advantagesBlock,
     .moreBlock{
-        gap: 143px;
+        gap: 125px;
     }
 
     .service{
-        margin-top: 140px;
+        margin-top: 125px;
     }
 }
 
 @media screen and (max-width: 1450px) {
     .service{
-        gap: 200px;
+        gap: 125px;
     }
 
     .descriptionBlock,
@@ -131,11 +132,20 @@
 
     .descriptionBlock,
     .advantagesBlock{
-        gap: 170px;
+        gap: 125px;
     }
 
-    .advantagesBlock{
+    .descriptionBlock,
+    .moreBlock{
         flex-direction: column-reverse;
+    }
+
+    .description{
+        gap: 70px;
+    }
+
+    .headerAndQuickAdvantages{
+        gap: 20px;
     }
 }
 
@@ -143,6 +153,16 @@
     .image{
         width: 594px!important;
         height: 964px!important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .moreScrollContainer{
+        width: 370px;
+    }
+
+    .exclusiveScrollContainer{
+        width: 300px;
     }
 }
 
@@ -154,11 +174,16 @@
     .descriptionHeader{
         max-width: 618px;
     }
+
+    .service{
+        gap: 130px;
+        margin-top: 100px;
+    }
 }
 
 @media screen and (max-width: 850px) {
     .service{
-        gap: 150px;
+        margin-top: 90px;
     }
 
     .exclusiveScrollContainer,
@@ -175,25 +200,46 @@
     }
 
     .service{
-        margin-top: 90px;
+        margin-top: 60px;
+        gap: 90px;
+    }
+
+    .headerAndQuickAdvantages{
+        margin-bottom: 35px;
+    }
+
+    .description{
+        gap: 55px;
     }
 
     .descriptionBlock,
     .advantagesBlock,
     .moreBlock{
-        gap: 91px;
+        gap: 90px;
     }
 
     .descriptionHeader{
         max-width: 525px;
     }
 
-    .headerAndQuickAdvantages{
-        gap: 20px;
+    .moreBlock{
+        gap: 50px;
     }
 
-    .advantages{
-        gap: 62px;
+    .moreTextBlock{
+        gap: 30px;
+    }
+
+    .quickAdvantages{
+        font-size: 21px;
+    }
+
+    .exclusiveScrollContainer{
+        width: 280px!important;
+    }
+
+    .moreScrollContainer{
+        width: 310px!important;
     }
 }
 
@@ -201,6 +247,12 @@
     .image{
         width: 330px!important;
         height: 520px!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .moreTextBlock{
+        gap: 25px;
     }
 }
 
