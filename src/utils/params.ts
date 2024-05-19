@@ -26,6 +26,8 @@ export const updateParams = (name: string, value: number | string,
   window.history.replaceState(null, "", `?${params.toString()}`);
 };
 
+// https://youtu.be/HuZxu_i4gO0?t=1116
+
 /**
  * Checks if url param exists and returns it is value
  * if url param does not exists also check for defaultValue
