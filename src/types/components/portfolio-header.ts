@@ -1,8 +1,9 @@
 import { IMainControls } from "../anim/animation";
 
 export interface IPortfolioHeader extends IMainControls{
-    currentPage: string,
+    currentChapter: string,
+    currentChapterText: string[],
     currentGenre: string,
     setCurrentGenre: React.Dispatch<React.SetStateAction<string>>,
-    checkAnimation: (a: string) => void;
+    checkForAnimationGoes: (a: string) => void;
 }

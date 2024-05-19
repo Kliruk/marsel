@@ -1,6 +1,5 @@
 import {Header, AboutMe, Portfolio,
-  Services, Advantages,
-  Contacts} from "@/components";
+  Services, Advantages} from "@/components";
 import React from "react";
 import Reviews from "@/components/Reviews";
 
@@ -17,7 +16,6 @@ export default function Home(): JSX.Element {
       <Portfolio />
       <Services />
       <Reviews />
-      <Contacts />
     </>
   );
 }

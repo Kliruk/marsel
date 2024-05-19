@@ -1,4 +1,3 @@
-import {Navbar} from "@/components";
 import CustomHeader from "@/hooks/CustomHeader";
 import Image from "next/image";
 import styles from "@/styles/root/global-not-found.module.css";
@@ -18,7 +17,6 @@ export const metadata: Metadata = {
 export default function NotFound(): JSX.Element {
   return (
     <div>
-      <Navbar />
       <div className={styles.main}>
         {/* ФОТО - ТЕСТОВІ */}
         <Image className={styles.leftPhoto} src={"/photo/test.jpg"}
