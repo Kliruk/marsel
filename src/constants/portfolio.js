@@ -10,5 +10,8 @@ export const PORTFOLIO_PAGES = [
         "text": ["Не можете", "Обрати локацiю", "Для Зйомки?"]
     }
 ]
-    
-export const LIST_OF_GENRES = ["контент", "лав сторi", "портрети", "сiмейна", "цiкаво"]
+
+export const LIST_OF_GENRES = ["контент", "лав сторi", "портрети", "сiмейна", "цiкаво"];
+
+export const CHAPTER_PORTFOLIO_VALUE = "p";
+export const CHAPTER_LOCATIONS_VALUE = "l";

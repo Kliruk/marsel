@@ -2,7 +2,8 @@
 
 import React, {useEffect, useState} from "react";
 import styles from "@/styles/pages/portfolio.module.css";
-import {PORTFOLIO_PAGES} from "@/constants/portfolio";
+import {CHAPTER_LOCATIONS_VALUE,
+  CHAPTER_PORTFOLIO_VALUE, PORTFOLIO_PAGES} from "@/constants/portfolio";
 import BackgroundText from "@/hooks/BackgroundText";
 import {ALL_IMAGES} from "@/constants/images-portfolio";
 import ImagesGallery from "@/components/ImagesGallery";
@@ -10,45 +11,53 @@ import Locations from "@/components/Locations";
 import PortfolioHeader from "@/components/PortfolioHeader";
 import {useAnimationControls} from "framer-motion";
 import AnimOpcY from "@/animations/AnimOpcY";
-import {updateParams} from "@/utils/params";
-import {useSearchParams} from "next/navigation";
+import {convertToParams} from "@/utils/params";
+import {useSearchParams, useRouter} from "next/navigation";
+import {CHAPTER_PARAM_NAME_DEFAULT,
+  PORTFOLIO_PAGES_PARAM_NAME_DEFAULT,
+  PORTFOLIO_PAGES_VALUE_DEFAULT} from "@/constants/default-values";
 
+
+// ПЕРЕНЕСТИ ВСЕ В Portfolio Header
 const Home = () => {
   const searchParam = useSearchParams();
-  const chaptersParam = "c";
+  const router = useRouter();
+  const currentChapter = searchParam.get(CHAPTER_PARAM_NAME_DEFAULT);
   const [currentGenre, setCurrentGenre] = useState<string>("");
-  const [currentChapter, setCurrentChapter] = useState(
-      PORTFOLIO_PAGES.find(
-          (v) => v.param === searchParam.get(chaptersParam)) || PORTFOLIO_PAGES[0]
-  );
+
   const [animationGoes, setAnimationGoes] = useState<boolean>(false);
   const mainControls = useAnimationControls();
 
   // animation controls
   useEffect(() => {
     mainControls.start("visible");
-  // it is supposed to be this way, because it needs to run only once
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const checkForAnimationGoes= (value: string) => {
+  const triggerAnimation= (value: string) => {
     if (!animationGoes) {
-      handleChange(value);
+      setAnimationGoes((prev) => !prev);
+      mainControls.start("hidden");
+      setTimeout(() => {
+        saveChanges(value);
+        mainControls.start("visible");
+
+        setAnimationGoes((prev) => !prev);
+      }, 700);
     }
   };
 
-  const handleChange = (value: string) => {
-    setAnimationGoes((prev) => !prev);
-    mainControls.start("hidden");
-    setTimeout(() => {
-      setCurrentChapter(PORTFOLIO_PAGES.find((v) => v.name === value) || PORTFOLIO_PAGES[0]);
-      updateParams(chaptersParam,
-          (PORTFOLIO_PAGES.find((v) => v.name === value) || PORTFOLIO_PAGES[0]).param,
-          searchParam);
-      mainControls.start("visible");
+  const saveChanges = (value: string) => {
+    const params = convertToParams(CHAPTER_PARAM_NAME_DEFAULT,
+        (PORTFOLIO_PAGES.find((v) => v.name === value) || PORTFOLIO_PAGES[0]).param,
+        searchParam);
 
-      setAnimationGoes((prev) => !prev);
-    }, 600);
+    if (value === PORTFOLIO_PAGES[0].name &&
+        searchParam.get(PORTFOLIO_PAGES_PARAM_NAME_DEFAULT) === null) {
+      // eslint-disable-next-line max-len
+      return router.push(`?${params}&${PORTFOLIO_PAGES_PARAM_NAME_DEFAULT}=${PORTFOLIO_PAGES_VALUE_DEFAULT}`, {scroll: false});
+    }
+
+    return router.push(`?${params}`, {scroll: false});
   };
 
 
@@ -56,10 +65,10 @@ const Home = () => {
     <div className={styles.portfolio}>
       <div className={styles.headerAndBackGroundText}>
         <div className={styles.controls}>
-          <PortfolioHeader currentChapter={currentChapter.name}
+          <PortfolioHeader
             currentGenre={currentGenre} setCurrentGenre={setCurrentGenre}
-            mainControls={mainControls} checkForAnimationGoes={checkForAnimationGoes}
-            currentChapterText={currentChapter.text}/>
+            mainControls={mainControls} checkForAnimationGoes={triggerAnimation}
+            chaptersParam={CHAPTER_PARAM_NAME_DEFAULT} />
         </div>
       </div>
       <BackgroundText size="regular" uniqueClassName={styles.portfolioBackText} isYMoves={false}>
@@ -70,10 +79,10 @@ const Home = () => {
       </BackgroundText>
       <AnimOpcY mainControls={mainControls} delay={.3} duration={.25}
         uniqueClassName={styles.animDivForGallery}>
-        {currentChapter.param === "p" &&
+        {(currentChapter === CHAPTER_PORTFOLIO_VALUE || currentChapter === null) &&
           <ImagesGallery images={ALL_IMAGES} />
         }
-        {currentChapter.param === "l" &&
+        {currentChapter === CHAPTER_LOCATIONS_VALUE &&
           <Locations />
         }
       </AnimOpcY>

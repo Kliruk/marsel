@@ -1,25 +1,30 @@
-import React, {useState} from "react";
+import React from "react";
 import {useSearchParams} from "next/navigation";
 import styles from "@/styles/components/images-gallery.module.css";
 import ImagesGrid from "@/UI's/ImagesGallery/ImagesGrid";
 import LoadMore from "../UI's/LoadMore";
 import {IImagesGallery} from "@/types/components/images-gallery";
 import {ALL_IMAGES} from "@/constants/images-portfolio";
-import {paramExists, updateParams} from "@/utils/params";
+import {convertToParams} from "@/utils/params";
+import {useRouter} from "next/navigation";
+import {PORTFOLIO_PAGES_PARAM_NAME_DEFAULT}
+  from "@/constants/default-values";
 
 const ImagesGallery = ({images} : IImagesGallery) => {
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   const loadOn = 12;
-  const [imagesInView, setImagesInView] = useState<number>(
-      parseInt(paramExists(searchParams, "p")) || loadOn);
-  // const [imagesInView, setImagesInView] = useState<number>(loadOn);
+  // `+` sign makes from string an int number
+  const currentPage = +(searchParams.get(PORTFOLIO_PAGES_PARAM_NAME_DEFAULT) || 1);
+  const imagesInView = currentPage * loadOn;
+
 
   const cutImages = () => {
     if (imagesInView <= images.length) {
-      setImagesInView((prev) => prev + loadOn);
-
-      updateParams("p", imagesInView/loadOn+1, searchParams);
+      const paramsForPages = convertToParams(PORTFOLIO_PAGES_PARAM_NAME_DEFAULT,
+          currentPage + 1, searchParams);
+      router.push(`?${paramsForPages}`, {scroll: false});
     }
   };
 

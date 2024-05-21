@@ -5,19 +5,27 @@ import DropDownMenu from "@/UI's/DropDownMenu";
 import Switches from "@/UI's/Switches";
 import {LIST_OF_GENRES, PORTFOLIO_PAGES} from "@/constants/portfolio";
 import CustomHeader from "@/hooks/CustomHeader";
+import {useSearchParams} from "next/navigation";
 import {IPortfolioHeader} from "@/types/components/portfolio-header";
 
-const PortfolioHeader = ({currentChapter,
+const PortfolioHeader = ({
   currentGenre, setCurrentGenre, checkForAnimationGoes, mainControls,
-  currentChapterText} : IPortfolioHeader) => {
+  chaptersParam} : IPortfolioHeader) => {
+  const searchParam = useSearchParams();
+
+  const currentChapter = searchParam.get(chaptersParam);
+  const currentObj = (PORTFOLIO_PAGES.find((v) => v.param === currentChapter) ||
+  PORTFOLIO_PAGES[0]);
+
   return (
     <>
-      <Switches current={currentChapter} handleChanges={checkForAnimationGoes}
+      <Switches current={currentObj.name}
+        handleChanges={checkForAnimationGoes}
         list={PORTFOLIO_PAGES.map((v) => v.name)}
         uniqueClassName={styles.switches} />
       <div className={styles.headerAndDropDown}>
         <div className={styles.header}>
-          {currentChapterText.map((headerLine: string, _: number) => (
+          {currentObj?.text.map((headerLine: string, _: number) => (
             <AnimOpcY
               mainControls={mainControls}
               delay={.1}
@@ -34,11 +42,10 @@ const PortfolioHeader = ({currentChapter,
 
         </div>
         <AnimOpcY mainControls={mainControls} delay={.25} duration={.25}>
-          {/* {currentChapter === "p" &&
+          {currentChapter === "p" &&
               <DropDownMenu current={currentGenre} setCurrent={setCurrentGenre}
                 list={LIST_OF_GENRES} uniqueClassName={styles.dropDownMenu} />
-          } */}
-          .
+          }
         </AnimOpcY>
       </div>
     </>

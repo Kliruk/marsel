@@ -52,7 +52,8 @@ const Service = ({currentService}: IService) => {
             </CustomHeader>
           </div>
           <p className={`${styles.descriptionText} paragraphTypical`}>{data.description}</p>
-          <ButtonSquared text={"ПОРТФОЛІО"} link={"/portfolio"} type={"none"} widthStar={12} />
+          <ButtonSquared text={"ПОРТФОЛІО"} link={"/portfolio?c=p&p=1"}
+            type={"none"} widthStar={12} />
         </div>
       </div>
       <div className={styles.advantagesBlock}>

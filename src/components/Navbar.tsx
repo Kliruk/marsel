@@ -19,7 +19,7 @@ const Navbar = () => {
         <ButtonLink starAnimationDelayMin={0.8} text="Reviews"
           link="#reviews" type="none" widthStar={12} />
         <ButtonLink starAnimationDelayMin={0.8} text="Portfolio"
-          link="/portfolio" type="none" widthStar={12} />
+          link="/portfolio?c=p&p=1" type="none" widthStar={12} />
       </div>
       }
       <div className={`${styles.buttons} ${pathname === "/portfolio" ? "w-full" : ""}`}>

@@ -15,9 +15,11 @@ const ImageFromGridGallery = ({image, dimensions, isContact} : IImageFromGridGal
           alt={"Робота фотографині"}
           sizes={"426px"}
           width={426}
-          height={dimensions ? dimensions.height : 450}
+          height={dimensions ? dimensions.height : 680}
         />
-        <div className={styles.fadeOut}></div>
+        {isContact &&
+          <div className={styles.fadeOut}></div>
+        }
       </div>
       {isContact &&
       <div className={styles.contact}>

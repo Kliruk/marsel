@@ -17,7 +17,7 @@ const Portfolio = () => {
       </div>
       <p className={`paragraphTypical ${styles.paragraph}`}>Кожен мій кадр - це окрема історія, а
         кожна фотографія - це краплинка емоції та почуттів </p>
-      <ButtonRounded text={"портфолiо"} link={"/portfolio"} type={"small"} widthStar={12} />
+      <ButtonRounded text={"портфолiо"} link={"/portfolio?c=p&p=1"} type={"small"} widthStar={12} />
       <div className={styles.gridAndBacktext}>
         <div className={styles.gridWithPhotos}>
           <CustomImageAnim uniqueClassName={styles.leftTopPhoto}
