@@ -1,16 +1,9 @@
 "use client";
 
 import React, {useEffect, useState} from "react";
-import styles from "@/styles/pages/portfolio.module.css";
-import {CHAPTER_LOCATIONS_VALUE,
-  CHAPTER_PORTFOLIO_VALUE, LIST_OF_GENRES, PORTFOLIO_PAGES} from "@/constants/portfolio";
-import BackgroundText from "@/hooks/BackgroundText";
+import {LIST_OF_GENRES, PORTFOLIO_PAGES} from "@/constants/portfolio";
 import {ALL_IMAGES} from "@/constants/portfolio";
-import ImagesGallery from "@/components/ImagesGallery";
-import Locations from "@/components/Locations";
-import PortfolioHeader from "@/components/PortfolioHeader";
 import {useAnimationControls} from "framer-motion";
-import AnimOpcY from "@/animations/AnimOpcY";
 import {convertToParams} from "@/utils/params";
 import {useSearchParams, useRouter} from "next/navigation";
 import {CHAPTER_PARAM_NAME_DEFAULT,
@@ -19,6 +12,7 @@ import {CHAPTER_PARAM_NAME_DEFAULT,
   PORTFOLIO_PAGES_VALUE_DEFAULT} from "@/constants/default-values";
 import {findObject, shuffleArray} from "@/utils/services";
 import {IListOfGenres, IPortfolioPages} from "@/types/pages/portfolio";
+import PortfolioUi from "@/components/portfolio/PortfolioUi";
 
 
 // ПЕРЕНЕСТИ ВСЕ В Portfolio Header
@@ -37,12 +31,6 @@ const Home = ({searchParams} : {searchParams : any}) => {
 
   // animation controls
   useEffect(() => {
-    if (!currentChapter) {
-      setShuffledImages(shuffleArray(ALL_IMAGES));
-    } else {
-      returnGenre(currentChapter, "param");
-    }
-
     mainControls.start("visible");
   }, []);
 
@@ -67,6 +55,7 @@ const Home = ({searchParams} : {searchParams : any}) => {
 
   const getGenresParams = (value : string) => {
     if (value === LIST_OF_GENRES[0].name) {
+      console.log("ffff");
       return returnAllImages();
     }
 
@@ -80,6 +69,8 @@ const Home = ({searchParams} : {searchParams : any}) => {
     const paramsWithoutGenre = Object.entries(restOfObj).map(([key, value]) => {
       return `${key}=${value}&`;
     });
+
+    setShuffledImages(shuffleArray(ALL_IMAGES));
 
     return paramsWithoutGenre.join("");
   };
@@ -135,31 +126,16 @@ const Home = ({searchParams} : {searchParams : any}) => {
 
 
   return (
-    <div className={styles.portfolio}>
-      <div className={styles.headerAndBackGroundText}>
-        <div className={styles.controls}>
-          <PortfolioHeader
-            mainControls={mainControls} currentGenre={currentGenreName}
-            triggerAnimation={chaptersWasTriggered} triggerGenres={genresWasTriggered}
-            chaptersParam={CHAPTER_PARAM_NAME_DEFAULT} />
-        </div>
-      </div>
-      <BackgroundText size="regular" uniqueClassName={styles.portfolioBackText} isYMoves={false}>
-          ПОРТ<br />ФОЛIО
-      </BackgroundText>
-      <BackgroundText size="regular" uniqueClassName={styles.momentsBackText} isYMoves={false}>
-          МОМ<br />ЕНТИ
-      </BackgroundText>
-      <AnimOpcY mainControls={mainControls} delay={.3} duration={.25}
-        uniqueClassName={styles.animDivForGallery}>
-        {(currentChapter === CHAPTER_PORTFOLIO_VALUE || currentChapter === null) &&
-          <ImagesGallery images={shuffledImages} />
-        }
-        {currentChapter === CHAPTER_LOCATIONS_VALUE &&
-          <Locations />
-        }
-      </AnimOpcY>
-    </div>
+    <PortfolioUi
+      currentGenreName={currentGenreName}
+      currentGenreParam={currentGenreParam}
+      chaptersWasTriggered={chaptersWasTriggered}
+      genresWasTriggered={genresWasTriggered}
+      currentChapter={currentChapter}
+      shuffledImages={shuffledImages}
+      setShuffledImages={setShuffledImages}
+      mainControls={mainControls}
+      returnGenre={returnGenre}/>
   );
 };
 

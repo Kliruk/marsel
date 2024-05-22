@@ -47,8 +47,12 @@ const Menu = ({current, defaultValue, action, list, uniqueClassName}
                 {list.map((genre, _) => {
                   if (current !== genre) {
                     return (
-                      <li key={_} className={styles.listI}
-                        onClick={() => sendVariant(genre)}><span>{genre}</span></li>
+                      <li key={_} className={styles.listI}>
+                        <span className={styles.span}
+                          onClick={() => sendVariant(genre)}>
+                          {genre}
+                        </span>
+                      </li>
                     );
                   }
                 })}
