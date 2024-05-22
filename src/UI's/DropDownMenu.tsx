@@ -5,17 +5,23 @@ import {IDropDownMenu} from "@/types/ui/drop-down-menu";
 
 /**
  * Return drop down menu for choosing an option
- * @param {text} main text for menu
- * @param {list} list of the options
- * @param {func} func that triggers when user choose something
+ * @param {current} current is a current text, that will be displayed
+ * when drow down menu is closed
+ * @param {defaultValue} defaultValue value that would be displayed if {current}
+ * is equal to null or undefined
+ * @param {action} action is the function that will triggers after user
+ * will choose value in list
+ * @param {list} list that will be displayed in drop down menu
+ * @param {uniqueClassName} unique class name in order to control css of element,
+ * adaptation for example
  * @return {JSX.Element}
  */
-const Menu = ({current, setCurrent, list, uniqueClassName}
-  : IDropDownMenu) : JSX.Element => {
+const Menu = ({current, defaultValue, action, list, uniqueClassName}
+  : IDropDownMenu<string>) : JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const sendVariant = (text : string) => {
-    setCurrent(text);
+    action(text);
     setIsOpen((prev) => !prev);
   };
 
@@ -27,7 +33,7 @@ const Menu = ({current, setCurrent, list, uniqueClassName}
       onClick={() => {
         setIsOpen((prev) => !prev);
       }}>
-        <span>{current !== "" ? current : "ЖАНР"}</span>
+        <span>{current ? current : defaultValue}</span>
         <svg className={isOpen ? styles.downArrow : styles.upArrow}
           viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M-3.3776e-07 8.0755C4.14474 8.0755 7.5 12.9628 7.5 19M15

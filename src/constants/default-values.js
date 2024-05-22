@@ -6,3 +6,4 @@ export const CHAPTER_PARAM_NAME_DEFAULT = "c";
 export const PORTFOLIO_PAGES_PARAM_NAME_DEFAULT = "p";
 export const PORTFOLIO_PAGES_VALUE_DEFAULT = 1;
 export const CHAPTER_VALUE_DEFAULT = "p";
+export const GENRE_PARAM_NAME_DEFAULT = "g";

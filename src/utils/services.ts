@@ -24,7 +24,7 @@ export const getRandomNumber = (min: number = 1, max: number = 1): number => {
  * @param {array} array that will be shuffled
  * @return {string[]}
  */
-export function shuffleArray<T extends any>(array: T[]): T[] {
+export function shuffleArray<T>(array: T[]): T[] {
   let currentIndex = array.length;
 
   // While there remain elements to shuffle...
@@ -39,4 +39,15 @@ export function shuffleArray<T extends any>(array: T[]): T[] {
   }
 
   return [...array];
+}
+
+/**
+ * Find right object in array of objects
+ * @param {array} array from which the search will be made
+ * @param {key} key which key will be searched
+ * @param {value} value to be compared
+ * @return {object}
+ */
+export function findObject<T>(array: T[], key: keyof T, value: T[keyof T] | null): T | undefined {
+  return array.find((v: T) => v[key] === value);
 }

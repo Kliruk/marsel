@@ -51,7 +51,7 @@ const Reviews: React.FC = () => {
   const currentReview = LIST_OF_REVIEWS[currentIndex];
 
   return (
-    <div className={styles.reviews}>
+    <div id="reviews" className={styles.reviews}>
       <BackgroundText size="big" uniqueClassName={styles.backTextReviews} isYMoves={false}
         delay={.28}>
         ВIДГ<br />УКИ

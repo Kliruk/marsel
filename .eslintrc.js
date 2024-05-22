@@ -407,7 +407,7 @@ module.exports = {
 
     "max-len": [2, {
 
-      code: 100,
+      code: 110,
 
       tabWidth: 2,
 

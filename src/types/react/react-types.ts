@@ -21,5 +21,5 @@ export interface IVoid {
 }
 
 export interface IReactVoidOneArg<Type>{
-    handleChanges: (a: Type) => void
+    handleChanges: (arg0: Type) => void
 }

@@ -1,8 +1,7 @@
-import { Dispatch, SetStateAction } from "react";
-
-export interface IDropDownMenu{
-    current: string,
-    setCurrent: Dispatch<SetStateAction<string>>,
+export interface IDropDownMenu<T>{
+    current: T | null | undefined,
+    defaultValue: T,
+    action: (a: T) => void,
     list: string[],
     uniqueClassName?: string,
 }
