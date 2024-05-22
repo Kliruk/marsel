@@ -12,7 +12,7 @@ import {CHAPTER_PARAM_NAME_DEFAULT,
   PORTFOLIO_PAGES_VALUE_DEFAULT} from "@/constants/default-values";
 import {findObject, shuffleArray} from "@/utils/services";
 import {IListOfGenres, IPortfolioPages} from "@/types/pages/portfolio";
-import PortfolioUi from "@/components/portfolio/PortfolioUi";
+import PortfolioUi from "@/components/PortfolioUi";
 
 
 // ПЕРЕНЕСТИ ВСЕ В Portfolio Header

@@ -3,11 +3,11 @@ import {CHAPTER_PARAM_NAME_DEFAULT} from "@/constants/default-values";
 import {CHAPTER_PORTFOLIO_VALUE, CHAPTER_LOCATIONS_VALUE, ALL_IMAGES} from "@/constants/portfolio";
 import BackgroundText from "@/hooks/BackgroundText";
 import React, {useEffect} from "react";
-import ImagesGallery from "../ImagesGallery";
-import Locations from "../Locations";
-import PortfolioHeader from "../PortfolioHeader";
+import ImagesGallery from "./ImagesGallery";
+import Locations from "./Locations";
+import PortfolioHeader from "./PortfolioHeader";
 import styles from "@/styles/pages/portfolio.module.css";
-import {IPortfolioUi} from "@/types/components/portfolio/portfolio-ui";
+import {IPortfolioUi} from "@/types/components/portfolio-ui";
 import {shuffleArray} from "@/utils/services";
 
 
