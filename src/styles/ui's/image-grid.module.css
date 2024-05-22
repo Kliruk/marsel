@@ -1,5 +1,8 @@
-.imageContainer{
+.imageGrid{
     position: relative;
+}
+
+.imageContainer{
     height: 100%;
     width: 100%;
 }
@@ -11,12 +14,7 @@
 
     top: 0;
 
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-.imageBlur img{
-    filter: blur(3.5px);
-    scale: 1.03;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -54,10 +52,6 @@
 .header{
     font-family: var(--font-accent);
     font-size: 1em;
-}
-
-.description{
-    font-size: 0.4em;
 }
 
 .buttons {

@@ -16,12 +16,14 @@ import {useSearchParams, useRouter} from "next/navigation";
 import {CHAPTER_PARAM_NAME_DEFAULT,
   PORTFOLIO_PAGES_PARAM_NAME_DEFAULT,
   PORTFOLIO_PAGES_VALUE_DEFAULT} from "@/constants/default-values";
+import {shuffleArray} from "@/utils/services";
 
 
 // ПЕРЕНЕСТИ ВСЕ В Portfolio Header
 const Home = () => {
   const searchParam = useSearchParams();
   const router = useRouter();
+  const [shuffledImages, setShuffledImages] = useState(ALL_IMAGES);
   const currentChapter = searchParam.get(CHAPTER_PARAM_NAME_DEFAULT);
   const [currentGenre, setCurrentGenre] = useState<string>("");
 
@@ -30,6 +32,7 @@ const Home = () => {
 
   // animation controls
   useEffect(() => {
+    setShuffledImages(shuffleArray(ALL_IMAGES));
     mainControls.start("visible");
   }, []);
 
@@ -80,7 +83,7 @@ const Home = () => {
       <AnimOpcY mainControls={mainControls} delay={.3} duration={.25}
         uniqueClassName={styles.animDivForGallery}>
         {(currentChapter === CHAPTER_PORTFOLIO_VALUE || currentChapter === null) &&
-          <ImagesGallery images={ALL_IMAGES} />
+          <ImagesGallery images={shuffledImages} />
         }
         {currentChapter === CHAPTER_LOCATIONS_VALUE &&
           <Locations />

@@ -6,7 +6,7 @@
  * @return {string}
  */
 
-export const customLazyLoading = (width : number, height : number): string => {
+export const lazyLoading = (width : number, height : number): string => {
   /**
    * Return a custom svg with its own element and animation in order to show it
    * instead of unload image

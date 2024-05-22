@@ -1,7 +1,7 @@
 
 import React from "react";
 import {IStar} from "@/types/ui/star";
-import {getRandomNumber} from "@/utils/getRandomNumber";
+import {getRandomNumber} from "@/utils/services";
 import styles from "@/styles/ui's/star.module.css";
 import {STAR_DELAY_DEFAULT} from "@/constants/default-values";
 

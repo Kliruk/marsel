@@ -4,8 +4,8 @@ import React, {useEffect, useRef, useState} from "react";
 import {useScroll} from "framer-motion";
 import Image from "next/image";
 import {ICustomImage} from "@/types/hooks/custom-image";
-import {customLazyLoading} from "../utils/customLazyLoading";
-import {roundDecimalNumber} from "@/utils/roundDecimalNumber";
+import {lazyLoading} from "../utils/lazy-loading";
+import {roundDecimalNumber} from "@/utils/services";
 import styles from "@/styles/hooks/custom-image-anim.module.css";
 
 
@@ -77,11 +77,11 @@ const CustomImageAnim = ({src, alt, width, height, uniqueClassName, sizes=""}: I
         transition: "all 0.1s ease",
       }}
     >
-      {/* no error here, because function {customLazyLoading} returns string
+      {/* no error here, because function {lazyLoading} returns string
       and {placeholder} requires to be string*/}
       {/* https://www.youtube.com/shorts/AT70PVbdfBI */}
       {/* @ts-ignore */}
-      <Image className={styles.image} placeholder={customLazyLoading(width, height)}
+      <Image className={styles.image} placeholder={lazyLoading(width, height)}
         src={src} alt={alt} sizes={sizes} quality={100}
         fill />
     </div>

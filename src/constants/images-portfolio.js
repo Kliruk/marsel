@@ -97,6 +97,24 @@
 //     "/photo/portfolio/portfolio-BLGirlWithCar-q29.5.webp",
 // ]
 
+import { shuffleArray } from "@/utils/services"
+
+// production version
+// export const ALL_IMAGES = [
+//     "/photo/portfolioTest/MAR00422.webp",
+//     "/photo/portfolioTest/MAR00429.webp",
+//     "/photo/portfolioTest/MAR00458.webp",
+//     "/photo/portfolioTest/MAR00463.webp",
+//     "/photo/portfolioTest/MAR00465.webp",
+//     "/photo/portfolioTest/MAR00571.webp",
+//     "/photo/portfolioTest/MAR00644.webp",
+//     "/photo/portfolioTest/MAR00651.webp",
+//     "/photo/portfolioTest/MAR00662.webp",
+//     "/photo/portfolioTest/MAR00695.webp",
+//     "/photo/portfolioTest/MAR00707.webp",
+// ]
+
+
 export const ALL_IMAGES = [
     "/photo/portfolioTest/MAR00422.webp",
     "/photo/portfolioTest/MAR00429.webp",
@@ -109,4 +127,50 @@ export const ALL_IMAGES = [
     "/photo/portfolioTest/MAR00662.webp",
     "/photo/portfolioTest/MAR00695.webp",
     "/photo/portfolioTest/MAR00707.webp",
+    "/photo/portfolioTest/MAR00422.webp",
+    "/photo/portfolioTest/MAR00429.webp",
+    "/photo/portfolioTest/MAR00458.webp",
+    "/photo/portfolioTest/MAR00463.webp",
+    "/photo/portfolioTest/MAR00465.webp",
+    "/photo/portfolioTest/MAR00571.webp",
+    "/photo/portfolioTest/MAR00644.webp",
+    "/photo/portfolioTest/MAR00651.webp",
+    "/photo/portfolioTest/MAR00662.webp",
+    "/photo/portfolioTest/MAR00695.webp",
+    "/photo/portfolioTest/MAR00707.webp",
+    "/photo/portfolioTest/MAR00422.webp",
+    "/photo/portfolioTest/MAR00429.webp",
+    "/photo/portfolioTest/MAR00458.webp",
+    "/photo/portfolioTest/MAR00463.webp",
+    "/photo/portfolioTest/MAR00465.webp",
+    "/photo/portfolioTest/MAR00571.webp",
+    "/photo/portfolioTest/MAR00644.webp",
+    "/photo/portfolioTest/MAR00651.webp",
+    "/photo/portfolioTest/MAR00662.webp",
+    "/photo/portfolioTest/MAR00695.webp",
+    "/photo/portfolioTest/MAR00707.webp",
+    "/photo/portfolioTest/MAR00422.webp",
+    "/photo/portfolioTest/MAR00429.webp",
+    "/photo/portfolioTest/MAR00458.webp",
+    "/photo/portfolioTest/MAR00463.webp",
+    "/photo/portfolioTest/MAR00465.webp",
+    "/photo/portfolioTest/MAR00571.webp",
+    "/photo/portfolioTest/MAR00644.webp",
+    "/photo/portfolioTest/MAR00651.webp",
+    "/photo/portfolioTest/MAR00662.webp",
+    "/photo/portfolioTest/MAR00695.webp",
+    "/photo/portfolioTest/MAR00707.webp",
+    "/photo/portfolioTest/MAR00422.webp",
+    "/photo/portfolioTest/MAR00429.webp",
+    "/photo/portfolioTest/MAR00458.webp",
+    "/photo/portfolioTest/MAR00463.webp",
+    "/photo/portfolioTest/MAR00465.webp",
+    "/photo/portfolioTest/MAR00571.webp",
+    "/photo/portfolioTest/MAR00644.webp",
+    "/photo/portfolioTest/MAR00651.webp",
+    "/photo/portfolioTest/MAR00662.webp",
+    "/photo/portfolioTest/MAR00695.webp",
+    "/photo/portfolioTest/MAR00707.webp",
 ]
+
+// export const ALL_IMAGES = shuffleArray(test);

@@ -32,6 +32,8 @@
 
 .animDivForGallery{
     width: 100%;
+    margin-top: 140px;
+    padding: 0 61px;
 }
 
 @media screen and (max-width: 992px) {
@@ -47,5 +49,28 @@
     .portfolioBackText{
         left: 40px;
         top: 500px;
+    }
+
+    .animDivForGallery{
+        margin-top: 115px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .animDivForGallery{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .animDivForGallery{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .animDivForGallery{
+        margin-top: 60px;
     }
 }

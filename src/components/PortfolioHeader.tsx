@@ -25,7 +25,7 @@ const PortfolioHeader = ({
         uniqueClassName={styles.switches} />
       <div className={styles.headerAndDropDown}>
         <div className={styles.header}>
-          {currentObj?.text.map((headerLine: string, _: number) => (
+          {currentObj.text.map((headerLine: string, _: number) => (
             <AnimOpcY
               mainControls={mainControls}
               delay={.1}
