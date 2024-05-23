@@ -3,7 +3,7 @@ import styles from "@/styles/ui's/switches.module.css";
 import {ISwitches} from "@/types/ui/switches";
 import SwitchStar from "@/UI's/SwitchStar";
 
-const ListOfServices = ({current, handleChanges, list, uniqueClassName} : ISwitches) => {
+const ListOfServices = ({current, handleChanges, list, uniqueClassName}: ISwitches<string>) => {
   return (
     <div className={`${styles.listOfService} ${uniqueClassName}`}>
       <ul className={styles.list}>

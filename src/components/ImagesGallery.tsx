@@ -47,7 +47,7 @@ const ImagesGallery = ({images} : IImagesGallery) => {
           )}
         />
       </div>
-      {imagesInView >= images.length &&
+      {imagesInView <= images.length &&
         <LoadMore action={cutImages} limit={images.length} current={imagesInView} />
       }
     </div>

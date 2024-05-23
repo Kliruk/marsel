@@ -94,6 +94,7 @@
 
 .listI span{
     cursor: pointer;
+    width: 100%;
 }
 
 .listI::after {

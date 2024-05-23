@@ -9,7 +9,7 @@ import {useSearchParams} from "next/navigation";
 import {IPortfolioHeader} from "@/types/components/portfolio-header";
 
 const PortfolioHeader = ({
-  currentGenre, setCurrentGenre, checkForAnimationGoes, mainControls,
+  currentGenre, triggerAnimation, triggerGenres, mainControls,
   chaptersParam} : IPortfolioHeader) => {
   const searchParam = useSearchParams();
 
@@ -20,7 +20,7 @@ const PortfolioHeader = ({
   return (
     <>
       <Switches current={currentObj.name}
-        handleChanges={checkForAnimationGoes}
+        handleChanges={triggerAnimation}
         list={PORTFOLIO_PAGES.map((v) => v.name)}
         uniqueClassName={styles.switches} />
       <div className={styles.headerAndDropDown}>
@@ -43,8 +43,9 @@ const PortfolioHeader = ({
         </div>
         <AnimOpcY mainControls={mainControls} delay={.25} duration={.25}>
           {currentChapter === "p" &&
-              <DropDownMenu current={currentGenre} setCurrent={setCurrentGenre}
-                list={LIST_OF_GENRES} uniqueClassName={styles.dropDownMenu} />
+              <DropDownMenu current={currentGenre} action={triggerGenres}
+                list={LIST_OF_GENRES.map((v) => v.name)} uniqueClassName={styles.dropDownMenu}
+                defaultValue="ЖАНР" />
           }
         </AnimOpcY>
       </div>
