@@ -1,13 +1,45 @@
+/* eslint-disable max-len */
 import type {Metadata} from "next";
-// import {Raleway as ralewayGoogleFont} from "next/font/google";
-// import localFont from "next/font/local";
 import {raleway, bergamasco, mak} from "@/utils/fonts";
 import "@/styles/globals.css";
 import {Contacts, Footer, Navbar} from "@/components";
 
 export const metadata: Metadata = {
   title: "Відео-фотографиня · Маргарита Ткачук",
-  description: "-----------",
+  description: "Мої кадри - це поєднання технічної майстерності,естетичного сприйняття та глибокого розуміння емоцій, що робить кожен проєкт унікальним",
+  authors: {
+    name: "Web Elefont",
+    url: "https://www.instagram.com/webelefont.blog/",
+  },
+  openGraph: {
+    title: "Відео-фотографиня · Маргарита Ткачук",
+    description: "Мої кадри - це поєднання технічної майстерності, естетичного сприйняття та глибокого розуміння емоцій, що робить кожен проєкт унікальним",
+    type: "website",
+    url: "",
+    images: {
+      url: "photo/header/header-LMargo-q10.webp",
+      alt: "Фотографиня Ткачук Марго",
+      type: "Photo",
+      width: "6000",
+      height: "4000",
+    },
+  },
+  alternates: {
+    canonical: "",
+  },
+  twitter: {
+    card: "summary",
+    title: "Відео-фотографиня · Маргарита Ткачук",
+    description: "Мої кадри - це поєднання технічної майстерності, естетичного сприйняття та глибокого розуміння емоцій, що робить кожен проєкт унікальним",
+    images: {
+      url: "photo/header/header-LMargo-q10.webp",
+      alt: "Фотографиня Ткачук Марго",
+      type: "Photo",
+      width: "6000",
+      height: "4000",
+    },
+  },
+
 };
 
 /**

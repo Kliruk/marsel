@@ -15,7 +15,6 @@ const PortfolioUi = ({mainControls, currentGenreName, chaptersWasTriggered,
   genresWasTriggered, currentChapter, shuffledImages, setShuffledImages, returnGenre,
   currentGenreParam}: IPortfolioUi) => {
   useEffect(() => {
-    console.log(currentGenreParam);
     if (!currentGenreParam) {
       setShuffledImages(shuffleArray(ALL_IMAGES));
     } else {

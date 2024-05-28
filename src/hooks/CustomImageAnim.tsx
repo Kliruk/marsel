@@ -82,7 +82,7 @@ const CustomImageAnim = ({src, alt, width, height, uniqueClassName, sizes=""}: I
       {/* https://www.youtube.com/shorts/AT70PVbdfBI */}
       {/* @ts-ignore */}
       <Image className={styles.image} placeholder={lazyLoading(width, height)}
-        src={src} alt={alt} sizes={sizes} quality={100}
+        src={src} alt={alt} sizes={sizes} quality={75}
         fill />
     </div>
   );

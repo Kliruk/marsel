@@ -18,11 +18,13 @@ const ImagesGallery = ({images} : IImagesGallery) => {
   const imagesInView = currentPage * loadOn;
 
   const cutImages = () => {
-    if (imagesInView <= images.length) {
-      const paramsForPages = convertToParams(PORTFOLIO_PAGES_PARAM_NAME_DEFAULT,
-          currentPage + 1, searchParams);
-      router.push(`?${paramsForPages}`, {scroll: false});
-    }
+    setTimeout(() => {
+      if (imagesInView <= images.length) {
+        const paramsForPages = convertToParams(PORTFOLIO_PAGES_PARAM_NAME_DEFAULT,
+            currentPage + 1, searchParams);
+        router.push(`?${paramsForPages}`, {scroll: false});
+      }
+    }, 500);
   };
 
   return (

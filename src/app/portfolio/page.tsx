@@ -15,7 +15,6 @@ import {IListOfGenres, IPortfolioPages} from "@/types/pages/portfolio";
 import PortfolioUi from "@/components/PortfolioUi";
 
 
-// ПЕРЕНЕСТИ ВСЕ В Portfolio Header
 const Home = ({searchParams} : {searchParams : any}) => {
   const searchParam = useSearchParams();
   const router = useRouter();
@@ -55,7 +54,6 @@ const Home = ({searchParams} : {searchParams : any}) => {
 
   const getGenresParams = (value : string) => {
     if (value === LIST_OF_GENRES[0].name) {
-      console.log("ffff");
       return returnAllImages();
     }
 
@@ -64,7 +62,7 @@ const Home = ({searchParams} : {searchParams : any}) => {
 
   const returnAllImages = () => {
     // eslint-disable-next-line no-unused-vars
-    const {g, ...restOfObj} = searchParams;
+    const {g, p, ...restOfObj} = searchParams;
 
     const paramsWithoutGenre = Object.entries(restOfObj).map(([key, value]) => {
       return `${key}=${value}&`;
@@ -81,6 +79,7 @@ const Home = ({searchParams} : {searchParams : any}) => {
     if (param) {
       setShuffledImages(shuffleArray(obj.list || []));
       const params = convertToParams(GENRE_PARAM_NAME_DEFAULT, param, searchParam);
+
       return params;
     }
 
@@ -97,7 +96,7 @@ const Home = ({searchParams} : {searchParams : any}) => {
   const triggerGenres = (value : string) => {
     const genresParams = getGenresParams(value);
 
-    router.push(`?&${genresParams}`, {scroll: false});
+    router.push(`?${genresParams}`, {scroll: false});
   };
 
   const triggerAnimation = (value: string, whatTriggered: "genres" | "chapters") => {
@@ -113,7 +112,7 @@ const Home = ({searchParams} : {searchParams : any}) => {
         mainControls.start("visible");
 
         setAnimationGoes((prev) => !prev);
-      }, 700);
+      }, 800);
     }
   };
 

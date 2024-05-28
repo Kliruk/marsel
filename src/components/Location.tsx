@@ -10,25 +10,30 @@ const Location = ({location} : ILocation) => {
     <div className={styles.location}>
       <div className={styles.topImages}>
         <CustomImageAnim src={location.images[0]} alt={"Локація"}
-          width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageTL}`} />
+          width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageTL}`}
+          sizes="(min-width: 600px) 273px, (min-width: 460px) 224px, 190px" />
         <CustomImageAnim src={location.images[1]} alt={"Локація"}
-          width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageTC}`} />
+          width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageTC}`}
+          sizes="(min-width: 600px) 273px, (min-width: 460px) 224px, 190px" />
         <CustomImageAnim src={location.images[2]} alt={"Локація"}
-          width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageTR}`} />
+          width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageTR}`}
+          sizes="(min-width: 600px) 273px, (min-width: 460px) 224px, 190px" />
       </div>
       <div className={styles.header}>
         <CustomHeader headerType={"h3"} delay={.1} isYMoves={true}>
           {location.companyName}
         </CustomHeader>
         <p className={`${styles.room} paragraphTypical`}>Кімната: {location.room}</p>
-        <ButtonSquared text={"Дізнатися більше"} link={location.link} type={"big"} widthStar={12} />
+        <ButtonSquared text={"Дiзнатися бiльше"} link={location.link} type={"big"} widthStar={12} />
       </div>
       <div className={styles.bottomImagesAndAddress}>
         <div className={styles.bottomImages}>
           <CustomImageAnim src={location.images[3]} alt={"Локація"}
-            width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageBL}`} />
+            width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageBL}`}
+            sizes="(min-width: 600px) 273px, (min-width: 460px) 224px, 190px" />
           <CustomImageAnim src={location.images[4]} alt={"Локація"}
-            width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageBR}`} />
+            width={374} height={560} uniqueClassName={`${styles.image} ${styles.imageBR}`}
+            sizes="(min-width: 600px) 273px, (min-width: 460px) 224px, 190px" />
         </div>
         <div className={`${styles.addresses} paragraphTypical`}>
           <p className={styles.subway}>
